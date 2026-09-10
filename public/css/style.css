@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
