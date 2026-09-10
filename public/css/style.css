@@ -1,14 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    background-color: #f5f3ef;
+    color: #292929;
     font-family: Arial, sans-serif;
 }
 
-header,
-main,
-footer {
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+
+/* HEADER */
+
+.main-header {
+    background-color: #f5f3ef;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.main-header .container {
+    height: 100%;
+}
+
+.logo {
+    gap: 12px;
+    margin-right: 70px;
+}
+
+.logo-icon {
+    background-color: #00ac66;
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.logo-text {
+    color: #00ac66;
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+.main-navigation,
+.account-navigation {
+    gap: 40px;
+}
+
+.main-header nav a {
+    color: #292929;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.main-header nav a:hover {
+    color: #00ac66;
+}
+
+
+/* HERO */
+
+.home-hero {
+    background-color: #f5f3ef;
+    padding: 80px 0 100px;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-text {
+    max-width: 320px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 14px;
+    line-height: 1.25;
+    margin-bottom: 35px;
+}
+
+.hero-image {
+    width: 370px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+}
+
+.hero-image span {
+    display: block;
+    text-align: right;
+    color: #aaa;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+
+/* BOUTONS */
+
+.btn-tomtroc {
+    display: inline-block;
+    background-color: #00ac66;
+    color: white;
+    text-decoration: none;
+    padding: 17px 30px;
+    border-radius: 10px;
+    border: 1px solid #00ac66;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-tomtroc:hover {
+    color: white;
+    opacity: 0.9;
+}
+
+.btn-outline-tomtroc {
+    background-color: transparent;
+    color: #00ac66;
+}
+
+.btn-outline-tomtroc:hover {
+    background-color: #00ac66;
+}
+
+
+/* LIVRES */
+
+.latest-books {
+    background-color: white;
+    padding: 75px 0 75px;
+}
+
+.latest-books h2,
+.how-it-works h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.latest-books .row {
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.book-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.book-image-empty {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-information {
+    padding: 15px;
+}
+
+.book-information h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    color: #777;
+    font-size: 12px;
+}
+
+.book-owner {
+    color: #aaa;
+    font-size: 9px;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+
+/* COMMENT ÇA MARCHE */
+
+.how-it-works {
+    background-color: #f5f3ef;
+    padding: 80px 0;
+}
+
+.how-it-works h2 {
+    margin-bottom: 15px;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 45px;
+    font-size: 13px;
+}
+
+.how-it-works .row {
+    max-width: 1000px;
+    margin: 0 auto 45px;
+}
+
+.step-card {
+    height: 130px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
     padding: 20px;
 }
 
-article {
-    margin-bottom: 20px;
+
+/* BANNIERE */
+
+
+.home-banner {
+    width: 1440px;
+    max-width: 100%;
+    height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.home-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* NOS VALEURS */
+
+.our-values {
+    background-color: #f5f3ef;
+    padding: 80px 0 110px;
+}
+
+.values-content {
+    width: 330px;
+    margin: auto;
+    position: relative;
+}
+
+.values-content h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.values-content p {
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.team {
+    display: block;
+    color: #aaa;
+    font-size: 10px;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+.heart {
+    color: #00ac66;
+    font-size: 90px;
+    text-align: right;
+    line-height: 1;
+}
+
+
+/* FOOTER */
+
+.main-footer {
+    background-color: white;
+    padding: 25px 0;
+}
+
+.main-footer .container {
+    gap: 40px;
+}
+
+.main-footer a,
+.main-footer span {
+    color: #555;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.footer-logo {
+    color: #00ac66 !important;
+    font-family: Georgia, serif;
+    font-size: 20px !important;
 }

@@ -6,7 +6,7 @@ class HomeController
     {
         $bookManager = new BookManager();
 
-        $books = $bookManager->getAllBooks();
+        $books = $bookManager->getLatestBooks();
 
         $view = new View('home');
 

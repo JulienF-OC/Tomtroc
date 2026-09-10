@@ -16,4 +16,20 @@ class BookManager extends AbstractEntityManager
 
         return $books;
     }
+    public function getLatestBooks(): array
+{
+    $query = $this->db->query(
+        'SELECT * FROM book
+        ORDER BY date_creation DESC
+        LIMIT 4'
+    );
+
+    $books = [];
+
+    foreach ($query->fetchAll() as $bookData) {
+        $books[] = new Book($bookData);
+    }
+
+    return $books;
+}
 }
