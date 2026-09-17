@@ -148,7 +148,7 @@ h2 {
 
 .latest-books {
     background-color: white;
-    padding: 75px 0 75px;
+    padding: 75px 0;
 }
 
 .latest-books h2,
@@ -180,13 +180,16 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #777;
 }
 
 .book-information {
     padding: 15px;
 }
 
+.book-information h2,
 .book-information h3 {
+    font-family: Arial, sans-serif;
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -241,7 +244,6 @@ h2 {
 
 
 /* BANNIERE */
-
 
 .home-banner {
     width: 1440px;
@@ -298,6 +300,60 @@ h2 {
 }
 
 
+/* PAGE NOS LIVRES */
+
+.books-page {
+    min-height: 750px;
+    padding: 80px 0 120px;
+    background-color: #f5f3ef;
+}
+
+.books-page .container {
+    max-width: 1000px;
+}
+
+.books-header {
+    margin-bottom: 60px;
+}
+
+.books-header h1 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.book-search-form {
+    width: 320px;
+}
+
+.book-search-input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 13px;
+    outline: none;
+}
+
+.book-search-input:focus {
+    border-color: #00ac66;
+}
+
+.books-grid {
+    row-gap: 35px;
+}
+
+.books-grid .book-card {
+    height: 100%;
+}
+
+.no-books {
+    padding: 40px 0;
+    color: #777;
+}
+
+
 /* FOOTER */
 
 .main-footer {
@@ -320,4 +376,164 @@ h2 {
     color: #00ac66 !important;
     font-family: Georgia, serif;
     font-size: 20px !important;
+}
+
+/* LIEN CARTE LIVRE */
+
+.book-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+}
+
+.book-link:hover {
+    color: inherit;
+}
+
+.book-link:hover .book-card {
+    transform: translateY(-3px);
+}
+
+.book-card {
+    transition: transform 0.2s ease;
+}
+
+
+/* DETAIL LIVRE */
+
+.book-detail {
+    display: flex;
+    min-height: 750px;
+    background-color: #f5f3ef;
+}
+
+.book-detail-image {
+    width: 50%;
+    min-height: 750px;
+    background-color: #eee;
+}
+
+.book-detail-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 750px;
+    object-fit: cover;
+}
+
+.book-detail-no-image {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+}
+
+.book-detail-content {
+    width: 50%;
+    padding: 80px;
+}
+
+.book-detail-inner {
+    max-width: 450px;
+}
+
+.book-detail-inner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.book-detail-author {
+    color: #777;
+    font-size: 14px;
+}
+
+.book-detail-inner hr {
+    width: 30px;
+    margin: 35px 0;
+}
+
+.book-detail-inner h2 {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 30px 0 15px;
+}
+
+.book-description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.book-owner-profile {
+    display: inline-block;
+    color: #292929;
+    text-decoration: none;
+    background-color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+}
+
+.book-owner-profile:hover {
+    color: #00ac66;
+}
+
+.book-message-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* 404 */
+
+.error-page {
+    min-height: 700px;
+    text-align: center;
+    padding-top: 150px;
+    background-color: #f5f3ef;
+}
+
+.error-page h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.error-page p {
+    margin-bottom: 40px;
+}
+
+.books-header  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8f8f8f;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.book-search-input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px 0 45px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 13px;
+    outline: none;
 }

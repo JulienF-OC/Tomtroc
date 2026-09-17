@@ -14,8 +14,14 @@
 
     <link
         rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
         href="/TomTroc/public/css/style.css"
     >
+
 </head>
 
 <body>
@@ -47,11 +53,13 @@
         <div class="account-navigation d-flex ms-auto">
 
             <a href="index.php?action=messages">
-                ♡ Messagerie
+                <i class="fa-regular fa-comment"></i>
+                Messagerie
             </a>
 
             <a href="index.php?action=account">
-                ♙ Mon compte
+                <i class="fa-regular fa-user"></i>
+                Mon compte
             </a>
 
             <a href="index.php?action=login">

@@ -33,7 +33,6 @@
 
             </div>
 
-
             <div class="col-md-6">
 
                 <div class="hero-image">
@@ -54,7 +53,6 @@
     </div>
 
 </section>
-
 
 
 <!-- DERNIERS LIVRES -->
@@ -100,7 +98,10 @@
                             </p>
 
                             <p class="book-owner">
-                                Vendu par : utilisateur
+                                Vendu par :
+                                <?= htmlspecialchars(
+                                    $book->getOwnerPseudo() ?? 'Utilisateur inconnu'
+                                ) ?>
                             </p>
 
                         </div>
@@ -112,7 +113,6 @@
             <?php endforeach; ?>
 
         </div>
-
 
         <div class="text-center">
 
@@ -130,7 +130,6 @@
 </section>
 
 
-
 <!-- COMMENT ÇA MARCHE -->
 
 <section class="how-it-works">
@@ -144,7 +143,6 @@
             Suivez ces étapes pour commencer :
         </p>
 
-
         <div class="row justify-content-center">
 
             <div class="col-md-3">
@@ -155,7 +153,6 @@
 
             </div>
 
-
             <div class="col-md-3">
 
                 <div class="step-card">
@@ -164,7 +161,6 @@
 
             </div>
 
-
             <div class="col-md-3">
 
                 <div class="step-card">
@@ -172,7 +168,6 @@
                 </div>
 
             </div>
-
 
             <div class="col-md-3">
 
@@ -183,7 +178,6 @@
             </div>
 
         </div>
-
 
         <div class="text-center">
 
@@ -201,7 +195,6 @@
 </section>
 
 
-
 <!-- GRANDE IMAGE -->
 
 <section class="home-banner">
@@ -212,7 +205,6 @@
     >
 
 </section>
-
 
 
 <!-- NOS VALEURS -->

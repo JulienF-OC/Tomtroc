@@ -16,11 +16,29 @@ try {
 
             break;
 
+
+        case 'books':
+
+            $bookController = new BookController();
+            $bookController->showBooks();
+
+            break;
+
+
+        case 'showBook':
+
+            $bookController = new BookController();
+            $bookController->showBook();
+
+            break;
+
+
         default:
 
             http_response_code(404);
 
-            echo 'Erreur 404 : page introuvable.';
+            $view = new View('404');
+            $view->render();
 
             break;
     }
