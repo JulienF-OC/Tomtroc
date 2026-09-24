@@ -52,19 +52,29 @@
 
         <div class="account-navigation d-flex ms-auto">
 
-            <a href="index.php?action=messages">
-                <i class="fa-regular fa-comment"></i>
-                Messagerie
-            </a>
+            <?php if (isset($_SESSION['user_id'])): ?>
 
-            <a href="index.php?action=account">
-                <i class="fa-regular fa-user"></i>
-                Mon compte
-            </a>
+                <a href="index.php?action=messages">
+                    <i class="fa-regular fa-comment"></i>
+                    Messagerie
+                </a>
 
-            <a href="index.php?action=login">
-                Connexion
-            </a>
+                <a href="index.php?action=account">
+                    <i class="fa-regular fa-user"></i>
+                    Mon compte
+                </a>
+
+                <a href="index.php?action=logout">
+                    Déconnexion
+                </a>
+
+            <?php else: ?>
+
+                <a href="index.php?action=login">
+                    Connexion
+                </a>
+
+            <?php endif; ?>
 
         </div>
 

@@ -378,6 +378,7 @@ h2 {
     font-size: 20px !important;
 }
 
+
 /* LIEN CARTE LIVRE */
 
 .book-link {
@@ -507,10 +508,13 @@ h2 {
     margin-bottom: 40px;
 }
 
-.books-header  {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+/* RECHERCHE */
+
+.books-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .search-wrapper {
@@ -536,4 +540,688 @@ h2 {
     background-color: white;
     font-size: 13px;
     outline: none;
+}
+
+
+/* =========================
+   INSCRIPTION / CONNEXION
+   ========================= */
+
+.auth-page {
+    background-color: #f5f3ef;
+}
+
+.auth-content {
+    display: flex;
+    width: 100%;
+    max-width: 1320px;
+    height: 478px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+/* FORMULAIRE */
+
+.auth-form {
+    width: 60%;
+    padding: 65px 50px 70px 100px;
+}
+
+.auth-form h1 {
+    margin: 0 0 40px;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #292929;
+}
+
+.auth-form form {
+    width: 260px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 24px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.auth-form input {
+    width: 260px;
+    height: 40px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    font-size: 13px;
+}
+
+.auth-form input:focus {
+    outline: 1px solid #00ac66;
+}
+
+.auth-form .btn-tomtroc {
+    width: 260px;
+    height: 46px;
+    margin-top: 5px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ac66;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-form .btn-tomtroc:hover {
+    opacity: 0.9;
+}
+
+.auth-link {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #292929;
+}
+
+.auth-link a {
+    color: #292929;
+    text-decoration: underline;
+}
+
+
+/* IMAGE */
+
+.auth-image {
+    width: 40%;
+    height: 478px;
+    overflow: hidden;
+}
+
+.auth-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* MESSAGES D'ERREUR */
+
+.auth-form .alert {
+    width: 260px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.auth-form .alert ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .auth-content {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .auth-form {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .auth-form form {
+        width: 100%;
+    }
+
+    .auth-form input,
+    .auth-form .btn-tomtroc {
+        width: 100%;
+    }
+
+    .auth-image {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+.account-page {
+    background-color: #f5f3ef;
+    min-height: 650px;
+    padding: 50px 0 80px;
+}
+
+.account-title {
+    margin: 0 0 35px;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #292929;
+}
+
+.account-top {
+    display: flex;
+    gap: 20px;
+}
+
+/* Profil */
+
+.account-profile {
+    width: 50%;
+    min-height: 275px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 5px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #00ac66;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.profile-edit {
+    color: #999999;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.profile-separator {
+    width: 130px;
+    height: 1px;
+    margin: 25px auto;
+    background-color: #eeeeee;
+}
+
+.account-profile h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #292929;
+}
+
+.profile-date {
+    margin: 5px 0 18px;
+    color: #999999;
+    font-size: 10px;
+}
+
+.profile-library-title {
+    margin: 0 0 5px;
+    color: #999999;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.profile-library {
+    margin: 0;
+    color: #292929;
+    font-size: 11px;
+}
+
+/* Informations */
+
+.account-informations {
+    width: 50%;
+    min-height: 275px;
+    padding: 25px 60px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.account-informations h2 {
+    margin: 0 0 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #292929;
+}
+
+.account-form-group {
+    margin-bottom: 15px;
+}
+
+.account-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #999999;
+    font-size: 9px;
+}
+
+.account-form-group input {
+    width: 100%;
+    height: 28px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #edf2f5;
+    font-size: 10px;
+    color: #292929;
+}
+
+.account-form-group input:focus {
+    outline: 1px solid #00ac66;
+}
+
+.account-save {
+    width: 82px;
+    height: 35px;
+    margin-top: 2px;
+    border: 1px solid #00ac66;
+    border-radius: 5px;
+    background-color: white;
+    color: #00ac66;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.account-save:hover {
+    background-color: #00ac66;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .account-top {
+        flex-direction: column;
+    }
+
+    .account-profile,
+    .account-informations {
+        width: 100%;
+    }
+
+    .account-informations {
+        padding: 25px;
+    }
+}
+
+.account-library {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.account-library-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.account-library-header h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.account-library-header a {
+    color: #00ac66;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.account-library-header a:hover {
+    text-decoration: underline;
+}
+
+.account-library-empty {
+    padding: 30px 0;
+    text-align: center;
+    color: #999999;
+    font-size: 11px;
+}
+
+.account-books-table {
+    width: 100%;
+}
+
+.account-books-head,
+.account-book-row {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 2fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.account-books-head {
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #999999;
+    font-size: 9px;
+}
+
+.account-book-row {
+    min-height: 80px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #292929;
+    font-size: 10px;
+}
+
+.account-book-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-book-info img {
+    width: 45px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.account-book-info span {
+    font-weight: 600;
+}
+
+.book-available {
+    color: #00ac66;
+}
+
+.book-unavailable {
+    color: #999999;
+}
+
+.account-book-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.account-book-actions a {
+    color: #292929;
+    font-size: 9px;
+    text-decoration: underline;
+}
+
+.account-book-actions a:hover {
+    color: #00ac66;
+}
+
+@media (max-width: 900px) {
+
+    .account-books-head {
+        display: none;
+    }
+
+    .account-book-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .account-book-info {
+        width: 100%;
+    }
+
+    .account-book-actions {
+        flex-direction: row;
+    }
+}
+
+.account-alert {
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    font-size: 10px;
+}
+
+.account-alert ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.public-profile-page {
+    background-color: #f7f6f3;
+    min-height: 600px;
+    padding: 70px 0 140px;
+}
+
+.public-profile-content {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.public-profile-card {
+    width: 230px;
+    min-height: 390px;
+    padding: 32px 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.public-profile-picture {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.public-profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.public-profile-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #00ac66;
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.public-profile-separator {
+    width: 130px;
+    height: 1px;
+    margin: 42px auto 35px;
+    background-color: #eeeeee;
+}
+
+.public-profile-card h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #292929;
+}
+
+.public-profile-date {
+    margin: 8px 0 22px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.public-profile-library-title {
+    margin: 0 0 7px;
+    color: #999999;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.public-profile-library {
+    margin: 0;
+    color: #292929;
+    font-size: 12px;
+}
+
+.public-profile-message {
+    display: block;
+    width: 145px;
+    margin: 30px auto 0;
+    padding: 12px 10px;
+    border: 1px solid #00ac66;
+    border-radius: 5px;
+    color: #00ac66;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.public-profile-message:hover {
+    background-color: #00ac66;
+    color: #ffffff;
+}
+
+
+/* =========================
+   PROFILE BOOKS
+========================= */
+
+.public-profile-books {
+    flex: 1;
+    min-height: 390px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.public-profile-books-header,
+.public-profile-book-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr 1.5fr;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.public-profile-books-header {
+    height: 40px;
+    padding: 0 25px;
+    border-bottom: 1px solid #eeeeee;
+    color: #292929;
+    font-size: 10px;
+}
+
+.public-profile-book-row {
+    min-height: 88px;
+    padding: 12px 25px;
+    color: #292929;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.public-profile-book-row:nth-child(odd) {
+    background-color: #edf4f7;
+}
+
+.public-profile-book-row:hover {
+    color: #292929;
+}
+
+.public-profile-book-image {
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+}
+
+.public-profile-book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.public-profile-book-image span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #999999;
+    font-size: 9px;
+}
+
+.public-profile-book-title,
+.public-profile-book-author {
+    color: #292929;
+    font-size: 11px;
+}
+
+.public-profile-book-description {
+    color: #292929;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.public-profile-no-books {
+    padding: 40px;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .public-profile-content {
+        flex-direction: column;
+    }
+
+    .public-profile-card {
+        width: 100%;
+    }
+
+    .public-profile-books {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .public-profile-books-header,
+    .public-profile-book-row {
+        min-width: 600px;
+    }
 }
