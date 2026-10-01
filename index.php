@@ -45,6 +45,11 @@ try {
             $userController->showProfile();
             break;
 
+        case 'conversation':
+            $messageController = new MessageController();
+            $messageController->showConversation();
+            break;
+
         case 'logout':
             $userController = new UserController();
             $userController->logout();

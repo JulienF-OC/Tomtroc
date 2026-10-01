@@ -104,7 +104,7 @@
         <div class="auth-image">
 
             <img
-                src="/TomTroc/public/images/auth-books.png"
+                src="/TomTroc/public/images/auth-books.jpg"
                 alt="Livres"
             >
 
