@@ -1,3 +1,12 @@
+<?php
+/*
+ * Création du jeton CSRF utilisé pour supprimer un livre.
+ */
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+?>
+
 <section class="account-page">
 
     <div class="container">
@@ -191,6 +200,13 @@
                     Vos livres
                 </h2>
 
+                <a
+                    href="index.php?action=addBook"
+                    class="account-add-book"
+                >
+                    + Ajouter un livre
+                </a>
+
             </div>
 
             <?php if (empty($books)): ?>
@@ -210,7 +226,11 @@
                     <div class="account-books-head">
 
                         <span>
-                            Livre
+                            Photo
+                        </span>
+
+                        <span>
+                            Titre
                         </span>
 
                         <span>
@@ -235,17 +255,27 @@
 
                         <div class="account-book-row">
 
-                            <div class="account-book-info">
+                            <div class="account-book-photo">
 
-                                <img
-                                    src="/TomTroc/public/images/<?= htmlspecialchars($book->getImage()) ?>"
-                                    alt="<?= htmlspecialchars($book->getTitle()) ?>"
-                                >
+                                <?php if ($book->getImage()): ?>
 
-                                <span>
-                                    <?= htmlspecialchars($book->getTitle()) ?>
-                                </span>
+                                    <img
+                                        src="<?= htmlspecialchars($book->getImage()) ?>"
+                                        alt="<?= htmlspecialchars($book->getTitle()) ?>"
+                                    >
 
+                                <?php else: ?>
+
+                                    <span class="account-book-no-image">
+                                        Pas de photo
+                                    </span>
+
+                                <?php endif; ?>
+
+                            </div>
+
+                            <div class="account-book-title">
+                                <?= htmlspecialchars($book->getTitle()) ?>
                             </div>
 
                             <div>
@@ -253,7 +283,7 @@
                             </div>
 
                             <div>
-                                <?= htmlspecialchars($book->getDescription()) ?>
+                                <?= htmlspecialchars($book->getDescription() ?? '') ?>
                             </div>
 
                             <div>
@@ -276,13 +306,40 @@
 
                             <div class="account-book-actions">
 
-                                <a href="#">
+                                <!-- Lien vers le formulaire de modification -->
+                                <a
+                                    href="index.php?action=editBook&id=<?= (int) $book->getId() ?>"
+                                >
                                     Éditer
                                 </a>
 
-                                <a href="#">
-                                    Supprimer
-                                </a>
+                                <!-- Formulaire de suppression sécurisé -->
+                                <form
+                                    action="index.php?action=deleteBook"
+                                    method="POST"
+                                    class="account-delete-form"
+                                >
+
+                                    <input
+                                        type="hidden"
+                                        name="book_id"
+                                        value="<?= (int) $book->getId() ?>"
+                                    >
+
+                                    <input
+                                        type="hidden"
+                                        name="csrf_token"
+                                        value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8') ?>"
+                                    >
+
+                                    <button
+                                        type="submit"
+                                        class="account-delete-button"
+                                    >
+                                        Supprimer
+                                    </button>
+
+                                </form>
 
                             </div>
 

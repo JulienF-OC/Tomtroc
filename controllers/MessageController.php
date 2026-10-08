@@ -1,3 +1,4 @@
+
 <?php
 
 class MessageController
@@ -9,6 +10,49 @@ class MessageController
     {
         $this->messageManager = new MessageManager();
         $this->userManager = new UserManager();
+    }
+
+    /*
+     * Affichage général de la messagerie.
+     */
+    public function showMessages(): void
+    {
+        /*
+         * L'utilisateur doit être connecté.
+         */
+        if (!isset($_SESSION['user_id'])) {
+            header('Location: index.php?action=login');
+            exit;
+        }
+
+        /*
+         * On récupère les conversations de l'utilisateur.
+         */
+        $conversations = $this->messageManager->getConversationsByUserId(
+            (int) $_SESSION['user_id']
+        );
+
+        /*
+         * Si une conversation existe, on ouvre la plus récente.
+         */
+        if (!empty($conversations)) {
+            $receiverId = (int) $conversations[0]['user_id'];
+
+            header(
+                'Location: index.php?action=conversation&id=' . $receiverId
+            );
+            exit;
+        }
+
+        /*
+         * Si aucune conversation n'existe,
+         * on affiche la page de messagerie vide.
+         */
+        $view = new View('messages');
+
+        $view->render([
+            'conversations' => $conversations
+        ]);
     }
 
     public function showConversation(): void
@@ -91,6 +135,17 @@ class MessageController
                 exit;
             }
         }
+
+        /*
+         * NOUVEAU :
+         * On marque comme lus uniquement les messages
+         * reçus de l'utilisateur dont la conversation
+         * est actuellement ouverte.
+         */
+        $this->messageManager->markMessagesAsRead(
+            (int) $_SESSION['user_id'],
+            $receiverId
+        );
 
         /*
          * Récupération des messages de la conversation ouverte.

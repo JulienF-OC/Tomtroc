@@ -1,3 +1,4 @@
+
 <?php
 
 class MessageManager extends AbstractEntityManager
@@ -102,6 +103,47 @@ class MessageManager extends AbstractEntityManager
             'sender_id' => $senderId,
             'receiver_id' => $receiverId,
             'content' => $content
+        ]);
+    }
+
+    /**
+     * Compte les messages non lus reçus par un utilisateur.
+     */
+    public function countUnreadMessages(int $userId): int
+    {
+        $query = $this->db->prepare(
+            'SELECT COUNT(*)
+             FROM `message`
+             WHERE id_receiver = :user_id
+               AND is_read = 0'
+        );
+
+        $query->execute([
+            'user_id' => $userId
+        ]);
+
+        return (int) $query->fetchColumn();
+    }
+
+    /**
+     * Marque comme lus les messages reçus
+     * d'un interlocuteur précis.
+     */
+    public function markMessagesAsRead(
+        int $userId,
+        int $senderId
+    ): void {
+        $query = $this->db->prepare(
+            'UPDATE `message`
+             SET is_read = 1
+             WHERE id_receiver = :user_id
+               AND id_sender = :sender_id
+               AND is_read = 0'
+        );
+
+        $query->execute([
+            'user_id' => $userId,
+            'sender_id' => $senderId
         ]);
     }
 }

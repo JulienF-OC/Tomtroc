@@ -1,3 +1,25 @@
+
+<?php
+
+/*
+ * Compteur de messages non lus.
+ *
+ * On effectue cette recherche uniquement
+ * lorsque l'utilisateur est connecté.
+ */
+$unreadMessagesCount = 0;
+
+if (isset($_SESSION['user_id'])) {
+
+    $messageManager = new MessageManager();
+
+    $unreadMessagesCount = $messageManager->countUnreadMessages(
+        (int) $_SESSION['user_id']
+    );
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -57,6 +79,18 @@
                 <a href="index.php?action=messages">
                     <i class="fa-regular fa-comment"></i>
                     Messagerie
+
+                    <?php if ($unreadMessagesCount > 0): ?>
+
+                        <span
+                            class="messages-notification-badge"
+                            aria-label="<?= $unreadMessagesCount ?> messages non lus"
+                        >
+                            <?= $unreadMessagesCount ?>
+                        </span>
+
+                    <?php endif; ?>
+
                 </a>
 
                 <a href="index.php?action=account">

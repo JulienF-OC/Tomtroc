@@ -1,1480 +1,7475 @@
 * {
+
+
+
     box-sizing: border-box;
+
+
+
 }
+
+
+
+
+
+
 
 body {
+
+
+
     margin: 0;
+
+
+
     background-color: #f5f3ef;
+
+
+
     color: #292929;
+
+
+
     font-family: Arial, sans-serif;
+
+
+
 }
 
+
+
+
+
+
+
 h1,
+
+
+
 h2 {
+
+
+
     font-family: Georgia, serif;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* HEADER */
 
+
+
+
+
+
+
 .main-header {
+
+
+
     background-color: #f5f3ef;
+
+
+
     height: 80px;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
 }
+
+
+
+
+
+
 
 .main-header .container {
+
+
+
     height: 100%;
+
+
+
 }
+
+
+
+
+
+
 
 .logo {
+
+
+
     gap: 12px;
+
+
+
     margin-right: 70px;
+
+
+
 }
+
+
+
+
+
+
 
 .logo-icon {
+
+
+
     background-color: #00ac66;
+
+
+
     color: white;
+
+
+
     width: 38px;
+
+
+
     height: 38px;
+
+
+
     border-radius: 6px;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     font-family: Georgia, serif;
+
+
+
     font-size: 18px;
+
+
+
 }
+
+
+
+
+
+
 
 .logo-text {
+
+
+
     color: #00ac66;
+
+
+
     font-family: Georgia, serif;
+
+
+
     font-size: 17px;
+
+
+
 }
+
+
+
+
+
+
 
 .main-navigation,
+
+
+
 .account-navigation {
+
+
+
     gap: 40px;
+
+
+
 }
+
+
+
+
+
+
 
 .main-header nav a {
+
+
+
     color: #292929;
+
+
+
     text-decoration: none;
+
+
+
     font-size: 13px;
+
+
+
 }
 
+
+
+
+
+
+
 .main-header nav a:hover {
+
+
+
     color: #00ac66;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* HERO */
 
+
+
+
+
+
+
 .home-hero {
+
+
+
     background-color: #f5f3ef;
+
+
+
     padding: 80px 0 100px;
+
+
+
 }
+
+
+
+
+
+
 
 .hero-content {
+
+
+
     max-width: 850px;
+
+
+
     margin: auto;
+
+
+
 }
+
+
+
+
+
+
 
 .hero-text {
+
+
+
     max-width: 320px;
+
+
+
 }
+
+
+
+
+
+
 
 .hero-text h1 {
+
+
+
     font-size: 38px;
+
+
+
     line-height: 1.15;
+
+
+
     margin-bottom: 20px;
+
+
+
 }
+
+
+
+
+
+
 
 .hero-text p {
+
+
+
     font-size: 14px;
+
+
+
     line-height: 1.25;
+
+
+
     margin-bottom: 35px;
+
+
+
 }
+
+
+
+
+
+
 
 .hero-image {
+
+
+
     width: 370px;
+
+
+
 }
+
+
+
+
+
+
 
 .hero-image img {
+
+
+
     width: 100%;
+
+
+
     height: 490px;
+
+
+
     object-fit: cover;
+
+
+
 }
 
+
+
+
+
+
+
 .hero-image span {
+
+
+
     display: block;
+
+
+
     text-align: right;
+
+
+
     color: #aaa;
+
+
+
     font-size: 10px;
+
+
+
     margin-top: 8px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* BOUTONS */
 
+
+
+
+
+
+
 .btn-tomtroc {
+
+
+
     display: inline-block;
+
+
+
     background-color: #00ac66;
+
+
+
     color: white;
+
+
+
     text-decoration: none;
+
+
+
     padding: 17px 30px;
+
+
+
     border-radius: 10px;
+
+
+
     border: 1px solid #00ac66;
+
+
+
     font-weight: 600;
+
+
+
     font-size: 13px;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-tomtroc:hover {
+
+
+
     color: white;
+
+
+
     opacity: 0.9;
+
+
+
 }
+
+
+
+
+
+
 
 .btn-outline-tomtroc {
+
+
+
     background-color: transparent;
+
+
+
     color: #00ac66;
+
+
+
 }
 
+
+
+
+
+
+
 .btn-outline-tomtroc:hover {
+
+
+
     background-color: #00ac66;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* LIVRES */
 
+
+
+
+
+
+
 .latest-books {
+
+
+
     background-color: white;
+
+
+
     padding: 75px 0;
+
+
+
 }
+
+
+
+
+
+
 
 .latest-books h2,
+
+
+
 .how-it-works h2 {
+
+
+
     font-size: 30px;
+
+
+
     text-align: center;
+
+
+
     margin-bottom: 60px;
+
+
+
 }
+
+
+
+
+
+
 
 .latest-books .row {
+
+
+
     max-width: 900px;
+
+
+
     margin: 0 auto 50px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-card {
+
+
+
     background-color: #fff;
+
+
+
     border-radius: 0 0 10px 10px;
+
+
+
     overflow: hidden;
+
+
+
 }
+
+
+
+
+
+
 
 .book-image {
+
+
+
     width: 100%;
+
+
+
     height: 230px;
+
+
+
     object-fit: cover;
+
+
+
 }
+
+
+
+
+
+
 
 .book-image-empty {
+
+
+
     background-color: #eee;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     color: #777;
+
+
+
 }
+
+
+
+
+
+
 
 .book-information {
+
+
+
     padding: 15px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-information h2,
+
+
+
 .book-information h3 {
+
+
+
     font-family: Arial, sans-serif;
+
+
+
     font-size: 15px;
+
+
+
     margin-bottom: 10px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-author {
+
+
+
     color: #777;
+
+
+
     font-size: 12px;
+
+
+
 }
 
+
+
+
+
+
+
 .book-owner {
+
+
+
     color: #aaa;
+
+
+
     font-size: 9px;
+
+
+
     font-style: italic;
+
+
+
     margin-top: 25px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* COMMENT ÇA MARCHE */
 
+
+
+
+
+
+
 .how-it-works {
+
+
+
     background-color: #f5f3ef;
+
+
+
     padding: 80px 0;
+
+
+
 }
+
+
+
+
+
+
 
 .how-it-works h2 {
+
+
+
     margin-bottom: 15px;
+
+
+
 }
+
+
+
+
+
+
 
 .section-description {
+
+
+
     text-align: center;
+
+
+
     max-width: 400px;
+
+
+
     margin: 0 auto 45px;
+
+
+
     font-size: 13px;
+
+
+
 }
+
+
+
+
+
+
 
 .how-it-works .row {
+
+
+
     max-width: 1000px;
+
+
+
     margin: 0 auto 45px;
+
+
+
 }
 
+
+
+
+
+
+
 .step-card {
+
+
+
     height: 130px;
+
+
+
     background-color: white;
+
+
+
     border-radius: 10px;
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     text-align: center;
+
+
+
     font-size: 12px;
+
+
+
     padding: 20px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* BANNIERE */
 
+
+
+
+
+
+
 .home-banner {
+
+
+
     width: 1440px;
+
+
+
     max-width: 100%;
+
+
+
     height: 220px;
+
+
+
     margin: 0 auto;
+
+
+
     overflow: hidden;
+
+
+
 }
 
+
+
+
+
+
+
 .home-banner img {
+
+
+
     display: block;
+
+
+
     width: 100%;
+
+
+
     height: 100%;
+
+
+
     object-fit: cover;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* NOS VALEURS */
 
+
+
+
+
+
+
 .our-values {
+
+
+
     background-color: #f5f3ef;
+
+
+
     padding: 80px 0 110px;
+
+
+
 }
+
+
+
+
+
+
 
 .values-content {
+
+
+
     width: 330px;
+
+
+
     margin: auto;
+
+
+
     position: relative;
+
+
+
 }
+
+
+
+
+
+
 
 .values-content h2 {
+
+
+
     font-size: 28px;
+
+
+
     margin-bottom: 30px;
+
+
+
 }
+
+
+
+
+
+
 
 .values-content p {
+
+
+
     font-size: 13px;
+
+
+
     line-height: 1.25;
+
+
+
 }
+
+
+
+
+
+
 
 .team {
+
+
+
     display: block;
+
+
+
     color: #aaa;
+
+
+
     font-size: 10px;
+
+
+
     margin-top: 35px;
+
+
+
     font-style: italic;
+
+
+
 }
 
+
+
+
+
+
+
 .heart {
+
+
+
     color: #00ac66;
+
+
+
     font-size: 90px;
+
+
+
     text-align: right;
+
+
+
     line-height: 1;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* PAGE NOS LIVRES */
 
+
+
+
+
+
+
 .books-page {
+
+
+
     min-height: 750px;
+
+
+
     padding: 80px 0 120px;
+
+
+
     background-color: #f5f3ef;
+
+
+
 }
+
+
+
+
+
+
 
 .books-page .container {
+
+
+
     max-width: 1000px;
+
+
+
 }
+
+
+
+
+
+
 
 .books-header {
+
+
+
     margin-bottom: 60px;
+
+
+
 }
+
+
+
+
+
+
 
 .books-header h1 {
+
+
+
     font-size: 32px;
+
+
+
     margin-bottom: 35px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-search-form {
+
+
+
     width: 320px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-search-input {
+
+
+
     width: 100%;
+
+
+
     height: 50px;
+
+
+
     padding: 0 20px;
+
+
+
     border: 1px solid #ddd;
+
+
+
     border-radius: 6px;
+
+
+
     background-color: white;
+
+
+
     font-size: 13px;
+
+
+
     outline: none;
+
+
+
 }
+
+
+
+
+
+
 
 .book-search-input:focus {
+
+
+
     border-color: #00ac66;
+
+
+
 }
+
+
+
+
+
+
 
 .books-grid {
+
+
+
     row-gap: 35px;
+
+
+
 }
+
+
+
+
+
+
 
 .books-grid .book-card {
+
+
+
     height: 100%;
+
+
+
 }
 
+
+
+
+
+
+
 .no-books {
+
+
+
     padding: 40px 0;
+
+
+
     color: #777;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
 
+
+
+
+
+
+
 .main-footer {
+
+
+
     background-color: white;
+
+
+
     padding: 25px 0;
+
+
+
 }
+
+
+
+
+
+
 
 .main-footer .container {
+
+
+
     gap: 40px;
+
+
+
 }
+
+
+
+
+
+
 
 .main-footer a,
+
+
+
 .main-footer span {
+
+
+
     color: #555;
+
+
+
     text-decoration: none;
+
+
+
     font-size: 10px;
+
+
+
 }
 
+
+
+
+
+
+
 .footer-logo {
+
+
+
     color: #00ac66 !important;
+
+
+
     font-family: Georgia, serif;
+
+
+
     font-size: 20px !important;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* LIEN CARTE LIVRE */
 
+
+
+
+
+
+
 .book-link {
+
+
+
     display: block;
+
+
+
     color: inherit;
+
+
+
     text-decoration: none;
+
+
+
     height: 100%;
+
+
+
 }
+
+
+
+
+
+
 
 .book-link:hover {
+
+
+
     color: inherit;
+
+
+
 }
+
+
+
+
+
+
 
 .book-link:hover .book-card {
+
+
+
     transform: translateY(-3px);
+
+
+
 }
 
+
+
+
+
+
+
 .book-card {
+
+
+
     transition: transform 0.2s ease;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* DETAIL LIVRE */
 
+
+
+
+
+
+
 .book-detail {
+
+
+
     display: flex;
+
+
+
     min-height: 750px;
+
+
+
     background-color: #f5f3ef;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-image {
+
+
+
     width: 50%;
+
+
+
     min-height: 750px;
+
+
+
     background-color: #eee;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-image img {
+
+
+
     width: 100%;
+
+
+
     height: 100%;
+
+
+
     min-height: 750px;
+
+
+
     object-fit: cover;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-no-image {
+
+
+
     width: 100%;
+
+
+
     height: 750px;
+
+
+
     display: flex;
+
+
+
     justify-content: center;
+
+
+
     align-items: center;
+
+
+
     color: #777;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-content {
+
+
+
     width: 50%;
+
+
+
     padding: 80px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-inner {
+
+
+
     max-width: 450px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-inner h1 {
+
+
+
     font-size: 36px;
+
+
+
     margin-bottom: 10px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-author {
+
+
+
     color: #777;
+
+
+
     font-size: 14px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-inner hr {
+
+
+
     width: 30px;
+
+
+
     margin: 35px 0;
+
+
+
 }
+
+
+
+
+
+
 
 .book-detail-inner h2 {
+
+
+
     font-family: Arial, sans-serif;
+
+
+
     text-transform: uppercase;
+
+
+
     font-size: 10px;
+
+
+
     font-weight: 600;
+
+
+
     letter-spacing: 1px;
+
+
+
     margin: 30px 0 15px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-description {
+
+
+
     font-size: 14px;
+
+
+
     line-height: 1.6;
+
+
+
 }
+
+
+
+
+
+
 
 .book-owner-profile {
+
+
+
     display: inline-block;
+
+
+
     color: #292929;
+
+
+
     text-decoration: none;
+
+
+
     background-color: white;
+
+
+
     padding: 12px 18px;
+
+
+
     border-radius: 30px;
+
+
+
 }
+
+
+
+
+
+
 
 .book-owner-profile:hover {
+
+
+
     color: #00ac66;
+
+
+
 }
 
+
+
+
+
+
+
 .book-message-button {
+
+
+
     display: block;
+
+
+
     width: 100%;
+
+
+
     text-align: center;
+
+
+
     margin-top: 50px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* 404 */
 
+
+
+
+
+
+
 .error-page {
+
+
+
     min-height: 700px;
+
+
+
     text-align: center;
+
+
+
     padding-top: 150px;
+
+
+
     background-color: #f5f3ef;
+
+
+
 }
+
+
+
+
+
+
 
 .error-page h1 {
+
+
+
     font-size: 70px;
+
+
+
     margin-bottom: 20px;
+
+
+
 }
 
+
+
+
+
+
+
 .error-page p {
+
+
+
     margin-bottom: 40px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* RECHERCHE */
 
+
+
+
+
+
+
 .books-header {
+
+
+
     display: flex;
+
+
+
     flex-direction: row;
+
+
+
     justify-content: space-between;
+
+
+
 }
+
+
+
+
+
+
 
 .search-wrapper {
+
+
+
     position: relative;
+
+
+
 }
+
+
+
+
+
+
 
 .search-icon {
+
+
+
     position: absolute;
+
+
+
     left: 16px;
+
+
+
     top: 50%;
+
+
+
     transform: translateY(-50%);
+
+
+
     color: #8f8f8f;
+
+
+
     font-size: 14px;
+
+
+
     pointer-events: none;
+
+
+
 }
 
+
+
+
+
+
+
 .book-search-input {
+
+
+
     width: 100%;
+
+
+
     height: 50px;
+
+
+
     padding: 0 20px 0 45px;
+
+
+
     border: 1px solid #ddd;
+
+
+
     border-radius: 6px;
+
+
+
     background-color: white;
+
+
+
     font-size: 13px;
+
+
+
     outline: none;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* =========================
+
+
+
    INSCRIPTION / CONNEXION
+
+
+
    ========================= */
 
+
+
+
+
+
+
 .auth-page {
+
+
+
     background-color: #f5f3ef;
+
+
+
 }
 
+
+
+
+
+
+
 .auth-content {
+
+
+
     display: flex;
+
+
+
     width: 100%;
+
+
+
     max-width: 1320px;
+
+
+
     height: 478px;
+
+
+
     margin: 0 auto;
+
+
+
     background-color: white;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* FORMULAIRE */
 
+
+
+
+
+
+
 .auth-form {
+
+
+
     width: 60%;
+
+
+
     padding: 65px 50px 70px 100px;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form h1 {
+
+
+
     margin: 0 0 40px;
+
+
+
     font-family: Georgia, serif;
+
+
+
     font-size: 32px;
+
+
+
     font-weight: 400;
+
+
+
     text-decoration: none;
+
+
+
     color: #292929;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form form {
+
+
+
     width: 260px;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form .form-group {
+
+
+
     margin-bottom: 24px;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form label {
+
+
+
     display: block;
+
+
+
     margin-bottom: 8px;
+
+
+
     font-size: 12px;
+
+
+
     color: #999999;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form input {
+
+
+
     width: 260px;
+
+
+
     height: 40px;
+
+
+
     padding: 8px 10px;
+
+
+
     border: none;
+
+
+
     border-radius: 4px;
+
+
+
     background-color: #f5f5f5;
+
+
+
     font-size: 13px;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form input:focus {
+
+
+
     outline: 1px solid #00ac66;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form .btn-tomtroc {
+
+
+
     width: 260px;
+
+
+
     height: 46px;
+
+
+
     margin-top: 5px;
+
+
+
     padding: 0;
+
+
+
     border: none;
+
+
+
     border-radius: 5px;
+
+
+
     background-color: #00ac66;
+
+
+
     color: white;
+
+
+
     font-size: 13px;
+
+
+
     font-weight: 600;
+
+
+
     cursor: pointer;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-form .btn-tomtroc:hover {
+
+
+
     opacity: 0.9;
+
+
+
 }
+
+
+
+
+
+
 
 .auth-link {
+
+
+
     margin-top: 25px;
+
+
+
     font-size: 12px;
+
+
+
     color: #292929;
+
+
+
 }
 
+
+
+
+
+
+
 .auth-link a {
+
+
+
     color: #292929;
+
+
+
     text-decoration: underline;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* IMAGE */
 
+
+
+
+
+
+
 .auth-image {
+
+
+
     width: 40%;
+
+
+
     height: 478px;
+
+
+
     overflow: hidden;
+
+
+
 }
 
+
+
+
+
+
+
 .auth-image img {
+
+
+
     display: block;
+
+
+
     width: 100%;
+
+
+
     height: 100%;
+
+
+
     object-fit: cover;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* MESSAGES D'ERREUR */
 
+
+
+
+
+
+
 .auth-form .alert {
+
+
+
     width: 260px;
+
+
+
     margin-bottom: 20px;
+
+
+
     padding: 10px;
+
+
+
     font-size: 12px;
+
+
+
 }
 
+
+
+
+
+
+
 .auth-form .alert ul {
+
+
+
     margin: 0;
+
+
+
     padding-left: 18px;
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 
 /* =========================
+
+
+
    RESPONSIVE
+
+
+
    ========================= */
+
+
+
+
+
+
 
 @media (max-width: 768px) {
 
+
+
+
+
+
+
     .auth-content {
+
+
+
         height: auto;
+
+
+
         flex-direction: column;
+
+
+
     }
+
+
+
+
+
+
 
     .auth-form {
+
+
+
         width: 100%;
+
+
+
         padding: 50px 30px;
+
+
+
     }
+
+
+
+
+
+
 
     .auth-form form {
+
+
+
         width: 100%;
+
+
+
     }
+
+
+
+
+
+
 
     .auth-form input,
+
+
+
     .auth-form .btn-tomtroc {
+
+
+
         width: 100%;
+
+
+
     }
+
+
+
+
+
+
 
     .auth-image {
+
+
+
         width: 100%;
+
+
+
         height: 350px;
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 .account-page {
+
+
+
     background-color: #f5f3ef;
+
+
+
     min-height: 650px;
+
+
+
     padding: 50px 0 80px;
+
+
+
 }
+
+
+
+
+
+
 
 .account-title {
+
+
+
     margin: 0 0 35px;
+
+
+
     font-family: Georgia, serif;
+
+
+
     font-size: 26px;
+
+
+
     font-weight: 400;
+
+
+
     color: #292929;
+
+
+
 }
 
+
+
+
+
+
+
 .account-top {
+
+
+
     display: flex;
+
+
+
     gap: 20px;
+
+
+
 }
+
+
+
+
+
+
 
 /* Profil */
 
+
+
+
+
+
+
 .account-profile {
+
+
+
     width: 50%;
+
+
+
     min-height: 275px;
+
+
+
     padding: 25px;
+
+
+
     background-color: #ffffff;
+
+
+
     border-radius: 12px;
+
+
+
     text-align: center;
+
+
+
 }
+
+
+
+
+
+
 
 .profile-picture {
+
+
+
     width: 90px;
+
+
+
     height: 90px;
+
+
+
     margin: 0 auto 5px;
+
+
+
     overflow: hidden;
+
+
+
     border-radius: 50%;
+
+
+
 }
+
+
+
+
+
+
 
 .profile-picture img {
+
+
+
     width: 100%;
+
+
+
     height: 100%;
+
+
+
     object-fit: cover;
+
+
+
 }
+
+
+
+
+
+
 
 .profile-placeholder {
+
+
+
     display: flex;
+
+
+
     align-items: center;
+
+
+
     justify-content: center;
+
+
+
     width: 100%;
+
+
+
     height: 100%;
+
+
+
     background-color: #00ac66;
+
+
+
     color: white;
+
+
+
     font-family: Georgia, serif;
+
+
+
     font-size: 32px;
+
+
+
 }
+
+
+
+
+
+
 
 .profile-edit {
+
+
+
     color: #999999;
+
+
+
     font-size: 11px;
+
+
+
     text-decoration: underline;
+
+
+
 }
+
+
+
+
+
+
 
 .profile-separator {
+
+
+
     width: 130px;
+
+
+
     height: 1px;
+
+
+
     margin: 25px auto;
+
+
+
     background-color: #eeeeee;
+
+
+
 }
+
+
+
+
+
+
 
 .account-profile h2 {
+
+
+
     margin: 0;
+
+
+
     font-family: Georgia, serif;
+
+
+
     font-size: 16px;
+
+
+
     font-weight: 400;
+
+
+
     color: #292929;
+
+
+
 }
+
+
+
+
+
+
 
 .profile-date {
+
+
+
     margin: 5px 0 18px;
+
+
+
     color: #999999;
+
+
+
     font-size: 10px;
+
+
+
 }
+
+
+
+
+
+
 
 .profile-library-title {
+
+
+
     margin: 0 0 5px;
+
+
+
     color: #999999;
+
+
+
     font-size: 8px;
+
+
+
     font-weight: 600;
+
+
+
 }
 
+
+
+
+
+
+
 .profile-library {
+
+
+
     margin: 0;
+
+
+
     color: #292929;
+
+
+
     font-size: 11px;
+
+
+
 }
+
+
+
+
+
+
 
 /* Informations */
 
+
+
+
+
+
+
 .account-informations {
+
+
+
     width: 50%;
+
+
+
     min-height: 275px;
+
+
+
     padding: 25px 60px;
+
+
+
     background-color: #ffffff;
+
+
+
     border-radius: 12px;
+
+
+
 }
+
+
+
+
+
+
 
 .account-informations h2 {
+
+
+
     margin: 0 0 20px;
+
+
+
     font-size: 12px;
+
+
+
     font-weight: 400;
+
+
+
     color: #292929;
+
+
+
 }
+
+
+
+
+
+
 
 .account-form-group {
+
+
+
     margin-bottom: 15px;
+
+
+
 }
+
+
+
+
+
+
 
 .account-form-group label {
+
+
+
     display: block;
+
+
+
     margin-bottom: 5px;
+
+
+
     color: #999999;
+
+
+
     font-size: 9px;
+
+
+
 }
+
+
+
+
+
+
 
 .account-form-group input {
+
+
+
     width: 100%;
+
+
+
     height: 28px;
+
+
+
     padding: 5px 10px;
+
+
+
     border: none;
+
+
+
     border-radius: 4px;
+
+
+
     background-color: #edf2f5;
+
+
+
     font-size: 10px;
+
+
+
     color: #292929;
+
+
+
 }
+
+
+
+
+
+
 
 .account-form-group input:focus {
+
+
+
     outline: 1px solid #00ac66;
+
+
+
 }
 
+
+
+
+
+
+
 .account-save {
+
+
+
     width: 82px;
+
+
+
     height: 35px;
+
+
+
     margin-top: 2px;
+
+
+
+    border: 1px solid #00ac66;
+
+
+
+    border-radius: 5px;
+
+
+
+    background-color: white;
+
+
+
+    color: #00ac66;
+
+
+
+    font-size: 10px;
+
+
+
+    cursor: pointer;
+
+
+
+}
+
+
+
+
+
+
+
+.account-save:hover {
+
+
+
+    background-color: #00ac66;
+
+
+
+    color: white;
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+    .account-top {
+
+
+
+        flex-direction: column;
+
+
+
+    }
+
+
+
+
+
+
+
+    .account-profile,
+
+
+
+    .account-informations {
+
+
+
+        width: 100%;
+
+
+
+    }
+
+
+
+
+
+
+
+    .account-informations {
+
+
+
+        padding: 25px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+.account-library {
+
+
+
+    margin-top: 20px;
+
+
+
+    padding: 25px;
+
+
+
+    background-color: #ffffff;
+
+
+
+    border-radius: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-library-header {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: space-between;
+
+
+
+    margin-bottom: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-library-header h2 {
+
+
+
+    margin: 0;
+
+
+
+    font-family: Georgia, serif;
+
+
+
+    font-size: 16px;
+
+
+
+    font-weight: 400;
+
+
+
+}
+
+
+
+
+
+
+
+.account-library-header a {
+
+
+
+    color: #00ac66;
+
+
+
+    font-size: 11px;
+
+
+
+    text-decoration: none;
+
+
+
+}
+
+
+
+
+
+
+
+.account-library-header a:hover {
+
+
+
+    text-decoration: underline;
+
+
+
+}
+
+
+
+
+
+
+
+.account-library-empty {
+
+
+
+    padding: 30px 0;
+
+
+
+    text-align: center;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 11px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-books-table {
+
+
+
+    width: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.account-books-head,
+
+
+
+.account-book-row {
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: 2fr 1.2fr 2fr 1fr 1fr;
+
+
+
+    gap: 15px;
+
+
+
+    align-items: center;
+
+
+
+}
+
+
+
+
+
+
+
+.account-books-head {
+
+
+
+    padding: 10px 0;
+
+
+
+    border-bottom: 1px solid #eeeeee;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 9px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-book-row {
+
+
+
+    min-height: 80px;
+
+
+
+    padding: 12px 0;
+
+
+
+    border-bottom: 1px solid #eeeeee;
+
+
+
+    color: #292929;
+
+
+
+    font-size: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-book-info {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-book-info img {
+
+
+
+    width: 45px;
+
+
+
+    height: 60px;
+
+
+
+    object-fit: cover;
+
+
+
+    border-radius: 3px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-book-info span {
+
+
+
+    font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+
+.book-available {
+
+
+
+    color: #00ac66;
+
+
+
+}
+
+
+
+
+
+
+
+.book-unavailable {
+
+
+
+    color: #999999;
+
+
+
+}
+
+
+
+
+
+
+
+.account-book-actions {
+
+
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+
+
+    gap: 5px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-book-actions a {
+
+
+
+    color: #292929;
+
+
+
+    font-size: 9px;
+
+
+
+    text-decoration: underline;
+
+
+
+}
+
+
+
+
+
+
+
+.account-book-actions a:hover {
+
+
+
+    color: #00ac66;
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+
+
+
+
+
+
+    .account-books-head {
+
+
+
+        display: none;
+
+
+
+    }
+
+
+
+
+
+
+
+    .account-book-row {
+
+
+
+        display: flex;
+
+
+
+        flex-direction: column;
+
+
+
+        align-items: flex-start;
+
+
+
+        gap: 10px;
+
+
+
+        padding: 20px 0;
+
+
+
+    }
+
+
+
+
+
+
+
+    .account-book-info {
+
+
+
+        width: 100%;
+
+
+
+    }
+
+
+
+
+
+
+
+    .account-book-actions {
+
+
+
+        flex-direction: row;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+.account-alert {
+
+
+
+    margin-bottom: 15px;
+
+
+
+    padding: 8px 10px;
+
+
+
+    font-size: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.account-alert ul {
+
+
+
+    margin: 0;
+
+
+
+    padding-left: 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-page {
+
+
+
+    background-color: #f7f6f3;
+
+
+
+    min-height: 600px;
+
+
+
+    padding: 70px 0 140px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-content {
+
+
+
+    display: flex;
+
+
+
+    gap: 20px;
+
+
+
+    align-items: stretch;
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   PROFILE CARD
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.public-profile-card {
+
+
+
+    width: 230px;
+
+
+
+    min-height: 390px;
+
+
+
+    padding: 32px 25px;
+
+
+
+    background-color: #ffffff;
+
+
+
+    border-radius: 12px;
+
+
+
+    text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-picture {
+
+
+
+    width: 90px;
+
+
+
+    height: 90px;
+
+
+
+    margin: 0 auto;
+
+
+
+    overflow: hidden;
+
+
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-picture img {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-placeholder {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    background-color: #00ac66;
+
+
+
+    color: #ffffff;
+
+
+
+    font-family: Georgia, serif;
+
+
+
+    font-size: 32px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-separator {
+
+
+
+    width: 130px;
+
+
+
+    height: 1px;
+
+
+
+    margin: 42px auto 35px;
+
+
+
+    background-color: #eeeeee;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-card h1 {
+
+
+
+    margin: 0;
+
+
+
+    font-family: Georgia, serif;
+
+
+
+    font-size: 20px;
+
+
+
+    font-weight: 400;
+
+
+
+    color: #292929;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-date {
+
+
+
+    margin: 8px 0 22px;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-library-title {
+
+
+
+    margin: 0 0 7px;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 9px;
+
+
+
+    font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-library {
+
+
+
+    margin: 0;
+
+
+
+    color: #292929;
+
+
+
+    font-size: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-message {
+
+
+
+    display: block;
+
+
+
+    width: 145px;
+
+
+
+    margin: 30px auto 0;
+
+
+
+    padding: 12px 10px;
+
+
+
+    border: 1px solid #00ac66;
+
+
+
+    border-radius: 5px;
+
+
+
+    color: #00ac66;
+
+
+
+    font-size: 11px;
+
+
+
+    font-weight: 600;
+
+
+
+    text-decoration: none;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-message:hover {
+
+
+
+    background-color: #00ac66;
+
+
+
+    color: #ffffff;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   PROFILE BOOKS
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.public-profile-books {
+
+
+
+    flex: 1;
+
+
+
+    min-height: 390px;
+
+
+
+    overflow: hidden;
+
+
+
+    background-color: #ffffff;
+
+
+
+    border-radius: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-books-header,
+
+
+
+.public-profile-book-row {
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: 90px 1fr 1fr 1.5fr;
+
+
+
+    column-gap: 20px;
+
+
+
+    align-items: center;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-books-header {
+
+
+
+    height: 40px;
+
+
+
+    padding: 0 25px;
+
+
+
+    border-bottom: 1px solid #eeeeee;
+
+
+
+    color: #292929;
+
+
+
+    font-size: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-row {
+
+
+
+    min-height: 88px;
+
+
+
+    padding: 12px 25px;
+
+
+
+    color: #292929;
+
+
+
+    font-size: 11px;
+
+
+
+    text-decoration: none;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-row:nth-child(odd) {
+
+
+
+    background-color: #edf4f7;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-row:hover {
+
+
+
+    color: #292929;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-image {
+
+
+
+    width: 54px;
+
+
+
+    height: 54px;
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-image img {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-image span {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 9px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-title,
+
+
+
+.public-profile-book-author {
+
+
+
+    color: #292929;
+
+
+
+    font-size: 11px;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-book-description {
+
+
+
+    color: #292929;
+
+
+
+    font-size: 10px;
+
+
+
+    font-style: italic;
+
+
+
+    line-height: 1.35;
+
+
+
+}
+
+
+
+
+
+
+
+.public-profile-no-books {
+
+
+
+    padding: 40px;
+
+
+
+    text-align: center;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+    .public-profile-content {
+
+
+
+        flex-direction: column;
+
+
+
+    }
+
+
+
+
+
+
+
+    .public-profile-card {
+
+
+
+        width: 100%;
+
+
+
+    }
+
+
+
+
+
+
+
+    .public-profile-books {
+
+
+
+        width: 100%;
+
+
+
+        overflow-x: auto;
+
+
+
+    }
+
+
+
+
+
+
+
+    .public-profile-books-header,
+
+
+
+    .public-profile-book-row {
+
+
+
+        min-width: 600px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   MESSAGERIE
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.messages-page {
+
+
+
+    background-color: #f5f3ef;
+
+
+
+    min-height: 650px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-layout {
+
+
+
+    display: flex;
+
+
+
+    width: 100%;
+
+
+
+    max-width: 1140px;
+
+
+
+    min-height: 650px;
+
+
+
+    margin: 0 auto;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   COLONNE GAUCHE
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.messages-sidebar {
+
+
+
+    width: 280px;
+
+
+
+    flex-shrink: 0;
+
+
+
+    background-color: #FAF9F7;
+
+
+
+    padding-top: 45px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-sidebar h1 {
+
+
+
+    margin: 0;
+
+
+
+    padding: 0 25px 25px;
+
+
+
+    font-family: Georgia, serif;
+
+
+
+    font-size: 22px;
+
+
+
+    font-weight: 400;
+
+
+
+    color: #292929;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversations {
+
+
+
+    width: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-item {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 12px;
+
+
+
+    width: 100%;
+
+
+
+    min-height: 75px;
+
+
+
+    padding: 12px 20px;
+
+
+
+    color: #292929;
+
+
+
+    text-decoration: none;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-item:hover {
+
+
+
+    color: #292929;
+
+
+
+    background-color: #f7f7f7;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-item.active {
+
+
+
+    background-color: #FFFFFF;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-picture {
+
+
+
+    width: 42px;
+
+
+
+    height: 42px;
+
+
+
+    flex-shrink: 0;
+
+
+
+    overflow: hidden;
+
+
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-picture img {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-placeholder {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    background-color: #00ac66;
+
+
+
+    color: #ffffff;
+
+
+
+    font-family: Georgia, serif;
+
+
+
+    font-size: 17px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-info {
+
+
+
+    flex: 1;
+
+
+
+    min-width: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-top {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: space-between;
+
+
+
+    gap: 8px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-pseudo {
+
+
+
+    overflow: hidden;
+
+
+
+    color: #292929;
+
+
+
+    font-size: 11px;
+
+
+
+    text-overflow: ellipsis;
+
+
+
+    white-space: nowrap;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-time {
+
+
+
+    flex-shrink: 0;
+
+
+
+    color: #777777;
+
+
+
+    font-size: 9px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-preview {
+
+
+
+    margin-top: 5px;
+
+
+
+    overflow: hidden;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 9px;
+
+
+
+    text-overflow: ellipsis;
+
+
+
+    white-space: nowrap;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   CONVERSATION
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.messages-main {
+
+
+
+    display: flex;
+
+
+
+    flex: 1;
+
+
+
+    flex-direction: column;
+
+
+
+    min-width: 0;
+
+
+
+    padding: 45px 40px 35px;
+
+
+
+    background-color: #f5f3ef;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-header {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 12px;
+
+
+
+    height: 45px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-header-picture {
+
+
+
+    width: 38px;
+
+
+
+    height: 38px;
+
+
+
+    flex-shrink: 0;
+
+
+
+    overflow: hidden;
+
+
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-header-picture img {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-header-placeholder {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    background-color: #00ac66;
+
+
+
+    color: #ffffff;
+
+
+
+    font-family: Georgia, serif;
+
+
+
+    font-size: 16px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-header span {
+
+
+
+    color: #292929;
+
+
+
+    font-size: 12px;
+
+
+
+    font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   MESSAGES
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.messages-content {
+
+
+
+    display: flex;
+
+
+
+    flex: 1;
+
+
+
+    flex-direction: column;
+
+
+
+    justify-content: flex-end;
+
+
+
+    gap: 22px;
+
+
+
+    padding: 35px 0 25px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-empty {
+
+
+
+    margin: auto;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row {
+
+
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+
+
+    max-width: 65%;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-received {
+
+
+
+    align-self: flex-start;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-sent {
+
+
+
+    align-self: flex-end;
+
+
+
+}
+
+
+
+
+
+
+
+.message-meta {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 6px;
+
+
+
+    margin-bottom: 5px;
+
+
+
+    color: #999999;
+
+
+
+    font-size: 8px;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-sent .message-meta {
+
+
+
+    justify-content: flex-end;
+
+
+
+}
+
+
+
+
+
+
+
+.message-small-picture {
+
+
+
+    width: 18px;
+
+
+
+    height: 18px;
+
+
+
+    overflow: hidden;
+
+
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+
+
+
+
+.message-small-picture img {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+
+
+.message-small-placeholder {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    background-color: #00ac66;
+
+
+
+    color: #ffffff;
+
+
+
+    font-size: 8px;
+
+
+
+}
+
+
+
+
+
+
+
+.message-bubble {
+
+
+
+    padding: 10px 14px;
+
+
+
+    border-radius: 3px;
+
+
+
+    color: #292929;
+
+
+
+    font-size: 12px;
+
+
+
+    line-height: 1.4;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-received .message-bubble {
+
+
+
+    background-color: #ffffff;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-sent .message-bubble {
+
+
+
+    background-color: #FFFFFF;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   ERREURS
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.messages-errors {
+
+
+
+    margin-top: 15px;
+
+
+
+    padding: 10px;
+
+
+
+    border-radius: 4px;
+
+
+
+    background-color: #ffffff;
+
+
+
+    color: #b00020;
+
+
+
+    font-size: 11px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-errors p {
+
+
+
+    margin: 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   FORMULAIRE
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+.messages-form {
+
+
+
+    display: flex;
+
+
+
+    gap: 15px;
+
+
+
+    width: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-form input {
+
+
+
+    flex: 1;
+
+
+
+    height: 45px;
+
+
+
+    padding: 0 18px;
+
+
+
+    border: 1px solid #f0f0f0;
+
+
+
+    border-radius: 5px;
+
+
+
+    background-color: #ffffff;
+
+
+
+    color: #292929;
+
+
+
+    font-size: 11px;
+
+
+
+    outline: none;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-form input::placeholder {
+
+
+
+    color: #aaaaaa;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-form input:focus {
+
+
+
+    border-color: #00ac66;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-form button {
+
+
+
+    width: 120px;
+
+
+
+    height: 45px;
+
+
+
+    border: none;
+
+
+
+    border-radius: 16px;
+
+
+
+    background-color: #00ac66;
+
+
+
+    color: #ffffff;
+
+
+
+    font-size: 11px;
+
+
+
+    font-weight: 600;
+
+
+
+    cursor: pointer;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-form button:hover {
+
+
+
+    opacity: 0.9;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+
+
+   RESPONSIVE MESSAGERIE
+
+
+
+   ========================= */
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+    .messages-layout {
+
+
+
+        flex-direction: column;
+
+
+
+    }
+
+
+
+
+
+
+
+    .messages-sidebar {
+
+
+
+        width: 100%;
+
+
+
+        padding-top: 30px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .messages-conversations {
+
+
+
+        display: flex;
+
+
+
+        overflow-x: auto;
+
+
+
+    }
+
+
+
+
+
+
+
+    .messages-conversation-item {
+
+
+
+        width: 220px;
+
+
+
+        flex-shrink: 0;
+
+
+
+    }
+
+
+
+
+
+
+
+    .messages-main {
+
+
+
+        min-height: 550px;
+
+
+
+        padding: 30px 20px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .message-row {
+
+
+
+        max-width: 85%;
+
+
+
+    }
+
+
+
+
+
+
+
+    .messages-form {
+
+
+
+        gap: 8px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .messages-form button {
+
+
+
+        width: 90px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+.messages-layout {
+
+
+
+    max-width: 1100px;
+
+
+
+    min-height: 620px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-sidebar {
+
+
+
+    width: 260px;
+
+
+
+    padding-top: 50px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-sidebar h1 {
+
+
+
+    padding: 0 30px 30px;
+
+
+
+    font-size: 22px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-item {
+
+
+
+    min-height: 72px;
+
+
+
+    padding: 12px 28px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-conversation-picture {
+
+
+
+    width: 38px;
+
+
+
+    height: 38px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-main {
+
+
+
+    min-height: 620px;
+
+
+
+    padding: 50px 40px 35px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-header {
+
+
+
+    height: 40px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-header-picture {
+
+
+
+    width: 36px;
+
+
+
+    height: 36px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-content {
+
+
+
+    padding: 40px 0 30px;
+
+
+
+    gap: 25px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Bulles plus proches de la maquette */
+
+
+
+
+
+
+
+.message-row {
+
+
+
+    width: 100%;
+
+
+
+    max-width: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-received {
+
+
+
+    align-items: flex-start;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-sent {
+
+
+
+    align-items: flex-end;
+
+
+
+}
+
+
+
+
+
+
+
+.message-bubble {
+
+
+
+    min-width: 220px;
+
+
+
+    max-width: 420px;
+
+
+
+    padding: 12px 16px;
+
+
+
+    font-size: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-received .message-meta {
+
+
+
+    width: 420px;
+
+
+
+    justify-content: flex-start;
+
+
+
+}
+
+
+
+
+
+
+
+.message-row-sent .message-meta {
+
+
+
+    width: 420px;
+
+
+
+    justify-content: flex-end;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Formulaire */
+
+
+
+
+
+
+
+.messages-form {
+
+
+
+    align-items: center;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-form input {
+
+
+
+    height: 42px;
+
+
+
+}
+
+
+
+
+
+
+
+.messages-form button {
+
+
+
+    width: 110px;
+
+
+
+    height: 42px;
+
+
+
+}
+
+
+
+/* =====================================================
+
+   AJOUT D'UN LIVRE - BOUTON DE LA BIBLIOTHEQUE
+
+   ===================================================== */
+
+
+
+.account-library-header {
+
+    gap: 20px;
+
+}
+
+
+
+.account-library-header .account-add-book {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 12px 20px;
+
+    border: 1px solid #00ac66;
+
+    border-radius: 6px;
+
+    background-color: #00ac66;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: background-color 0.2s ease;
+
+}
+
+
+
+.account-library-header .account-add-book:hover {
+
+    background-color: #008f55;
+
+    border-color: #008f55;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+}
+
+
+
+/* =====================================================
+
+   AJOUT D'UN LIVRE - FORMULAIRE
+
+   ===================================================== */
+
+
+
+.book-form-page {
+
+    min-height: 720px;
+
+    padding: 45px 0 90px;
+
+    background-color: #f5f3ef;
+
+}
+
+
+
+.book-form-page .container {
+
+    max-width: 1120px;
+
+}
+
+
+
+.book-form-back {
+
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    color: #777777;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+}
+
+
+
+.book-form-back:hover {
+
+    color: #00ac66;
+
+}
+
+
+
+.book-form-title {
+
+    margin: 0 0 32px;
+
+    color: #292929;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+}
+
+
+
+.book-form-container {
+
+    padding: 45px;
+
+    border-radius: 12px;
+
+    background-color: #ffffff;
+
+}
+
+
+
+.book-form-container > .alert {
+
+    margin-bottom: 28px;
+
+    font-size: 13px;
+
+}
+
+
+
+.book-form-container > .alert ul {
+
+    margin-bottom: 0;
+
+}
+
+
+
+.book-form {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 65px;
+
+    align-items: start;
+
+}
+
+
+
+.book-form-photo > label:first-child,
+
+.book-form-group > label {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #888888;
+
+    font-size: 12px;
+
+}
+
+
+
+.book-form-photo-placeholder {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    width: 100%;
+
+    min-height: 380px;
+
+    padding: 30px;
+
+    background-color: #edf2f5;
+
+    color: #999999;
+
+    text-align: center;
+
+}
+
+
+
+.book-form-photo-placeholder i {
+
+    font-size: 48px;
+
+}
+
+
+
+.book-form-photo-placeholder p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+}
+
+
+
+.book-form-photo-link {
+
+    display: block;
+
+    margin: 15px 0 10px;
+
+    color: #292929;
+
+    font-size: 12px;
+
+    text-align: right;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+
+}
+
+
+
+.book-form-photo-link:hover {
+
+    color: #00ac66;
+
+}
+
+
+
+.book-form-photo input[type="file"] {
+
+    display: block;
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    color: #555555;
+
+    font-size: 12px;
+
+}
+
+
+
+.book-form-photo-help {
+
+    margin-top: 10px;
+
+    color: #999999;
+
+    font-size: 11px;
+
+}
+
+
+
+.book-form-group {
+
+    margin-bottom: 24px;
+
+}
+
+
+
+.book-form-group input,
+
+.book-form-group textarea,
+
+.book-form-group select {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 1px solid transparent;
+
+    border-radius: 5px;
+
+    background-color: #edf2f5;
+
+    color: #292929;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+}
+
+
+
+.book-form-group input,
+
+.book-form-group select {
+
+    min-height: 48px;
+
+}
+
+
+
+.book-form-group textarea {
+
+    min-height: 200px;
+
+    resize: vertical;
+
+}
+
+
+
+.book-form-group input:focus,
+
+.book-form-group textarea:focus,
+
+.book-form-group select:focus {
+
+    border-color: #00ac66;
+
+    outline: none;
+
+}
+
+
+
+.book-form-submit {
+
+    width: 100%;
+
+    max-width: 280px;
+
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    border: 1px solid #00ac66;
+
+    border-radius: 7px;
+
+    background-color: #00ac66;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+
+.book-form-submit:hover {
+
+    background-color: #008f55;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .account-library-header {
+
+        flex-wrap: wrap;
+
+    }
+
+
+
+    .book-form-page {
+
+        padding: 30px 0 60px;
+
+    }
+
+
+
+    .book-form-container {
+
+        padding: 25px 20px;
+
+    }
+
+
+
+    .book-form {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+
+    .book-form-photo-placeholder {
+
+        min-height: 260px;
+
+    }
+
+
+
+    .book-form-submit {
+
+        max-width: none;
+
+    }
+
+}
+
+/* =====================================================
+   MON COMPTE - MODIFICATION DE LA PHOTO DE PROFIL
+   ===================================================== */
+
+.profile-image-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.profile-image-form .profile-edit {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-image-submit {
+    padding: 7px 12px;
     border: 1px solid #00ac66;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ffffff;
     color: #00ac66;
+    font-family: Arial, sans-serif;
     font-size: 10px;
     cursor: pointer;
 }
 
-.account-save:hover {
+.profile-image-submit:hover {
     background-color: #00ac66;
-    color: white;
+    color: #ffffff;
 }
 
-@media (max-width: 768px) {
+/* =====================================================
+   MON COMPTE - BOUTON DE SUPPRESSION
+   ===================================================== */
 
-    .account-top {
-        flex-direction: column;
-    }
-
-    .account-profile,
-    .account-informations {
-        width: 100%;
-    }
-
-    .account-informations {
-        padding: 25px;
-    }
-}
-
-.account-library {
-    margin-top: 20px;
-    padding: 25px;
-    background-color: #ffffff;
-    border-radius: 12px;
-}
-
-.account-library-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.account-library-header h2 {
+.account-delete-form {
     margin: 0;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    font-weight: 400;
 }
 
-.account-library-header a {
-    color: #00ac66;
-    font-size: 11px;
-    text-decoration: none;
-}
-
-.account-library-header a:hover {
+.account-delete-button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    text-align: left;
     text-decoration: underline;
+    cursor: pointer;
 }
 
-.account-library-empty {
-    padding: 30px 0;
-    text-align: center;
-    color: #999999;
-    font-size: 11px;
+.account-delete-button:hover {
+    color: #00ac66;
 }
+
+
+/* =====================================================
+   MON COMPTE - TABLEAU DES LIVRES (MAQUETTE FIGMA)
+   ===================================================== */
 
 .account-books-table {
-    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
 }
 
 .account-books-head,
 .account-book-row {
-    display: grid;
-    grid-template-columns: 2fr 1.2fr 2fr 1fr 1fr;
-    gap: 15px;
-    align-items: center;
+    grid-template-columns: 90px minmax(125px, 1.2fr) minmax(125px, 1.2fr) minmax(180px, 1.6fr) minmax(110px, 1fr) minmax(145px, 1fr);
+    gap: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 850px;
 }
 
 .account-books-head {
-    padding: 10px 0;
-    border-bottom: 1px solid #eeeeee;
-    color: #999999;
+    background-color: #ffffff;
+    text-transform: uppercase;
     font-size: 9px;
+    letter-spacing: 0.04em;
 }
 
 .account-book-row {
-    min-height: 80px;
-    padding: 12px 0;
-    border-bottom: 1px solid #eeeeee;
-    color: #292929;
-    font-size: 10px;
+    min-height: 100px;
+    border-bottom: 0;
+    background-color: #ffffff;
 }
 
-.account-book-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.account-book-row:nth-child(odd) {
+    background-color: #edf3f6;
 }
 
-.account-book-info img {
-    width: 45px;
-    height: 60px;
+.account-book-photo img {
+    display: block;
+    width: 56px;
+    height: 76px;
     object-fit: cover;
     border-radius: 3px;
 }
 
-.account-book-info span {
-    font-weight: 600;
+.account-book-photo .account-book-no-image {
+    display: inline-block;
+    max-width: 75px;
+    font-size: 11px;
+    color: #777777;
 }
 
-.book-available {
-    color: #00ac66;
+.account-book-title {
+    font-weight: 500;
 }
 
-.book-unavailable {
-    color: #999999;
-}
-
-.account-book-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.account-book-actions a {
-    color: #292929;
+.account-book-row .book-available,
+.account-book-row .book-unavailable {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 20px;
+    color: #ffffff;
     font-size: 9px;
-    text-decoration: underline;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
-.account-book-actions a:hover {
-    color: #00ac66;
+.account-book-row .book-available {
+    background-color: #69c9a2;
+}
+
+.account-book-row .book-unavailable {
+    background-color: #d9787b;
+}
+
+.account-book-row .account-book-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.account-book-row .account-book-actions a,
+.account-book-row .account-delete-button {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.account-book-row .account-delete-button {
+    color: #cb565c;
+}
+
+.account-book-row .account-delete-button:hover {
+    color: #a33339;
 }
 
 @media (max-width: 900px) {
-
     .account-books-head {
-        display: none;
+        display: grid;
     }
 
     .account-book-row {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 20px 0;
-    }
-
-    .account-book-info {
-        width: 100%;
-    }
-
-    .account-book-actions {
-        flex-direction: row;
+        display: grid;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 
-.account-alert {
-    margin-bottom: 15px;
-    padding: 8px 10px;
-    font-size: 10px;
-}
+/* =====================================================
+   MESSAGERIE - AJUSTEMENTS FIGMA (sans JavaScript)
+   ===================================================== */
 
-.account-alert ul {
-    margin: 0;
-    padding-left: 15px;
-}
-
-.public-profile-page {
-    background-color: #f7f6f3;
-    min-height: 600px;
-    padding: 70px 0 140px;
-}
-
-.public-profile-content {
-    display: flex;
-    gap: 20px;
-    align-items: stretch;
-}
-
-/* =========================
-   PROFILE CARD
-========================= */
-
-.public-profile-card {
-    width: 230px;
-    min-height: 390px;
-    padding: 32px 25px;
+/* La conversation sélectionnée se distingue des autres. */
+.messages-conversation-item.active {
     background-color: #ffffff;
-    border-radius: 12px;
-    text-align: center;
 }
 
-.public-profile-picture {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.public-profile-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.public-profile-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #00ac66;
-    color: #ffffff;
-    font-family: Georgia, serif;
-    font-size: 32px;
-}
-
-.public-profile-separator {
-    width: 130px;
-    height: 1px;
-    margin: 42px auto 35px;
-    background-color: #eeeeee;
-}
-
-.public-profile-card h1 {
-    margin: 0;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #292929;
-}
-
-.public-profile-date {
-    margin: 8px 0 22px;
-    color: #999999;
-    font-size: 12px;
-}
-
-.public-profile-library-title {
-    margin: 0 0 7px;
-    color: #999999;
-    font-size: 9px;
-    font-weight: 600;
-}
-
-.public-profile-library {
-    margin: 0;
-    color: #292929;
-    font-size: 12px;
-}
-
-.public-profile-message {
-    display: block;
-    width: 145px;
-    margin: 30px auto 0;
-    padding: 12px 10px;
-    border: 1px solid #00ac66;
-    border-radius: 5px;
-    color: #00ac66;
-    font-size: 11px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.public-profile-message:hover {
-    background-color: #00ac66;
-    color: #ffffff;
-}
-
-
-/* =========================
-   PROFILE BOOKS
-========================= */
-
-.public-profile-books {
-    flex: 1;
-    min-height: 390px;
-    overflow: hidden;
-    background-color: #ffffff;
-    border-radius: 12px;
-}
-
-.public-profile-books-header,
-.public-profile-book-row {
-    display: grid;
-    grid-template-columns: 90px 1fr 1fr 1.5fr;
-    column-gap: 20px;
-    align-items: center;
-}
-
-.public-profile-books-header {
-    height: 40px;
-    padding: 0 25px;
-    border-bottom: 1px solid #eeeeee;
-    color: #292929;
-    font-size: 10px;
-}
-
-.public-profile-book-row {
-    min-height: 88px;
-    padding: 12px 25px;
-    color: #292929;
-    font-size: 11px;
-    text-decoration: none;
-}
-
-.public-profile-book-row:nth-child(odd) {
-    background-color: #edf4f7;
-}
-
-.public-profile-book-row:hover {
-    color: #292929;
-}
-
-.public-profile-book-image {
-    width: 54px;
-    height: 54px;
-    overflow: hidden;
-}
-
-.public-profile-book-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.public-profile-book-image span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    color: #999999;
-    font-size: 9px;
-}
-
-.public-profile-book-title,
-.public-profile-book-author {
-    color: #292929;
-    font-size: 11px;
-}
-
-.public-profile-book-description {
-    color: #292929;
-    font-size: 10px;
-    font-style: italic;
-    line-height: 1.35;
-}
-
-.public-profile-no-books {
-    padding: 40px;
-    text-align: center;
-    color: #999999;
-    font-size: 12px;
-}
-
-
-@media (max-width: 768px) {
-
-    .public-profile-content {
-        flex-direction: column;
-    }
-
-    .public-profile-card {
-        width: 100%;
-    }
-
-    .public-profile-books {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .public-profile-books-header,
-    .public-profile-book-row {
-        min-width: 600px;
-    }
-}
-
-/* =========================
-   MESSAGERIE
-========================= */
-
-.messages-page {
-    background-color: #f5f3ef;
-    min-height: 650px;
-}
-
-.messages-layout {
-    display: flex;
-    width: 100%;
-    max-width: 1140px;
-    min-height: 650px;
-    margin: 0 auto;
-}
-
-
-/* =========================
-   COLONNE GAUCHE
-========================= */
-
-.messages-sidebar {
-    width: 280px;
-    flex-shrink: 0;
-    background-color: #FAF9F7;
-    padding-top: 45px;
-}
-
-.messages-sidebar h1 {
-    margin: 0;
-    padding: 0 25px 25px;
-    font-family: Georgia, serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: #292929;
-}
-
-.messages-conversations {
-    width: 100%;
-}
-
-.messages-conversation-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    min-height: 75px;
-    padding: 12px 20px;
-    color: #292929;
-    text-decoration: none;
-}
-
-.messages-conversation-item:hover {
-    color: #292929;
+.messages-conversation-item:not(.active) {
     background-color: #f7f7f7;
 }
 
-.messages-conversation-item.active {
-    background-color: #FFFFFF;
+.messages-conversation-item:not(.active):hover {
+    background-color: #eef2f4;
 }
 
-.messages-conversation-picture {
-    width: 42px;
-    height: 42px;
-    flex-shrink: 0;
-    overflow: hidden;
-    border-radius: 50%;
+/* Les messages envoyés sont bleu clair, les reçus blancs. */
+.message-row-sent .message-bubble {
+    background-color: #edf3f6;
 }
 
-.messages-conversation-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.message-row-received .message-bubble {
+    background-color: #ffffff;
 }
 
-.messages-conversation-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #00ac66;
-    color: #ffffff;
-    font-family: Georgia, serif;
-    font-size: 17px;
-}
-
-.messages-conversation-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.messages-conversation-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.messages-conversation-pseudo {
-    overflow: hidden;
-    color: #292929;
-    font-size: 11px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.messages-conversation-time {
-    flex-shrink: 0;
-    color: #777777;
-    font-size: 9px;
-}
-
-.messages-conversation-preview {
-    margin-top: 5px;
-    overflow: hidden;
-    color: #999999;
-    font-size: 9px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-
-/* =========================
-   CONVERSATION
-========================= */
-
-.messages-main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    min-width: 0;
-    padding: 45px 40px 35px;
-    background-color: #f5f3ef;
-}
-
-.messages-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    height: 45px;
-}
-
-.messages-header-picture {
-    width: 38px;
-    height: 38px;
-    flex-shrink: 0;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.messages-header-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.messages-header-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #00ac66;
-    color: #ffffff;
-    font-family: Georgia, serif;
-    font-size: 16px;
-}
-
-.messages-header span {
-    color: #292929;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-
-/* =========================
-   MESSAGES
-========================= */
-
-.messages-content {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 22px;
-    padding: 35px 0 25px;
-}
-
-.messages-empty {
-    margin: auto;
-    color: #999999;
-    font-size: 12px;
-}
-
-.message-row {
-    display: flex;
-    flex-direction: column;
-    max-width: 65%;
+/* Bulles et horodatages restent alignés sur leur côté. */
+.message-row-sent {
+    align-items: flex-end;
 }
 
 .message-row-received {
-    align-self: flex-start;
+    align-items: flex-start;
 }
 
-.message-row-sent {
-    align-self: flex-end;
+/* Les bulles ne dépassent pas la largeur disponible. */
+.messages-content .message-bubble {
+    box-sizing: border-box;
+    max-width: min(420px, 100%);
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
-.message-meta {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 5px;
-    color: #999999;
-    font-size: 8px;
+.messages-content .message-meta {
+    max-width: 100%;
 }
 
-.message-row-sent .message-meta {
-    justify-content: flex-end;
+/* Sur écran étroit, les bulles restent lisibles. */
+@media (max-width: 700px) {
+    .messages-content .message-bubble {
+        max-width: 100%;
+    }
+
+    .messages-content .message-meta {
+        width: auto;
+    }
 }
 
-.message-small-picture {
-    width: 18px;
-    height: 18px;
-    overflow: hidden;
-    border-radius: 50%;
+/* =====================================================
+   MESSAGERIE - FINITIONS FIDELES A LA MAQUETTE FIGMA
+   Les regles precedentes sont conservees.
+   ===================================================== */
+
+/* Colonne de gauche : proportions et selection. */
+.messages-layout {
+    max-width: 1140px;
 }
 
-.message-small-picture img {
+.messages-sidebar {
+    width: 260px;
+}
+
+.messages-conversation-item.active {
+    background-color: #ffffff;
+}
+
+.messages-conversation-item:not(.active) {
+    background-color: #faf9f7;
+}
+
+/* Conversation : espacement et bulles regulieres. */
+.messages-main {
+    padding: 40px 40px 35px;
+}
+
+.messages-content {
+    gap: 22px;
+    padding: 30px 0 25px;
+}
+
+.messages-content .message-row {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
 }
 
-.message-small-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #00ac66;
-    color: #ffffff;
-    font-size: 8px;
-}
-
-.message-bubble {
-    padding: 10px 14px;
-    border-radius: 3px;
-    color: #292929;
-    font-size: 12px;
-    line-height: 1.4;
+.messages-content .message-bubble {
+    width: 320px;
+    min-width: 0;
+    max-width: min(320px, 100%);
+    box-sizing: border-box;
+    padding: 12px 16px;
+    font-size: 11px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
 .message-row-received .message-bubble {
@@ -1482,207 +7477,69 @@ h2 {
 }
 
 .message-row-sent .message-bubble {
-    background-color: #FFFFFF;
+    background-color: #edf3f6;
 }
 
-
-/* =========================
-   ERREURS
-========================= */
-
-.messages-errors {
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #ffffff;
-    color: #b00020;
-    font-size: 11px;
-}
-
-.messages-errors p {
-    margin: 0;
-}
-
-
-/* =========================
-   FORMULAIRE
-========================= */
-
-.messages-form {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-}
-
-.messages-form input {
-    flex: 1;
-    height: 45px;
-    padding: 0 18px;
-    border: 1px solid #f0f0f0;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #292929;
-    font-size: 11px;
-    outline: none;
-}
-
-.messages-form input::placeholder {
-    color: #aaaaaa;
-}
-
-.messages-form input:focus {
-    border-color: #00ac66;
-}
-
-.messages-form button {
-    width: 120px;
-    height: 45px;
-    border: none;
-    border-radius: 16px;
-    background-color: #00ac66;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.messages-form button:hover {
-    opacity: 0.9;
-}
-
-
-/* =========================
-   RESPONSIVE MESSAGERIE
-========================= */
-
-@media (max-width: 768px) {
-
-    .messages-layout {
-        flex-direction: column;
-    }
-
-    .messages-sidebar {
-        width: 100%;
-        padding-top: 30px;
-    }
-
-    .messages-conversations {
-        display: flex;
-        overflow-x: auto;
-    }
-
-    .messages-conversation-item {
-        width: 220px;
-        flex-shrink: 0;
-    }
-
-    .messages-main {
-        min-height: 550px;
-        padding: 30px 20px;
-    }
-
-    .message-row {
-        max-width: 85%;
-    }
-
-    .messages-form {
-        gap: 8px;
-    }
-
-    .messages-form button {
-        width: 90px;
-    }
-}
-
-.messages-layout {
-    max-width: 1100px;
-    min-height: 620px;
-}
-
-.messages-sidebar {
-    width: 260px;
-    padding-top: 50px;
-}
-
-.messages-sidebar h1 {
-    padding: 0 30px 30px;
-    font-size: 22px;
-}
-
-.messages-conversation-item {
-    min-height: 72px;
-    padding: 12px 28px;
-}
-
-.messages-conversation-picture {
-    width: 38px;
-    height: 38px;
-}
-
-.messages-main {
-    min-height: 620px;
-    padding: 50px 40px 35px;
-}
-
-.messages-header {
-    height: 40px;
-}
-
-.messages-header-picture {
-    width: 36px;
-    height: 36px;
-}
-
-.messages-content {
-    padding: 40px 0 30px;
-    gap: 25px;
-}
-
-
-/* Bulles plus proches de la maquette */
-
-.message-row {
-    width: 100%;
+.messages-content .message-meta {
+    width: 320px;
     max-width: 100%;
 }
 
-.message-row-received {
-    align-items: flex-start;
-}
-
-.message-row-sent {
-    align-items: flex-end;
-}
-
-.message-bubble {
-    min-width: 220px;
-    max-width: 420px;
-    padding: 12px 16px;
-    font-size: 10px;
-}
-
 .message-row-received .message-meta {
-    width: 420px;
     justify-content: flex-start;
 }
 
 .message-row-sent .message-meta {
-    width: 420px;
     justify-content: flex-end;
 }
 
-
-/* Formulaire */
-
+/* Formulaire de message dans le meme alignement que la maquette. */
 .messages-form {
+    gap: 16px;
+}
+
+@media (max-width: 700px) {
+    .messages-sidebar {
+        width: auto;
+    }
+
+    .messages-main {
+        padding: 24px 16px;
+    }
+
+    .messages-content .message-bubble {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .messages-content .message-meta {
+        width: auto;
+    }
+}
+
+
+/* =========================================
+   NOTIFICATION MESSAGERIE
+========================================= */
+
+.messages-notification-badge {
+    display: inline-flex;
     align-items: center;
-}
+    justify-content: center;
 
-.messages-form input {
-    height: 42px;
-}
+    min-width: 15px;
+    height: 15px;
+    padding: 0 3px;
 
-.messages-form button {
-    width: 110px;
-    height: 42px;
+    border-radius: 50px;
+    background-color: #292929;
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 1;
+
+    vertical-align: middle;
+    margin-left: 2px;
 }

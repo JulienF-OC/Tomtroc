@@ -1,3 +1,4 @@
+
 <?php
 
 class BookManager extends AbstractEntityManager
@@ -128,5 +129,118 @@ class BookManager extends AbstractEntityManager
         }
 
         return $books;
+    }
+
+    /*
+     * Ajout d'un nouveau livre dans la base de données.
+     */
+    public function createBook(
+        int $userId,
+        string $title,
+        string $author,
+        string $description,
+        string $image,
+        int $available
+    ): int {
+        $query = $this->db->prepare(
+            'INSERT INTO book (
+                id_user,
+                title,
+                author,
+                description,
+                image,
+                available,
+                date_creation
+            ) VALUES (
+                :user_id,
+                :title,
+                :author,
+                :description,
+                :image,
+                :available,
+                NOW()
+            )'
+        );
+
+        $query->execute([
+            'user_id' => $userId,
+            'title' => $title,
+            'author' => $author,
+            'description' => $description,
+            'image' => $image,
+            'available' => $available
+        ]);
+
+        return (int) $this->db->lastInsertId();
+    }
+
+    /*
+     * Modification d'un livre appartenant à l'utilisateur.
+     */
+    public function updateBook(
+        int $bookId,
+        int $userId,
+        string $title,
+        string $author,
+        string $description,
+        string $image,
+        int $available
+    ): bool {
+        /*
+         * La condition id_user empêche de modifier
+         * le livre d'un autre utilisateur.
+         */
+        $query = $this->db->prepare(
+            'UPDATE book
+            SET
+                title = :title,
+                author = :author,
+                description = :description,
+                image = :image,
+                available = :available
+            WHERE
+                id = :book_id
+                AND id_user = :user_id'
+        );
+
+        return $query->execute([
+            'book_id' => $bookId,
+            'user_id' => $userId,
+            'title' => $title,
+            'author' => $author,
+            'description' => $description,
+            'image' => $image,
+            'available' => $available
+        ]);
+    }
+
+    /*
+     * Suppression d'un livre appartenant à l'utilisateur.
+     */
+    public function deleteBook(int $bookId, int $userId): bool
+    {
+        /*
+         * On utilise une requête préparée pour éviter
+         * les injections SQL.
+         *
+         * La condition id_user garantit qu'un utilisateur
+         * ne peut pas supprimer le livre d'un autre.
+         */
+        $query = $this->db->prepare(
+            'DELETE FROM book
+            WHERE id = :book_id
+            AND id_user = :user_id'
+        );
+
+        $query->execute([
+            'book_id' => $bookId,
+            'user_id' => $userId
+        ]);
+
+        /*
+         * rowCount() indique combien de livres
+         * ont réellement été supprimés.
+         */
+        return $query->rowCount() > 0;
     }
 }

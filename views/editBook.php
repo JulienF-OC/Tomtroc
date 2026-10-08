@@ -1,0 +1,181 @@
+
+<section class="book-form-page">
+
+    <div class="container">
+
+        <a href="index.php?action=account" class="book-form-back">
+            ← retour
+        </a>
+
+        <h1 class="book-form-title">
+            Modifier les informations
+        </h1>
+
+        <div class="book-form-container">
+
+            <?php if (!empty($errors)): ?>
+
+                <div class="alert alert-danger">
+
+                    <ul>
+                        <?php foreach ($errors as $error): ?>
+                            <li>
+                                <?= htmlspecialchars($error) ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                </div>
+
+            <?php endif; ?>
+
+            <form
+                action="index.php?action=editBook&id=<?= (int) $book->getId() ?>"
+                method="POST"
+                enctype="multipart/form-data"
+                class="book-form"
+            >
+
+                <!-- Photo du livre -->
+                <div class="book-form-photo">
+
+                    <label for="book_image">
+                        Photo
+                    </label>
+
+                    <?php if ($book->getImage()): ?>
+
+                        <img
+                            src="<?= htmlspecialchars($book->getImage()) ?>"
+                            alt="<?= htmlspecialchars($book->getTitle()) ?>"
+                            class="book-edit-image"
+                        >
+
+                    <?php else: ?>
+
+                        <div class="book-form-photo-placeholder">
+
+                            <i class="fa-regular fa-image"></i>
+
+                            <p>
+                                Aucune photo
+                            </p>
+
+                        </div>
+
+                    <?php endif; ?>
+
+                    <label
+                        for="book_image"
+                        class="book-form-photo-link"
+                    >
+                        Modifier la photo
+                    </label>
+
+                    <input
+                        type="file"
+                        id="book_image"
+                        name="image"
+                        accept="image/jpeg,image/png,image/webp"
+                    >
+
+                    <p class="book-form-photo-help">
+                        Laissez ce champ vide pour conserver la photo actuelle.
+                    </p>
+
+                </div>
+
+                <!-- Informations du livre -->
+                <div class="book-form-fields">
+
+                    <div class="book-form-group">
+
+                        <label for="title">
+                            Titre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            value="<?= htmlspecialchars($old['title'] ?? '') ?>"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="book-form-group">
+
+                        <label for="author">
+                            Auteur
+                        </label>
+
+                        <input
+                            type="text"
+                            id="author"
+                            name="author"
+                            value="<?= htmlspecialchars($old['author'] ?? '') ?>"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="book-form-group">
+
+                        <label for="description">
+                            Commentaire
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="10"
+                        ><?= htmlspecialchars($old['description'] ?? '') ?></textarea>
+
+                    </div>
+
+                    <div class="book-form-group">
+
+                        <label for="available">
+                            Disponibilité
+                        </label>
+
+                        <select
+                            id="available"
+                            name="available"
+                        >
+
+                            <option
+                                value="1"
+                                <?= (string) ($old['available'] ?? '1') === '1' ? 'selected' : '' ?>
+                            >
+                                disponible
+                            </option>
+
+                            <option
+                                value="0"
+                                <?= (string) ($old['available'] ?? '1') === '0' ? 'selected' : '' ?>
+                            >
+                                non disponible
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="book-form-submit"
+                    >
+                        Valider
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -25,6 +26,21 @@ try {
             $bookController->showBook();
             break;
 
+        case 'addBook':
+            $bookController = new BookController();
+            $bookController->addBook();
+            break;
+
+        case 'editBook':
+            $bookController = new BookController();
+            $bookController->editBook();
+            break;
+
+        case 'deleteBook':
+            $bookController = new BookController();
+            $bookController->deleteBook();
+            break;
+
         case 'register':
             $userController = new UserController();
             $userController->showRegister();
@@ -43,6 +59,11 @@ try {
         case 'profile':
             $userController = new UserController();
             $userController->showProfile();
+            break;
+
+        case 'messages':
+            $messageController = new MessageController();
+            $messageController->showMessages();
             break;
 
         case 'conversation':
