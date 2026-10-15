@@ -1,4 +1,4 @@
-<section class="error-page">
+<section class="error-page d-flex flex-column align-items-center text-center">
 
     <h1>404</h1>
 

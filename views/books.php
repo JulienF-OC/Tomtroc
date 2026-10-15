@@ -2,37 +2,37 @@
 
     <div class="container">
 
-        <div class="books-header">
+        <div class="books-header d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
 
-            <h1>Nos livres à l'échange</h1>
+            <h1 class="mb-0">Nos livres à l'échange</h1>
 
             <form
-    action="index.php"
-    method="GET"
-    class="book-search-form"
->
+                action="index.php"
+                method="GET"
+                class="book-search-form"
+            >
 
-    <input
-        type="hidden"
-        name="action"
-        value="books"
-    >
+                <input
+                    type="hidden"
+                    name="action"
+                    value="books"
+                >
 
-    <div class="search-wrapper">
+                <div class="search-wrapper">
 
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
 
-        <input
-            type="search"
-            name="search"
-            value="<?= htmlspecialchars($search) ?>"
-            placeholder="Rechercher un livre"
-            class="book-search-input"
-        >
+                    <input
+                        type="search"
+                        name="search"
+                        value="<?= htmlspecialchars($search) ?>"
+                        placeholder="Rechercher un livre"
+                        class="book-search-input"
+                    >
 
-    </div>
+                </div>
 
-</form>
+            </form>
 
         </div>
 
@@ -45,18 +45,18 @@
 
         <?php else: ?>
 
-            <div class="row books-grid">
+            <div class="row books-grid g-3 g-md-4">
 
                 <?php foreach ($books as $book): ?>
 
-                    <div class="col-md-3">
+                    <div class="col-6 col-lg-3">
 
                         <a
                             href="index.php?action=showBook&id=<?= $book->getId() ?>"
                             class="book-link"
                         >
 
-                            <article class="book-card">
+                            <article class="book-card h-100">
 
                                 <?php if ($book->getImage() !== null): ?>
 

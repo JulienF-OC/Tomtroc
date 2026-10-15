@@ -1,6754 +1,2406 @@
 * {
 
-
-
     box-sizing: border-box;
 
-
-
 }
-
-
-
-
-
-
 
 body {
 
-
-
     margin: 0;
-
-
 
     background-color: #f5f3ef;
 
-
-
     color: #292929;
-
-
 
     font-family: Arial, sans-serif;
 
-
-
 }
-
-
-
-
-
-
 
 h1,
 
-
-
 h2 {
-
-
 
     font-family: Georgia, serif;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* HEADER */
 
-
-
-
-
-
-
 .main-header {
 
-
-
     background-color: #f5f3ef;
-
-
 
     height: 80px;
 
-
-
     display: flex;
-
-
 
     align-items: center;
 
-
-
 }
-
-
-
-
-
-
 
 .main-header .container {
 
-
-
     height: 100%;
 
-
-
 }
-
-
-
-
-
-
 
 .logo {
 
-
-
     gap: 12px;
-
-
 
     margin-right: 70px;
 
-
-
 }
-
-
-
-
-
-
 
 .logo-icon {
 
-
-
     background-color: #00ac66;
-
-
 
     color: white;
 
-
-
     width: 38px;
-
-
 
     height: 38px;
 
-
-
     border-radius: 6px;
-
-
 
     display: flex;
 
-
-
     align-items: center;
-
-
 
     justify-content: center;
 
-
-
     font-family: Georgia, serif;
-
-
 
     font-size: 18px;
 
-
-
 }
-
-
-
-
-
-
 
 .logo-text {
 
-
-
     color: #00ac66;
-
-
 
     font-family: Georgia, serif;
 
-
-
     font-size: 17px;
 
-
-
 }
-
-
-
-
-
-
 
 .main-navigation,
 
-
-
 .account-navigation {
-
-
 
     gap: 40px;
 
-
-
 }
-
-
-
-
-
-
 
 .main-header nav a {
 
-
-
     color: #292929;
-
-
 
     text-decoration: none;
 
-
-
     font-size: 13px;
 
-
-
 }
-
-
-
-
-
-
 
 .main-header nav a:hover {
 
-
-
     color: #00ac66;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-/* HERO */
-
-
-
-
-
-
-
-.home-hero {
-
-
-
-    background-color: #f5f3ef;
-
-
-
-    padding: 80px 0 100px;
-
-
-
-}
-
-
-
-
-
-
-
-.hero-content {
-
-
-
-    max-width: 850px;
-
-
-
-    margin: auto;
-
-
-
-}
-
-
-
-
-
-
-
-.hero-text {
-
-
-
-    max-width: 320px;
-
-
-
-}
-
-
-
-
-
-
-
-.hero-text h1 {
-
-
-
-    font-size: 38px;
-
-
-
-    line-height: 1.15;
-
-
-
-    margin-bottom: 20px;
-
-
-
-}
-
-
-
-
-
-
-
-.hero-text p {
-
-
-
-    font-size: 14px;
-
-
-
-    line-height: 1.25;
-
-
-
-    margin-bottom: 35px;
-
-
-
-}
-
-
-
-
-
-
-
-.hero-image {
-
-
-
-    width: 370px;
-
-
-
-}
-
-
-
-
-
-
-
-.hero-image img {
-
-
-
-    width: 100%;
-
-
-
-    height: 490px;
-
-
-
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-.hero-image span {
-
-
-
-    display: block;
-
-
-
-    text-align: right;
-
-
-
-    color: #aaa;
-
-
-
-    font-size: 10px;
-
-
-
-    margin-top: 8px;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
 
 /* BOUTONS */
 
-
-
-
-
-
-
 .btn-tomtroc {
-
-
 
     display: inline-block;
 
-
-
     background-color: #00ac66;
-
-
 
     color: white;
 
-
-
     text-decoration: none;
-
-
 
     padding: 17px 30px;
 
-
-
-    border-radius: 10px;
-
-
+    border-radius: 5px;
 
     border: 1px solid #00ac66;
 
-
-
     font-weight: 600;
-
-
 
     font-size: 13px;
 
-
-
 }
-
-
-
-
-
-
 
 .btn-tomtroc:hover {
 
-
-
     color: white;
-
-
 
     opacity: 0.9;
 
-
-
 }
-
-
-
-
-
-
 
 .btn-outline-tomtroc {
 
-
-
     background-color: transparent;
-
-
 
     color: #00ac66;
 
-
-
 }
-
-
-
-
-
-
 
 .btn-outline-tomtroc:hover {
 
-
-
     background-color: #00ac66;
 
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-/* LIVRES */
-
-
-
-
-
-
-
-.latest-books {
-
-
-
-    background-color: white;
-
-
-
-    padding: 75px 0;
-
-
-
-}
-
-
-
-
-
-
-
-.latest-books h2,
-
-
-
-.how-it-works h2 {
-
-
-
-    font-size: 30px;
-
-
-
-    text-align: center;
-
-
-
-    margin-bottom: 60px;
-
-
-
-}
-
-
-
-
-
-
-
-.latest-books .row {
-
-
-
-    max-width: 900px;
-
-
-
-    margin: 0 auto 50px;
-
-
-
-}
-
-
-
-
-
-
-
-.book-card {
-
-
-
-    background-color: #fff;
-
-
-
-    border-radius: 0 0 10px 10px;
-
-
-
-    overflow: hidden;
-
-
-
-}
-
-
-
-
-
-
-
-.book-image {
-
-
-
-    width: 100%;
-
-
-
-    height: 230px;
-
-
-
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-.book-image-empty {
-
-
-
-    background-color: #eee;
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    color: #777;
-
-
-
-}
-
-
-
-
-
-
-
-.book-information {
-
-
-
-    padding: 15px;
-
-
-
-}
-
-
-
-
-
-
-
-.book-information h2,
-
-
-
-.book-information h3 {
-
-
-
-    font-family: Arial, sans-serif;
-
-
-
-    font-size: 15px;
-
-
-
-    margin-bottom: 10px;
-
-
-
-}
-
-
-
-
-
-
-
-.book-author {
-
-
-
-    color: #777;
-
-
-
-    font-size: 12px;
-
-
-
-}
-
-
-
-
-
-
-
-.book-owner {
-
-
-
-    color: #aaa;
-
-
-
-    font-size: 9px;
-
-
-
-    font-style: italic;
-
-
-
-    margin-top: 25px;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* COMMENT ÇA MARCHE */
-
-
-
-
-
-
-
-.how-it-works {
-
-
-
-    background-color: #f5f3ef;
-
-
-
-    padding: 80px 0;
-
-
-
-}
-
-
-
-
-
-
-
-.how-it-works h2 {
-
-
-
-    margin-bottom: 15px;
-
-
-
-}
-
-
-
-
-
-
-
-.section-description {
-
-
-
-    text-align: center;
-
-
-
-    max-width: 400px;
-
-
-
-    margin: 0 auto 45px;
-
-
-
-    font-size: 13px;
-
-
-
-}
-
-
-
-
-
-
-
-.how-it-works .row {
-
-
-
-    max-width: 1000px;
-
-
-
-    margin: 0 auto 45px;
-
-
-
-}
-
-
-
-
-
-
-
-.step-card {
-
-
-
-    height: 130px;
-
-
-
-    background-color: white;
-
-
-
-    border-radius: 10px;
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    text-align: center;
-
-
-
-    font-size: 12px;
-
-
-
-    padding: 20px;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* BANNIERE */
-
-
-
-
-
-
-
-.home-banner {
-
-
-
-    width: 1440px;
-
-
-
-    max-width: 100%;
-
-
-
-    height: 220px;
-
-
-
-    margin: 0 auto;
-
-
-
-    overflow: hidden;
-
-
-
-}
-
-
-
-
-
-
-
-.home-banner img {
-
-
-
-    display: block;
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* NOS VALEURS */
-
-
-
-
-
-
-
-.our-values {
-
-
-
-    background-color: #f5f3ef;
-
-
-
-    padding: 80px 0 110px;
-
-
-
-}
-
-
-
-
-
-
-
-.values-content {
-
-
-
-    width: 330px;
-
-
-
-    margin: auto;
-
-
-
-    position: relative;
-
-
-
-}
-
-
-
-
-
-
-
-.values-content h2 {
-
-
-
-    font-size: 28px;
-
-
-
-    margin-bottom: 30px;
-
-
-
-}
-
-
-
-
-
-
-
-.values-content p {
-
-
-
-    font-size: 13px;
-
-
-
-    line-height: 1.25;
-
-
-
-}
-
-
-
-
-
-
-
-.team {
-
-
-
-    display: block;
-
-
-
-    color: #aaa;
-
-
-
-    font-size: 10px;
-
-
-
-    margin-top: 35px;
-
-
-
-    font-style: italic;
-
-
-
-}
-
-
-
-
-
-
-
-.heart {
-
-
-
-    color: #00ac66;
-
-
-
-    font-size: 90px;
-
-
-
-    text-align: right;
-
-
-
-    line-height: 1;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
+/* CARTES LIVRES - styles partages avec le catalogue */
+.book-card { background-color: #fff; border-radius: 0 0 5px 5px; overflow: hidden; }
+.book-image { width: 100%; height: 230px; object-fit: cover; }
+.book-image-empty { background-color: #eee; display: flex; align-items: center; justify-content: center; color: #777; }
+.book-information { padding: 15px; }
+.book-information h2, .book-information h3 { font-family: Arial, sans-serif; font-size: 15px; margin-bottom: 10px; }
+.book-author { color: #777; font-size: 12px; }
+.book-owner { color: #aaa; font-size: 9px; font-style: italic; margin-top: 25px; }
 
 /* PAGE NOS LIVRES */
 
-
-
-
-
-
-
 .books-page {
 
-
-
     min-height: 750px;
-
-
 
     padding: 80px 0 120px;
 
-
-
     background-color: #f5f3ef;
 
-
-
 }
-
-
-
-
-
-
 
 .books-page .container {
 
-
-
     max-width: 1000px;
-
-
 
 }
 
-
-
-
-
-
-
 .books-header {
-
-
 
     margin-bottom: 60px;
 
-
-
 }
-
-
-
-
-
-
 
 .books-header h1 {
 
-
-
     font-size: 32px;
-
-
 
     margin-bottom: 35px;
 
-
-
 }
-
-
-
-
-
-
 
 .book-search-form {
 
-
-
     width: 320px;
 
-
-
 }
-
-
-
-
-
-
-
-.book-search-input {
-
-
-
-    width: 100%;
-
-
-
-    height: 50px;
-
-
-
-    padding: 0 20px;
-
-
-
-    border: 1px solid #ddd;
-
-
-
-    border-radius: 6px;
-
-
-
-    background-color: white;
-
-
-
-    font-size: 13px;
-
-
-
-    outline: none;
-
-
-
-}
-
-
-
-
-
-
 
 .book-search-input:focus {
 
-
-
     border-color: #00ac66;
 
-
-
 }
-
-
-
-
-
-
 
 .books-grid {
 
-
-
     row-gap: 35px;
 
-
-
 }
-
-
-
-
-
-
 
 .books-grid .book-card {
 
-
-
     height: 100%;
 
-
-
 }
-
-
-
-
-
-
 
 .no-books {
 
-
-
     padding: 40px 0;
-
-
 
     color: #777;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 
-
-
-
-
-
-
 .main-footer {
 
-
-
     background-color: white;
-
-
 
     padding: 25px 0;
 
-
-
 }
-
-
-
-
-
-
 
 .main-footer .container {
 
-
-
     gap: 40px;
 
-
-
 }
-
-
-
-
-
-
 
 .main-footer a,
 
-
-
 .main-footer span {
-
-
 
     color: #555;
 
-
-
     text-decoration: none;
-
-
 
     font-size: 10px;
 
-
-
 }
-
-
-
-
-
-
 
 .footer-logo {
 
-
-
     color: #00ac66 !important;
 
-
-
     font-family: Georgia, serif;
-
-
 
     font-size: 20px !important;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* LIEN CARTE LIVRE */
 
-
-
-
-
-
-
 .book-link {
-
-
 
     display: block;
 
-
-
     color: inherit;
-
-
 
     text-decoration: none;
 
-
-
     height: 100%;
 
-
-
 }
-
-
-
-
-
-
 
 .book-link:hover {
 
-
-
     color: inherit;
 
-
-
 }
-
-
-
-
-
-
 
 .book-link:hover .book-card {
 
-
-
     transform: translateY(-3px);
 
-
-
 }
-
-
-
-
-
-
 
 .book-card {
 
-
-
     transition: transform 0.2s ease;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* DETAIL LIVRE */
 
-
-
-
-
-
-
 .book-detail {
-
-
-
-    display: flex;
-
-
 
     min-height: 750px;
 
-
-
     background-color: #f5f3ef;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-image {
 
-
-
-    width: 50%;
-
-
-
     min-height: 750px;
-
-
 
     background-color: #eee;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-image img {
 
-
-
     width: 100%;
 
-
-
     height: 100%;
-
-
 
     min-height: 750px;
 
-
-
     object-fit: cover;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-no-image {
 
-
-
     width: 100%;
-
-
 
     height: 750px;
 
-
-
     display: flex;
-
-
 
     justify-content: center;
 
-
-
     align-items: center;
-
-
 
     color: #777;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-content {
 
-
-
-    width: 50%;
-
-
-
     padding: 80px;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-inner {
 
-
-
     max-width: 450px;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-inner h1 {
 
-
-
     font-size: 36px;
-
-
 
     margin-bottom: 10px;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-author {
 
-
-
     color: #777;
-
-
 
     font-size: 14px;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-inner hr {
 
-
-
     width: 30px;
-
-
 
     margin: 35px 0;
 
-
-
 }
-
-
-
-
-
-
 
 .book-detail-inner h2 {
 
-
-
     font-family: Arial, sans-serif;
-
-
 
     text-transform: uppercase;
 
-
-
     font-size: 10px;
 
-
-
     font-weight: 600;
-
-
 
     letter-spacing: 1px;
 
-
-
     margin: 30px 0 15px;
 
-
-
 }
-
-
-
-
-
-
 
 .book-description {
 
-
-
     font-size: 14px;
-
-
 
     line-height: 1.6;
 
-
-
 }
-
-
-
-
-
-
 
 .book-owner-profile {
 
-
-
     display: inline-block;
-
-
 
     color: #292929;
 
-
-
     text-decoration: none;
 
-
-
     background-color: white;
-
-
 
     padding: 12px 18px;
 
-
-
-    border-radius: 30px;
-
-
+    border-radius: 5px;
 
 }
-
-
-
-
-
-
 
 .book-owner-profile:hover {
 
-
-
     color: #00ac66;
 
-
-
 }
-
-
-
-
-
-
 
 .book-message-button {
 
-
-
     display: block;
-
-
 
     width: 100%;
 
-
-
     text-align: center;
-
-
 
     margin-top: 50px;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* 404 */
 
-
-
-
-
-
-
 .error-page {
 
-
-
-    min-height: 700px;
-
-
+    min-height: calc(100vh - 80px);
 
     text-align: center;
 
-
-
-    padding-top: 150px;
-
-
+    padding: 205px 20px 80px;
 
     background-color: #f5f3ef;
 
-
-
 }
-
-
-
-
-
-
 
 .error-page h1 {
 
-
-
-    font-size: 70px;
-
-
+    font-size: 90px;
 
     margin-bottom: 20px;
 
-
-
 }
-
-
-
-
-
-
 
 .error-page p {
 
-
-
-    margin-bottom: 40px;
-
-
+    margin-bottom: 48px;
 
 }
 
+@media (max-width: 767.98px) {
+    .error-page {
+        padding: 210px 16px 80px;
+    }
 
+    .error-page h1 {
+        font-size: 90px;
+    }
 
-
-
-
-
-
-
-
+    .error-page p {
+        font-size: 18px;
+        margin-bottom: 48px;
+    }
+}
 
 /* RECHERCHE */
 
-
-
-
-
-
-
 .books-header {
 
-
-
-    display: flex;
-
-
-
-    flex-direction: row;
-
-
-
-    justify-content: space-between;
-
-
-
+    /* Disposition responsive geree par Bootstrap. */
 }
-
-
-
-
-
-
 
 .search-wrapper {
 
-
-
     position: relative;
 
-
-
 }
-
-
-
-
-
-
 
 .search-icon {
 
-
-
     position: absolute;
 
-
-
-    left: 16px;
-
-
+    left: 13px;
 
     top: 50%;
 
-
-
     transform: translateY(-50%);
-
-
 
     color: #8f8f8f;
 
-
-
-    font-size: 14px;
-
-
+    font-size: 13px;
 
     pointer-events: none;
 
-
-
 }
-
-
-
-
-
-
 
 .book-search-input {
-
-
-
     width: 100%;
-
-
-
     height: 50px;
-
-
-
-    padding: 0 20px 0 45px;
-
-
-
-    border: 1px solid #ddd;
-
-
-
+    padding: 0 16px 0 40px;
+    border: 1px solid #f0f0f0;
     border-radius: 6px;
-
-
-
-    background-color: white;
-
-
-
-    font-size: 13px;
-
-
-
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
     outline: none;
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
+.book-search-input::placeholder {
+    color: #a6a6a6;
+    opacity: 1;
+}
 
 /* =========================
-
-
 
    INSCRIPTION / CONNEXION
 
-
-
    ========================= */
-
-
-
-
-
-
 
 .auth-page {
 
-
-
     background-color: #f5f3ef;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-content {
 
-
-
     display: flex;
 
-
-
     width: 100%;
-
-
 
     max-width: 1320px;
 
-
-
-    height: 478px;
-
-
+    min-height: 478px;
 
     margin: 0 auto;
 
-
-
     background-color: white;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* FORMULAIRE */
 
-
-
-
-
-
-
 .auth-form {
-
-
-
-    width: 60%;
-
-
 
     padding: 65px 50px 70px 100px;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form h1 {
 
-
-
     margin: 0 0 40px;
-
-
 
     font-family: Georgia, serif;
 
-
-
     font-size: 32px;
-
-
 
     font-weight: 400;
 
-
-
     text-decoration: none;
-
-
 
     color: #292929;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form form {
 
-
-
     width: 260px;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form .form-group {
 
-
-
     margin-bottom: 24px;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form label {
 
-
-
     display: block;
-
-
 
     margin-bottom: 8px;
 
-
-
     font-size: 12px;
-
-
 
     color: #999999;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form input {
 
-
-
     width: 260px;
-
-
 
     height: 40px;
 
-
-
     padding: 8px 10px;
-
-
 
     border: none;
 
-
-
     border-radius: 4px;
-
-
 
     background-color: #f5f5f5;
 
-
-
     font-size: 13px;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form input:focus {
 
-
-
     outline: 1px solid #00ac66;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form .btn-tomtroc {
 
-
-
     width: 260px;
-
-
 
     height: 46px;
 
-
-
     margin-top: 5px;
-
-
 
     padding: 0;
 
-
-
     border: none;
-
-
 
     border-radius: 5px;
 
-
-
     background-color: #00ac66;
 
-
-
     color: white;
-
-
 
     font-size: 13px;
 
-
-
     font-weight: 600;
-
-
 
     cursor: pointer;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form .btn-tomtroc:hover {
 
-
-
     opacity: 0.9;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-link {
 
-
-
     margin-top: 25px;
-
-
 
     font-size: 12px;
 
-
-
     color: #292929;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-link a {
 
-
-
     color: #292929;
-
-
 
     text-decoration: underline;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* IMAGE */
 
-
-
-
-
-
-
 .auth-image {
-
-
-
-    width: 40%;
-
-
-
-    height: 478px;
-
-
 
     overflow: hidden;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-image img {
 
-
-
     display: block;
-
-
 
     width: 100%;
 
-
-
     height: 100%;
-
-
 
     object-fit: cover;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* MESSAGES D'ERREUR */
 
-
-
-
-
-
-
 .auth-form .alert {
-
-
 
     width: 260px;
 
-
-
     margin-bottom: 20px;
-
-
 
     padding: 10px;
 
-
-
     font-size: 12px;
 
-
-
 }
-
-
-
-
-
-
 
 .auth-form .alert ul {
 
-
-
     margin: 0;
-
-
 
     padding-left: 18px;
 
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
 /* =========================
-
-
 
    RESPONSIVE
 
-
-
    ========================= */
 
-
-
-
-
-
-
 @media (max-width: 768px) {
-
-
-
-
-
-
 
     .auth-content {
 
-
-
         height: auto;
-
-
 
         flex-direction: column;
 
-
-
     }
-
-
-
-
-
-
 
     .auth-form {
 
-
-
         width: 100%;
-
-
 
         padding: 50px 30px;
 
-
-
     }
-
-
-
-
-
-
 
     .auth-form form {
 
-
-
         width: 100%;
 
-
-
     }
-
-
-
-
-
-
 
     .auth-form input,
 
-
-
     .auth-form .btn-tomtroc {
-
-
 
         width: 100%;
 
-
-
     }
-
-
-
-
-
-
 
     .auth-image {
 
-
-
         width: 100%;
-
-
 
         height: 350px;
 
-
-
     }
 
-
-
 }
-
-
-
-
-
-
 
 .account-page {
 
-
-
     background-color: #f5f3ef;
 
-
-
     min-height: 650px;
-
-
 
     padding: 50px 0 80px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-title {
 
-
-
     margin: 0 0 35px;
 
-
-
     font-family: Georgia, serif;
-
-
 
     font-size: 26px;
 
-
-
     font-weight: 400;
-
-
 
     color: #292929;
 
-
-
 }
-
-
-
-
-
-
 
 .account-top {
 
-
-
     display: flex;
-
-
 
     gap: 20px;
 
-
-
 }
-
-
-
-
-
-
 
 /* Profil */
 
-
-
-
-
-
-
 .account-profile {
-
-
 
     width: 50%;
 
-
-
     min-height: 275px;
-
-
 
     padding: 25px;
 
-
-
     background-color: #ffffff;
 
-
-
-    border-radius: 12px;
-
-
+    border-radius: 5px;
 
     text-align: center;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-picture {
 
-
-
     width: 90px;
 
-
-
     height: 90px;
-
-
 
     margin: 0 auto 5px;
 
-
-
     overflow: hidden;
-
-
 
     border-radius: 50%;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-picture img {
 
-
-
     width: 100%;
-
-
 
     height: 100%;
 
-
-
     object-fit: cover;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-placeholder {
 
-
-
     display: flex;
-
-
 
     align-items: center;
 
-
-
     justify-content: center;
-
-
 
     width: 100%;
 
-
-
     height: 100%;
-
-
 
     background-color: #00ac66;
 
-
-
     color: white;
-
-
 
     font-family: Georgia, serif;
 
-
-
     font-size: 32px;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-edit {
 
-
-
     color: #999999;
-
-
 
     font-size: 11px;
 
-
-
     text-decoration: underline;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-separator {
 
-
-
     width: 130px;
 
-
-
     height: 1px;
-
-
 
     margin: 25px auto;
 
-
-
     background-color: #eeeeee;
 
-
-
 }
-
-
-
-
-
-
 
 .account-profile h2 {
 
-
-
     margin: 0;
-
-
 
     font-family: Georgia, serif;
 
-
-
     font-size: 16px;
-
-
 
     font-weight: 400;
 
-
-
     color: #292929;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-date {
 
-
-
     margin: 5px 0 18px;
-
-
 
     color: #999999;
 
-
-
     font-size: 10px;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-library-title {
 
-
-
     margin: 0 0 5px;
-
-
 
     color: #999999;
 
-
-
     font-size: 8px;
-
-
 
     font-weight: 600;
 
-
-
 }
-
-
-
-
-
-
 
 .profile-library {
 
-
-
     margin: 0;
-
-
 
     color: #292929;
 
-
-
     font-size: 11px;
 
-
-
 }
-
-
-
-
-
-
 
 /* Informations */
 
-
-
-
-
-
-
 .account-informations {
-
-
 
     width: 50%;
 
-
-
     min-height: 275px;
-
-
 
     padding: 25px 60px;
 
-
-
     background-color: #ffffff;
 
-
-
-    border-radius: 12px;
-
-
+    border-radius: 5px;
 
 }
-
-
-
-
-
-
 
 .account-informations h2 {
 
-
-
     margin: 0 0 20px;
-
-
 
     font-size: 12px;
 
-
-
     font-weight: 400;
-
-
 
     color: #292929;
 
-
-
 }
-
-
-
-
-
-
 
 .account-form-group {
 
-
-
     margin-bottom: 15px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-form-group label {
 
-
-
     display: block;
-
-
 
     margin-bottom: 5px;
 
-
-
     color: #999999;
-
-
 
     font-size: 9px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-form-group input {
 
-
-
     width: 100%;
-
-
 
     height: 28px;
 
-
-
     padding: 5px 10px;
-
-
 
     border: none;
 
-
-
     border-radius: 4px;
-
-
 
     background-color: #edf2f5;
 
-
-
     font-size: 10px;
-
-
 
     color: #292929;
 
-
-
 }
-
-
-
-
-
-
 
 .account-form-group input:focus {
 
-
-
     outline: 1px solid #00ac66;
 
-
-
 }
-
-
-
-
-
-
 
 .account-save {
 
-
-
     width: 82px;
-
-
 
     height: 35px;
 
-
-
     margin-top: 2px;
-
-
 
     border: 1px solid #00ac66;
 
-
-
     border-radius: 5px;
-
-
 
     background-color: white;
 
-
-
     color: #00ac66;
-
-
 
     font-size: 10px;
 
-
-
     cursor: pointer;
 
-
-
 }
-
-
-
-
-
-
 
 .account-save:hover {
 
-
-
     background-color: #00ac66;
-
-
 
     color: white;
 
-
-
 }
 
-
-
-
-
-
-
 @media (max-width: 768px) {
-
-
-
-
-
-
 
     .account-top {
 
-
-
         flex-direction: column;
 
-
-
     }
-
-
-
-
-
-
 
     .account-profile,
 
-
-
     .account-informations {
-
-
 
         width: 100%;
 
-
-
     }
 
-
-
-
-
-
-
     .account-informations {
-
-
 
         padding: 25px;
 
-
-
     }
 
-
-
 }
-
-
-
-
-
-
 
 .account-library {
 
-
-
     margin-top: 20px;
-
-
 
     padding: 25px;
 
-
-
     background-color: #ffffff;
 
-
-
-    border-radius: 12px;
-
-
+    border-radius: 5px;
 
 }
-
-
-
-
-
-
 
 .account-library-header {
 
-
-
     display: flex;
-
-
 
     align-items: center;
 
-
-
     justify-content: space-between;
-
-
 
     margin-bottom: 20px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-library-header h2 {
 
-
-
     margin: 0;
-
-
 
     font-family: Georgia, serif;
 
-
-
     font-size: 16px;
-
-
 
     font-weight: 400;
 
-
-
 }
-
-
-
-
-
-
 
 .account-library-header a {
 
-
-
     color: #00ac66;
-
-
 
     font-size: 11px;
 
-
-
     text-decoration: none;
 
-
-
 }
-
-
-
-
-
-
 
 .account-library-header a:hover {
 
-
-
     text-decoration: underline;
 
-
-
 }
-
-
-
-
-
-
 
 .account-library-empty {
 
-
-
     padding: 30px 0;
-
-
 
     text-align: center;
 
-
-
     color: #999999;
-
-
 
     font-size: 11px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-books-table {
 
-
-
     width: 100%;
 
-
-
 }
-
-
-
-
-
-
 
 .account-books-head,
 
-
-
 .account-book-row {
 
-
-
     display: grid;
-
-
 
     grid-template-columns: 2fr 1.2fr 2fr 1fr 1fr;
 
-
-
     gap: 15px;
-
-
 
     align-items: center;
 
-
-
 }
-
-
-
-
-
-
 
 .account-books-head {
 
-
-
     padding: 10px 0;
-
-
 
     border-bottom: 1px solid #eeeeee;
 
-
-
     color: #999999;
 
-
-
-    font-size: 9px;
-
-
+    
 
 }
-
-
-
-
-
-
 
 .account-book-row {
 
-
-
     min-height: 80px;
-
-
 
     padding: 12px 0;
 
-
-
     border-bottom: 1px solid #eeeeee;
-
-
 
     color: #292929;
 
-
-
     font-size: 10px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-book-info {
 
-
-
     display: flex;
 
-
-
     align-items: center;
-
-
 
     gap: 10px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-book-info img {
 
-
-
     width: 45px;
-
-
 
     height: 60px;
 
-
-
     object-fit: cover;
-
-
 
     border-radius: 3px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-book-info span {
 
-
-
     font-weight: 600;
 
-
-
 }
-
-
-
-
-
-
 
 .book-available {
 
-
-
     color: #00ac66;
 
-
-
 }
-
-
-
-
-
-
 
 .book-unavailable {
 
-
-
     color: #999999;
 
-
-
 }
-
-
-
-
-
-
 
 .account-book-actions {
 
-
-
     display: flex;
 
-
-
     flex-direction: column;
-
-
 
     gap: 5px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-book-actions a {
 
-
-
     color: #292929;
 
-
-
     font-size: 9px;
-
-
 
     text-decoration: underline;
 
-
-
 }
-
-
-
-
-
-
 
 .account-book-actions a:hover {
 
-
-
     color: #00ac66;
 
-
-
 }
-
-
-
-
-
-
 
 @media (max-width: 900px) {
 
-
-
-
-
-
-
     .account-books-head {
-
-
 
         display: none;
 
-
-
     }
-
-
-
-
-
-
 
     .account-book-row {
 
-
-
         display: flex;
 
-
-
         flex-direction: column;
-
-
 
         align-items: flex-start;
 
-
-
         gap: 10px;
-
-
 
         padding: 20px 0;
 
-
-
     }
-
-
-
-
-
-
 
     .account-book-info {
 
-
-
         width: 100%;
 
-
-
     }
-
-
-
-
-
-
 
     .account-book-actions {
 
-
-
         flex-direction: row;
-
-
 
     }
 
-
-
 }
-
-
-
-
-
-
 
 .account-alert {
 
-
-
     margin-bottom: 15px;
-
-
 
     padding: 8px 10px;
 
-
-
     font-size: 10px;
 
-
-
 }
-
-
-
-
-
-
 
 .account-alert ul {
 
-
-
     margin: 0;
-
-
 
     padding-left: 15px;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-page {
 
-
-
     background-color: #f7f6f3;
-
-
 
     min-height: 600px;
 
-
-
     padding: 70px 0 140px;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-content {
 
-
-
     display: flex;
-
-
 
     gap: 20px;
 
-
-
     align-items: stretch;
-
-
 
 }
 
-
-
-
-
-
-
 /* =========================
-
-
 
    PROFILE CARD
 
-
-
    ========================= */
-
-
-
-
-
-
 
 .public-profile-card {
 
-
-
     width: 230px;
 
-
-
     min-height: 390px;
-
-
 
     padding: 32px 25px;
 
-
-
     background-color: #ffffff;
 
-
-
-    border-radius: 12px;
-
-
+    border-radius: 5px;
 
     text-align: center;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-picture {
 
-
-
     width: 90px;
-
-
 
     height: 90px;
 
-
-
     margin: 0 auto;
-
-
 
     overflow: hidden;
 
-
-
     border-radius: 50%;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-picture img {
 
-
-
     width: 100%;
-
-
 
     height: 100%;
 
-
-
     object-fit: cover;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-placeholder {
 
-
-
     display: flex;
-
-
 
     align-items: center;
 
-
-
     justify-content: center;
-
-
 
     width: 100%;
 
-
-
     height: 100%;
-
-
 
     background-color: #00ac66;
 
-
-
     color: #ffffff;
 
-
-
     font-family: Georgia, serif;
-
-
 
     font-size: 32px;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-separator {
 
-
-
     width: 130px;
-
-
 
     height: 1px;
 
-
-
     margin: 42px auto 35px;
-
-
 
     background-color: #eeeeee;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-card h1 {
 
-
-
     margin: 0;
 
-
-
     font-family: Georgia, serif;
-
-
 
     font-size: 20px;
 
-
-
     font-weight: 400;
-
-
 
     color: #292929;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-date {
 
-
-
     margin: 8px 0 22px;
-
-
 
     color: #999999;
 
-
-
     font-size: 12px;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-library-title {
 
-
-
     margin: 0 0 7px;
-
-
 
     color: #999999;
 
-
-
     font-size: 9px;
-
-
 
     font-weight: 600;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-library {
 
-
-
     margin: 0;
-
-
 
     color: #292929;
 
-
-
     font-size: 12px;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-message {
 
-
-
     display: block;
-
-
 
     width: 145px;
 
-
-
     margin: 30px auto 0;
-
-
 
     padding: 12px 10px;
 
-
-
     border: 1px solid #00ac66;
 
-
-
     border-radius: 5px;
-
-
 
     color: #00ac66;
 
-
-
     font-size: 11px;
-
-
 
     font-weight: 600;
 
-
-
     text-decoration: none;
 
-
-
 }
-
-
-
-
-
-
 
 .public-profile-message:hover {
 
-
-
     background-color: #00ac66;
-
-
 
     color: #ffffff;
 
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
 /* =========================
-
-
 
    PROFILE BOOKS
 
-
-
    ========================= */
-
-
-
-
-
-
 
 .public-profile-books {
 
-
-
     flex: 1;
-
-
 
     min-height: 390px;
 
-
-
     overflow: hidden;
-
-
 
     background-color: #ffffff;
-
-
-
-    border-radius: 12px;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-books-header,
-
-
-
-.public-profile-book-row {
-
-
-
-    display: grid;
-
-
-
-    grid-template-columns: 90px 1fr 1fr 1.5fr;
-
-
-
-    column-gap: 20px;
-
-
-
-    align-items: center;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-books-header {
-
-
-
-    height: 40px;
-
-
-
-    padding: 0 25px;
-
-
-
-    border-bottom: 1px solid #eeeeee;
-
-
-
-    color: #292929;
-
-
-
-    font-size: 10px;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-row {
-
-
-
-    min-height: 88px;
-
-
-
-    padding: 12px 25px;
-
-
-
-    color: #292929;
-
-
-
-    font-size: 11px;
-
-
-
-    text-decoration: none;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-row:nth-child(odd) {
-
-
-
-    background-color: #edf4f7;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-row:hover {
-
-
-
-    color: #292929;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-image {
-
-
-
-    width: 54px;
-
-
-
-    height: 54px;
-
-
-
-    overflow: hidden;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-image img {
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-image span {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    color: #999999;
-
-
-
-    font-size: 9px;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-title,
-
-
-
-.public-profile-book-author {
-
-
-
-    color: #292929;
-
-
-
-    font-size: 11px;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-book-description {
-
-
-
-    color: #292929;
-
-
-
-    font-size: 10px;
-
-
-
-    font-style: italic;
-
-
-
-    line-height: 1.35;
-
-
-
-}
-
-
-
-
-
-
-
-.public-profile-no-books {
-
-
-
-    padding: 40px;
-
-
-
-    text-align: center;
-
-
-
-    color: #999999;
-
-
-
-    font-size: 12px;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-
-
-
-
-
-
-
-    .public-profile-content {
-
-
-
-        flex-direction: column;
-
-
-
-    }
-
-
-
-
-
-
-
-    .public-profile-card {
-
-
-
-        width: 100%;
-
-
-
-    }
-
-
-
-
-
-
-
-    .public-profile-books {
-
-
-
-        width: 100%;
-
-
-
-        overflow-x: auto;
-
-
-
-    }
-
-
-
-
-
-
-
-    .public-profile-books-header,
-
-
-
-    .public-profile-book-row {
-
-
-
-        min-width: 600px;
-
-
-
-    }
-
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-
-
-
-   MESSAGERIE
-
-
-
-   ========================= */
-
-
-
-
-
-
-
-.messages-page {
-
-
-
-    background-color: #f5f3ef;
-
-
-
-    min-height: 650px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-layout {
-
-
-
-    display: flex;
-
-
-
-    width: 100%;
-
-
-
-    max-width: 1140px;
-
-
-
-    min-height: 650px;
-
-
-
-    margin: 0 auto;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-
-
-
-   COLONNE GAUCHE
-
-
-
-   ========================= */
-
-
-
-
-
-
-
-.messages-sidebar {
-
-
-
-    width: 280px;
-
-
-
-    flex-shrink: 0;
-
-
-
-    background-color: #FAF9F7;
-
-
-
-    padding-top: 45px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-sidebar h1 {
-
-
-
-    margin: 0;
-
-
-
-    padding: 0 25px 25px;
-
-
-
-    font-family: Georgia, serif;
-
-
-
-    font-size: 22px;
-
-
-
-    font-weight: 400;
-
-
-
-    color: #292929;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversations {
-
-
-
-    width: 100%;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-item {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    gap: 12px;
-
-
-
-    width: 100%;
-
-
-
-    min-height: 75px;
-
-
-
-    padding: 12px 20px;
-
-
-
-    color: #292929;
-
-
-
-    text-decoration: none;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-item:hover {
-
-
-
-    color: #292929;
-
-
-
-    background-color: #f7f7f7;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-item.active {
-
-
-
-    background-color: #FFFFFF;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-picture {
-
-
-
-    width: 42px;
-
-
-
-    height: 42px;
-
-
-
-    flex-shrink: 0;
-
-
-
-    overflow: hidden;
-
-
-
-    border-radius: 50%;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-picture img {
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-placeholder {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    background-color: #00ac66;
-
-
-
-    color: #ffffff;
-
-
-
-    font-family: Georgia, serif;
-
-
-
-    font-size: 17px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-info {
-
-
-
-    flex: 1;
-
-
-
-    min-width: 0;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-top {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: space-between;
-
-
-
-    gap: 8px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-pseudo {
-
-
-
-    overflow: hidden;
-
-
-
-    color: #292929;
-
-
-
-    font-size: 11px;
-
-
-
-    text-overflow: ellipsis;
-
-
-
-    white-space: nowrap;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-time {
-
-
-
-    flex-shrink: 0;
-
-
-
-    color: #777777;
-
-
-
-    font-size: 9px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-preview {
-
-
-
-    margin-top: 5px;
-
-
-
-    overflow: hidden;
-
-
-
-    color: #999999;
-
-
-
-    font-size: 9px;
-
-
-
-    text-overflow: ellipsis;
-
-
-
-    white-space: nowrap;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-
-
-
-   CONVERSATION
-
-
-
-   ========================= */
-
-
-
-
-
-
-
-.messages-main {
-
-
-
-    display: flex;
-
-
-
-    flex: 1;
-
-
-
-    flex-direction: column;
-
-
-
-    min-width: 0;
-
-
-
-    padding: 45px 40px 35px;
-
-
-
-    background-color: #f5f3ef;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-header {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    gap: 12px;
-
-
-
-    height: 45px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-header-picture {
-
-
-
-    width: 38px;
-
-
-
-    height: 38px;
-
-
-
-    flex-shrink: 0;
-
-
-
-    overflow: hidden;
-
-
-
-    border-radius: 50%;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-header-picture img {
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-header-placeholder {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    background-color: #00ac66;
-
-
-
-    color: #ffffff;
-
-
-
-    font-family: Georgia, serif;
-
-
-
-    font-size: 16px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-header span {
-
-
-
-    color: #292929;
-
-
-
-    font-size: 12px;
-
-
-
-    font-weight: 600;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-
-
-
-   MESSAGES
-
-
-
-   ========================= */
-
-
-
-
-
-
-
-.messages-content {
-
-
-
-    display: flex;
-
-
-
-    flex: 1;
-
-
-
-    flex-direction: column;
-
-
-
-    justify-content: flex-end;
-
-
-
-    gap: 22px;
-
-
-
-    padding: 35px 0 25px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-empty {
-
-
-
-    margin: auto;
-
-
-
-    color: #999999;
-
-
-
-    font-size: 12px;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row {
-
-
-
-    display: flex;
-
-
-
-    flex-direction: column;
-
-
-
-    max-width: 65%;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-received {
-
-
-
-    align-self: flex-start;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-sent {
-
-
-
-    align-self: flex-end;
-
-
-
-}
-
-
-
-
-
-
-
-.message-meta {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    gap: 6px;
-
-
-
-    margin-bottom: 5px;
-
-
-
-    color: #999999;
-
-
-
-    font-size: 8px;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-sent .message-meta {
-
-
-
-    justify-content: flex-end;
-
-
-
-}
-
-
-
-
-
-
-
-.message-small-picture {
-
-
-
-    width: 18px;
-
-
-
-    height: 18px;
-
-
-
-    overflow: hidden;
-
-
-
-    border-radius: 50%;
-
-
-
-}
-
-
-
-
-
-
-
-.message-small-picture img {
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    object-fit: cover;
-
-
-
-}
-
-
-
-
-
-
-
-.message-small-placeholder {
-
-
-
-    display: flex;
-
-
-
-    align-items: center;
-
-
-
-    justify-content: center;
-
-
-
-    width: 100%;
-
-
-
-    height: 100%;
-
-
-
-    background-color: #00ac66;
-
-
-
-    color: #ffffff;
-
-
-
-    font-size: 8px;
-
-
-
-}
-
-
-
-
-
-
-
-.message-bubble {
-
-
-
-    padding: 10px 14px;
-
-
-
-    border-radius: 3px;
-
-
-
-    color: #292929;
-
-
-
-    font-size: 12px;
-
-
-
-    line-height: 1.4;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-received .message-bubble {
-
-
-
-    background-color: #ffffff;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-sent .message-bubble {
-
-
-
-    background-color: #FFFFFF;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-
-
-
-   ERREURS
-
-
-
-   ========================= */
-
-
-
-
-
-
-
-.messages-errors {
-
-
-
-    margin-top: 15px;
-
-
-
-    padding: 10px;
-
-
-
-    border-radius: 4px;
-
-
-
-    background-color: #ffffff;
-
-
-
-    color: #b00020;
-
-
-
-    font-size: 11px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-errors p {
-
-
-
-    margin: 0;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-
-
-
-   FORMULAIRE
-
-
-
-   ========================= */
-
-
-
-
-
-
-
-.messages-form {
-
-
-
-    display: flex;
-
-
-
-    gap: 15px;
-
-
-
-    width: 100%;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-form input {
-
-
-
-    flex: 1;
-
-
-
-    height: 45px;
-
-
-
-    padding: 0 18px;
-
-
-
-    border: 1px solid #f0f0f0;
-
-
 
     border-radius: 5px;
 
-
-
-    background-color: #ffffff;
-
-
-
-    color: #292929;
-
-
-
-    font-size: 11px;
-
-
-
-    outline: none;
-
-
-
 }
 
+.public-profile-books-header,
 
+.public-profile-book-row {
 
+    display: grid;
 
+    grid-template-columns: 90px 1fr 1fr 1.5fr;
 
-
-
-.messages-form input::placeholder {
-
-
-
-    color: #aaaaaa;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-form input:focus {
-
-
-
-    border-color: #00ac66;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-form button {
-
-
-
-    width: 120px;
-
-
-
-    height: 45px;
-
-
-
-    border: none;
-
-
-
-    border-radius: 16px;
-
-
-
-    background-color: #00ac66;
-
-
-
-    color: #ffffff;
-
-
-
-    font-size: 11px;
-
-
-
-    font-weight: 600;
-
-
-
-    cursor: pointer;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-form button:hover {
-
-
-
-    opacity: 0.9;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-
-
-
-   RESPONSIVE MESSAGERIE
-
-
-
-   ========================= */
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-
-
-
-
-
-
-
-    .messages-layout {
-
-
-
-        flex-direction: column;
-
-
-
-    }
-
-
-
-
-
-
-
-    .messages-sidebar {
-
-
-
-        width: 100%;
-
-
-
-        padding-top: 30px;
-
-
-
-    }
-
-
-
-
-
-
-
-    .messages-conversations {
-
-
-
-        display: flex;
-
-
-
-        overflow-x: auto;
-
-
-
-    }
-
-
-
-
-
-
-
-    .messages-conversation-item {
-
-
-
-        width: 220px;
-
-
-
-        flex-shrink: 0;
-
-
-
-    }
-
-
-
-
-
-
-
-    .messages-main {
-
-
-
-        min-height: 550px;
-
-
-
-        padding: 30px 20px;
-
-
-
-    }
-
-
-
-
-
-
-
-    .message-row {
-
-
-
-        max-width: 85%;
-
-
-
-    }
-
-
-
-
-
-
-
-    .messages-form {
-
-
-
-        gap: 8px;
-
-
-
-    }
-
-
-
-
-
-
-
-    .messages-form button {
-
-
-
-        width: 90px;
-
-
-
-    }
-
-
-
-}
-
-
-
-
-
-
-
-.messages-layout {
-
-
-
-    max-width: 1100px;
-
-
-
-    min-height: 620px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-sidebar {
-
-
-
-    width: 260px;
-
-
-
-    padding-top: 50px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-sidebar h1 {
-
-
-
-    padding: 0 30px 30px;
-
-
-
-    font-size: 22px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-item {
-
-
-
-    min-height: 72px;
-
-
-
-    padding: 12px 28px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-conversation-picture {
-
-
-
-    width: 38px;
-
-
-
-    height: 38px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-main {
-
-
-
-    min-height: 620px;
-
-
-
-    padding: 50px 40px 35px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-header {
-
-
-
-    height: 40px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-header-picture {
-
-
-
-    width: 36px;
-
-
-
-    height: 36px;
-
-
-
-}
-
-
-
-
-
-
-
-.messages-content {
-
-
-
-    padding: 40px 0 30px;
-
-
-
-    gap: 25px;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Bulles plus proches de la maquette */
-
-
-
-
-
-
-
-.message-row {
-
-
-
-    width: 100%;
-
-
-
-    max-width: 100%;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-received {
-
-
-
-    align-items: flex-start;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-sent {
-
-
-
-    align-items: flex-end;
-
-
-
-}
-
-
-
-
-
-
-
-.message-bubble {
-
-
-
-    min-width: 220px;
-
-
-
-    max-width: 420px;
-
-
-
-    padding: 12px 16px;
-
-
-
-    font-size: 10px;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-received .message-meta {
-
-
-
-    width: 420px;
-
-
-
-    justify-content: flex-start;
-
-
-
-}
-
-
-
-
-
-
-
-.message-row-sent .message-meta {
-
-
-
-    width: 420px;
-
-
-
-    justify-content: flex-end;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Formulaire */
-
-
-
-
-
-
-
-.messages-form {
-
-
+    column-gap: 20px;
 
     align-items: center;
 
+}
 
+.public-profile-books-header {
+
+    height: 40px;
+
+    padding: 0 25px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #292929;
+
+    font-size: 10px;
 
 }
 
+.public-profile-book-row {
 
+    min-height: 88px;
 
+    padding: 12px 25px;
 
+    color: #292929;
 
+    font-size: 11px;
 
+    text-decoration: none;
+
+}
+
+.public-profile-book-row:nth-child(odd) {
+
+    background-color: #edf4f7;
+
+}
+
+.public-profile-book-row:hover {
+
+    color: #292929;
+
+}
+
+.public-profile-book-image {
+
+    width: 54px;
+
+    height: 54px;
+
+    overflow: hidden;
+
+}
+
+.public-profile-book-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.public-profile-book-image span {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100%;
+
+    color: #999999;
+
+    font-size: 9px;
+
+}
+
+.public-profile-book-title,
+
+.public-profile-book-author {
+
+    color: #292929;
+
+    font-size: 11px;
+
+}
+
+.public-profile-book-description {
+
+    color: #292929;
+
+    font-size: 10px;
+
+    font-style: italic;
+
+    line-height: 1.35;
+
+}
+
+.public-profile-no-books {
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: #999999;
+
+    font-size: 12px;
+
+}
+
+@media (max-width: 768px) {
+
+    .public-profile-content {
+
+        flex-direction: column;
+
+    }
+
+    .public-profile-card {
+
+        width: 100%;
+
+    }
+
+    .public-profile-books {
+
+        width: 100%;
+
+        overflow-x: auto;
+
+    }
+
+    .public-profile-books-header,
+
+    .public-profile-book-row {
+
+        min-width: 600px;
+
+    }
+
+}
+
+/* =========================
+
+   MESSAGERIE
+
+   ========================= */
+
+.messages-page {
+
+    background-color: #f5f3ef;
+
+    min-height: 650px;
+
+}
+
+.messages-layout {
+
+    display: flex;
+
+    
+
+    
+
+    min-height: 650px;
+
+    margin: 0 auto;
+
+}
+
+/* =========================
+
+   COLONNE GAUCHE
+
+   ========================= */
+
+.messages-sidebar {
+
+    width: 280px;
+
+    flex-shrink: 0;
+
+    background-color: #FAF9F7;
+
+    padding-top: 45px;
+
+}
+
+.messages-sidebar h1 {
+
+    margin: 0;
+
+    padding: 0 25px 25px;
+
+    font-family: Georgia, serif;
+
+    
+
+    font-weight: 400;
+
+    color: #292929;
+
+}
+
+.messages-conversations {
+
+    width: 100%;
+
+}
+
+.messages-conversation-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    min-height: 75px;
+
+    padding: 12px 20px;
+
+    color: #292929;
+
+    text-decoration: none;
+
+}
+
+.messages-conversation-item:hover {
+
+    color: #292929;
+
+    background-color: #f7f7f7;
+
+}
+
+.messages-conversation-item.active {
+
+    background-color: #FFFFFF;
+
+}
+
+.messages-conversation-picture {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+}
+
+.messages-conversation-picture img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.messages-conversation-placeholder {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #00ac66;
+
+    color: #ffffff;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+}
+
+.messages-conversation-info {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+.messages-conversation-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+}
+
+.messages-conversation-pseudo {
+
+    overflow: hidden;
+
+    color: #292929;
+
+    font-size: 11px;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+.messages-conversation-time {
+
+    flex-shrink: 0;
+
+    color: #777777;
+
+    font-size: 9px;
+
+}
+
+.messages-conversation-preview {
+
+    margin-top: 5px;
+
+    overflow: hidden;
+
+    color: #999999;
+
+    font-size: 9px;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+/* =========================
+
+   CONVERSATION
+
+   ========================= */
+
+.messages-main {
+
+    
+
+    flex: 1;
+
+    
+
+    min-width: 0;
+
+    padding: 45px 40px 35px;
+
+    background-color: #f5f3ef;
+
+}
+
+.messages-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    height: 45px;
+
+}
+
+.messages-header-picture {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+}
+
+.messages-header-picture img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.messages-header-placeholder {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #00ac66;
+
+    color: #ffffff;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+}
+
+.messages-header span {
+
+    color: #292929;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+/* =========================
+
+   MESSAGES
+
+   ========================= */
+
+.messages-content {
+
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    
+
+    padding: 35px 0 25px;
+
+}
+
+.messages-empty {
+
+    margin: auto;
+
+    color: #999999;
+
+    font-size: 12px;
+
+}
+
+.message-row {
+
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: 65%;
+
+}
+
+.message-row-received {
+
+    align-self: flex-start;
+
+}
+
+.message-row-sent {
+
+    align-self: flex-end;
+
+}
+
+.message-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-bottom: 5px;
+
+    color: #999999;
+
+    font-size: 8px;
+
+}
+
+.message-row-sent .message-meta {
+
+    
+
+}
+
+.message-small-picture {
+
+    width: 18px;
+
+    height: 18px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+}
+
+.message-small-picture img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.message-small-placeholder {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #00ac66;
+
+    color: #ffffff;
+
+    font-size: 8px;
+
+}
+
+.message-bubble {
+
+    padding: 10px 14px;
+
+    border-radius: 3px;
+
+    color: #292929;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+}
+
+.message-row-received .message-bubble {
+
+    
+
+}
+
+.message-row-sent .message-bubble {
+
+    background-color: #FFFFFF;
+
+}
+
+/* =========================
+
+   ERREURS
+
+   ========================= */
+
+.messages-errors {
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    border-radius: 4px;
+
+    background-color: #ffffff;
+
+    color: #b00020;
+
+    font-size: 11px;
+
+}
+
+.messages-errors p {
+
+    margin: 0;
+
+}
+
+/* =========================
+
+   FORMULAIRE
+
+   ========================= */
+
+.messages-form {
+
+    display: flex;
+
+    gap: 15px;
+
+    width: 100%;
+
+}
 
 .messages-form input {
 
+    flex: 1;
 
+    height: 45px;
 
-    height: 42px;
+    padding: 0 18px;
 
+    border: 1px solid #f0f0f0;
 
+    border-radius: 5px;
+
+    background-color: #ffffff;
+
+    color: #292929;
+
+    font-size: 11px;
+
+    outline: none;
 
 }
 
+.messages-form input::placeholder {
 
+    color: #aaaaaa;
 
+}
 
+.messages-form input:focus {
 
+    border-color: #00ac66;
 
+}
 
 .messages-form button {
 
+    width: 120px;
 
+    height: 45px;
 
-    width: 110px;
+    border: none;
 
+    border-radius: 5px;
 
+    background-color: #00ac66;
 
-    height: 42px;
+    color: #ffffff;
 
+    font-size: 11px;
 
+    font-weight: 600;
+
+    cursor: pointer;
 
 }
 
+.messages-form button:hover {
 
+    opacity: 0.9;
+
+}
+
+/* =========================
+
+   RESPONSIVE MESSAGERIE
+
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .messages-layout {
+
+        flex-direction: column;
+
+    }
+
+    .messages-sidebar {
+
+        width: 100%;
+
+        padding-top: 30px;
+
+    }
+
+    .messages-conversations {
+
+        display: flex;
+
+        overflow-x: auto;
+
+    }
+
+    .messages-conversation-item {
+
+        width: 220px;
+
+        flex-shrink: 0;
+
+    }
+
+    .messages-main {
+
+        min-height: 550px;
+
+        padding: 30px 20px;
+
+    }
+
+    .message-row {
+
+        max-width: 85%;
+
+    }
+
+    .messages-form {
+
+        gap: 8px;
+
+    }
+
+    .messages-form button {
+
+        width: 90px;
+
+    }
+
+}
+
+.messages-layout {
+
+    max-width: 1100px;
+
+    min-height: 620px;
+
+}
+
+.messages-sidebar {
+
+    
+
+    padding-top: 50px;
+
+}
+
+.messages-sidebar h1 {
+
+    padding: 0 30px 30px;
+
+    font-size: 22px;
+
+}
+
+.messages-conversation-item {
+
+    min-height: 72px;
+
+    padding: 12px 28px;
+
+}
+
+.messages-conversation-picture {
+
+    width: 38px;
+
+    height: 38px;
+
+}
+
+.messages-main {
+
+    min-height: 620px;
+
+    padding: 50px 40px 35px;
+
+}
+
+.messages-header {
+
+    height: 40px;
+
+}
+
+.messages-header-picture {
+
+    width: 36px;
+
+    height: 36px;
+
+}
+
+.messages-content {
+
+    padding: 40px 0 30px;
+
+    gap: 25px;
+
+}
+
+/* Bulles plus proches de la maquette */
+
+.message-row {
+
+    width: 100%;
+
+    max-width: 100%;
+
+}
+
+.message-row-received {
+
+    
+
+}
+
+.message-row-sent {
+
+    
+
+}
+
+.message-bubble {
+
+    min-width: 220px;
+
+    max-width: 420px;
+
+    padding: 12px 16px;
+
+    font-size: 10px;
+
+}
+
+.message-row-received .message-meta {
+
+    width: 420px;
+
+    
+
+}
+
+.message-row-sent .message-meta {
+
+    width: 420px;
+
+    
+
+}
+
+/* Formulaire */
+
+.messages-form {
+
+    align-items: center;
+
+}
+
+.messages-form input {
+
+    height: 42px;
+
+}
+
+.messages-form button {
+
+    width: 110px;
+
+    height: 42px;
+
+}
 
 /* =====================================================
 
@@ -6756,15 +2408,11 @@ h2 {
 
    ===================================================== */
 
-
-
 .account-library-header {
 
     gap: 20px;
 
 }
-
-
 
 .account-library-header .account-add-book {
 
@@ -6796,8 +2444,6 @@ h2 {
 
 }
 
-
-
 .account-library-header .account-add-book:hover {
 
     background-color: #008f55;
@@ -6810,15 +2456,11 @@ h2 {
 
 }
 
-
-
 /* =====================================================
 
    AJOUT D'UN LIVRE - FORMULAIRE
 
    ===================================================== */
-
-
 
 .book-form-page {
 
@@ -6830,15 +2472,11 @@ h2 {
 
 }
 
-
-
 .book-form-page .container {
 
     max-width: 1120px;
 
 }
-
-
 
 .book-form-back {
 
@@ -6854,15 +2492,11 @@ h2 {
 
 }
 
-
-
 .book-form-back:hover {
 
     color: #00ac66;
 
 }
-
-
 
 .book-form-title {
 
@@ -6878,19 +2512,15 @@ h2 {
 
 }
 
-
-
 .book-form-container {
 
     padding: 45px;
 
-    border-radius: 12px;
+    border-radius: 5px;
 
     background-color: #ffffff;
 
 }
-
-
 
 .book-form-container > .alert {
 
@@ -6900,15 +2530,11 @@ h2 {
 
 }
 
-
-
 .book-form-container > .alert ul {
 
     margin-bottom: 0;
 
 }
-
-
 
 .book-form {
 
@@ -6921,8 +2547,6 @@ h2 {
     align-items: start;
 
 }
-
-
 
 .book-form-photo > label:first-child,
 
@@ -6937,8 +2561,6 @@ h2 {
     font-size: 12px;
 
 }
-
-
 
 .book-form-photo-placeholder {
 
@@ -6966,15 +2588,11 @@ h2 {
 
 }
 
-
-
 .book-form-photo-placeholder i {
 
     font-size: 48px;
 
 }
-
-
 
 .book-form-photo-placeholder p {
 
@@ -6983,8 +2601,6 @@ h2 {
     font-size: 13px;
 
 }
-
-
 
 .book-form-photo-link {
 
@@ -7004,15 +2620,11 @@ h2 {
 
 }
 
-
-
 .book-form-photo-link:hover {
 
     color: #00ac66;
 
 }
-
-
 
 .book-form-photo input[type="file"] {
 
@@ -7028,8 +2640,6 @@ h2 {
 
 }
 
-
-
 .book-form-photo-help {
 
     margin-top: 10px;
@@ -7040,15 +2650,11 @@ h2 {
 
 }
 
-
-
 .book-form-group {
 
     margin-bottom: 24px;
 
 }
-
-
 
 .book-form-group input,
 
@@ -7076,8 +2682,6 @@ h2 {
 
 }
 
-
-
 .book-form-group input,
 
 .book-form-group select {
@@ -7086,8 +2690,6 @@ h2 {
 
 }
 
-
-
 .book-form-group textarea {
 
     min-height: 200px;
@@ -7095,8 +2697,6 @@ h2 {
     resize: vertical;
 
 }
-
-
 
 .book-form-group input:focus,
 
@@ -7109,8 +2709,6 @@ h2 {
     outline: none;
 
 }
-
-
 
 .book-form-submit {
 
@@ -7138,15 +2736,11 @@ h2 {
 
 }
 
-
-
 .book-form-submit:hover {
 
     background-color: #008f55;
 
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -7156,23 +2750,17 @@ h2 {
 
     }
 
-
-
     .book-form-page {
 
         padding: 30px 0 60px;
 
     }
 
-
-
     .book-form-container {
 
         padding: 25px 20px;
 
     }
-
-
 
     .book-form {
 
@@ -7182,15 +2770,11 @@ h2 {
 
     }
 
-
-
     .book-form-photo-placeholder {
 
         min-height: 260px;
 
     }
-
-
 
     .book-form-submit {
 
@@ -7257,14 +2841,13 @@ h2 {
     color: #00ac66;
 }
 
-
 /* =====================================================
    MON COMPTE - TABLEAU DES LIVRES (MAQUETTE FIGMA)
    ===================================================== */
 
 .account-books-table {
     overflow-x: auto;
-    border-radius: 12px;
+    border-radius: 5px;
 }
 
 .account-books-head,
@@ -7372,7 +2955,7 @@ h2 {
 
 /* La conversation sélectionnée se distingue des autres. */
 .messages-conversation-item.active {
-    background-color: #ffffff;
+    
 }
 
 .messages-conversation-item:not(.active) {
@@ -7385,11 +2968,11 @@ h2 {
 
 /* Les messages envoyés sont bleu clair, les reçus blancs. */
 .message-row-sent .message-bubble {
-    background-color: #edf3f6;
+    
 }
 
 .message-row-received .message-bubble {
-    background-color: #ffffff;
+    
 }
 
 /* Bulles et horodatages restent alignés sur leur côté. */
@@ -7403,14 +2986,14 @@ h2 {
 
 /* Les bulles ne dépassent pas la largeur disponible. */
 .messages-content .message-bubble {
-    box-sizing: border-box;
+    
     max-width: min(420px, 100%);
-    min-width: 0;
-    overflow-wrap: anywhere;
+    
+    
 }
 
 .messages-content .message-meta {
-    max-width: 100%;
+    
 }
 
 /* Sur écran étroit, les bulles restent lisibles. */
@@ -7464,12 +3047,12 @@ h2 {
 .messages-content .message-bubble {
     width: 320px;
     min-width: 0;
-    max-width: min(320px, 100%);
+    
     box-sizing: border-box;
     padding: 12px 16px;
     font-size: 11px;
     line-height: 1.5;
-    overflow-wrap: anywhere;
+    
 }
 
 .message-row-received .message-bubble {
@@ -7517,7 +3100,6 @@ h2 {
     }
 }
 
-
 /* =========================================
    NOTIFICATION MESSAGERIE
 ========================================= */
@@ -7542,4 +3124,898 @@ h2 {
 
     vertical-align: middle;
     margin-left: 2px;
+}
+
+/* =====================================================
+   ACCUEIL - REGLES SPECIFIQUES FIGMA
+   Grille, alignements, marges courantes et responsive : Bootstrap 5.
+   ===================================================== */
+.home-hero { background: #f5f3ef; padding: 64px 0 82px; }
+.hero-content { max-width: 900px; margin: auto; }
+.hero-text { max-width: 350px; }
+.hero-text h1 { font-size: clamp(30px, 3vw, 38px); line-height: 1.12; margin-bottom: 20px; }
+.hero-text p { font-size: 14px; line-height: 1.5; margin-bottom: 35px; }
+.hero-image { max-width: 370px; margin-left: auto; }
+.hero-image img { display: block; width: 100%; height: 490px; object-fit: cover; }
+.hero-image span { display: block; text-align: right; color: #aaa; font-size: 10px; margin-top: 8px; }
+
+.latest-books { background: #fff; padding: 72px 0 76px; }
+.latest-books h2, .how-it-works h2 { font-size: 30px; text-align: center; margin-bottom: 50px; }
+.latest-books .row { max-width: 900px; margin: 0 auto 44px; }
+.latest-books .book-card { display: flex; flex-direction: column; width: 100%; border-radius: 4px; }
+.latest-books .book-image { display: block; width: 100%; height: 220px; object-fit: cover; }
+.latest-books .book-image-empty { padding: 12px; text-align: center; }
+.latest-books .book-information { display: flex; flex: 1; flex-direction: column; padding: 15px; }
+.latest-books .book-information h3 { font-size: 14px; line-height: 1.3; margin-bottom: 9px; }
+.latest-books .book-author { font-size: 12px; margin-bottom: 0; }
+.latest-books .book-owner { margin: auto 0 0; padding-top: 20px; font-size: 10px; }
+
+.how-it-works { background: #f5f3ef; padding: 72px 0 76px; }
+.how-it-works h2 { margin-bottom: 14px; }
+.section-description { max-width: 440px; margin: 0 auto 40px; text-align: center; font-size: 13px; line-height: 1.5; }
+.how-it-works .row { max-width: 1000px; margin: 0 auto 45px; }
+.step-card { display: flex; align-items: center; justify-content: center; min-height: 135px; padding: 18px; border-radius: 5px; background: #fff; text-align: center; font-size: 12px; line-height: 1.5; }
+
+.home-banner { width: 100%; max-width: 1440px; height: 230px; margin: auto; overflow: hidden; }
+.home-banner img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.our-values { background: #f5f3ef; padding: 75px 0 100px; }
+.values-content { width: 100%; max-width: 370px; margin: auto; position: relative; }
+.values-content h2 { font-size: 28px; margin-bottom: 30px; }
+.values-content p { font-size: 13px; line-height: 1.5; }
+.team { display: block; color: #aaa; font-size: 10px; margin-top: 35px; font-style: italic; }
+.heart { color: #00ac66; font-size: 90px; text-align: right; line-height: 1; }
+
+/* Uniquement les dimensions que les utilitaires Bootstrap ne couvrent pas. */
+@media (max-width: 767.98px) {
+    .home-hero { padding: 0 0 35px; }
+    .hero-text { max-width: 100%; }
+    .hero-image { max-width: 100%; margin: auto; }
+    .home-hero .container { padding-left: 0; padding-right: 0; }
+    .home-hero .hero-content { --bs-gutter-x: 0; --bs-gutter-y: 0; }
+    .home-hero .hero-text { padding: 25px 24px 0; }
+    .home-hero .hero-image span { padding-right: 12px; }
+    .home-hero .hero-text h1 { font-size: 26px; text-align: left; }
+    .home-hero .hero-text p { margin-bottom: 20px; }
+    .latest-books .container { max-width: 420px; }
+    .latest-books .book-information { min-width: 0; }
+    .latest-books .book-information h3,
+    .latest-books .book-author,
+    .latest-books .book-owner { overflow-wrap: anywhere; }
+    .hero-image img { height: auto; aspect-ratio: 0.74; object-fit: cover; }
+    .latest-books, .how-it-works { padding: 52px 0; }
+    .latest-books h2, .how-it-works h2 { font-size: 25px; margin-bottom: 32px; }
+    .latest-books .book-image { height: 190px; }
+    .latest-books .book-information { padding: 12px; }
+    .step-card { min-height: 110px; }
+    .home-banner { height: 330px; }
+    .our-values { padding: 55px 18px 75px; }
+    .our-values .values-content h2 { text-align: left; }
+    .main-footer { width: 100%; padding: 28px 0; }
+    .main-footer .container {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        gap: 16px;
+        max-width: 100%;
+    }
+    .main-footer a,
+    .main-footer span { font-size: 12px; text-align: center; }
+    .main-footer .footer-logo { font-size: 20px !important; }
+}
+@media (max-width: 400px) {
+    .latest-books .book-image { height: 155px; }
+}
+
+/* Navigation mobile compacte, proche de la maquette Figma. */
+@media (max-width: 991.98px) {
+    .main-header { height: auto; min-height: 56px; }
+    .main-header .navbar {
+        min-height: 56px;
+        padding: 8px 12px;
+    }
+    .main-header .logo { gap: 8px; margin-right: 0; }
+    .main-header .logo-icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+    .main-header .logo-text { font-size: 12px; }
+    .main-header .navbar-toggler {
+        padding: 4px 6px;
+        border: 0;
+        box-shadow: none;
+    }
+    .main-header .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .main-header .navbar-collapse {
+        width: 100%;
+        padding: 12px 0 16px;
+    }
+    .main-header .main-navigation,
+    .main-header .account-navigation { gap: 0; }
+    .main-header .navbar-collapse a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* Catalogue : seules les dimensions specifiques restent en CSS. */
+.book-search-form { max-width: 100%; }
+@media (max-width: 767.98px) {
+    .book-search-form { width: 100%; }
+    .books-page { padding: 35px 0 70px; }
+    .books-header { margin-bottom: 30px; }
+    .books-header h1 { font-size: 26px; margin-bottom: 0; }
+    .books-grid .book-image { height: 170px; }
+    .books-grid .book-information { padding: 12px; }
+}
+
+/* Detail du livre : Bootstrap gere les colonnes ; dimensions mobiles specifiques. */
+@media (max-width: 767.98px) {
+    .book-detail, .book-detail-image { min-height: 0; }
+    .book-detail-image img { height: 340px; min-height: 0; object-fit: cover; }
+    .book-detail-no-image { height: 340px; }
+    .book-detail-content { padding: 32px 24px 48px; }
+    .book-detail-inner { max-width: 100%; }
+    .book-detail-inner h1 { font-size: 30px; }
+}
+
+/* Inscription / connexion : colonnes Bootstrap et hauteur naturelle. */
+.auth-content.row { height: auto; }
+.auth-content.row > .auth-image { min-height: 478px; }
+.auth-content.row > .auth-image img { height: 100%; }
+@media (max-width: 991.98px) {
+    .auth-content.row > .auth-image { min-height: 0; height: 350px; }
+    .auth-content.row > .auth-form { padding: 50px 30px; }
+    .auth-content.row .auth-form form,
+    .auth-content.row .auth-form input,
+    .auth-content.row .auth-form .btn-tomtroc { max-width: 100%; }
+}
+
+/* =====================================================
+   MON COMPTE - FINITIONS RESPONSIVE BOOTSTRAP 5
+   Les styles existants des autres pages sont conserves.
+   ===================================================== */
+
+/* Les deux cartes restent de meme largeur sur ordinateur. */
+@media (min-width: 992px) {
+    .account-top > .account-profile,
+    .account-top > .account-informations {
+        flex: 1 1 0;
+        width: 0;
+        min-width: 0;
+    }
+}
+
+/* Empilement propre des cartes et champs lisibles sur mobile. */
+@media (max-width: 991.98px) {
+    .account-top > .account-profile,
+    .account-top > .account-informations {
+        width: 100%;
+        min-width: 0;
+    }
+    .account-page .account-title {
+        margin-bottom: 30px;
+    }
+    .account-library {
+        padding: 24px 18px;
+    }
+    .account-library-header {
+        gap: 14px;
+    }
+}
+
+/* Le tableau de six colonnes defile dans sa propre zone,
+   sans elargir la page ni masquer les boutons d'action. */
+.account-library .account-books-table.table-responsive {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.account-library .account-books-head,
+.account-library .account-book-row {
+    grid-template-columns: 90px minmax(125px, 1.2fr) minmax(125px, 1.2fr) minmax(180px, 1.6fr) minmax(110px, 1fr) minmax(145px, 1fr);
+    min-width: 850px;
+}
+.account-library .account-book-row > div {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.account-library .account-books-table:focus-visible {
+    outline: 2px solid #00ac66;
+    outline-offset: 2px;
+}
+@media (max-width: 575.98px) {
+    .account-library-header .account-add-book {
+        padding: 12px 14px;
+        font-size: 11px;
+    }
+}
+
+/* =====================================================
+   MON COMPTE - LIVRES EN CARTES SUR MOBILE (MAQUETTE)
+   Tableau conserve sur ordinateur ; aucune modification PHP.
+   ===================================================== */
+@media (max-width: 767.98px) {
+    .account-library .account-books-table.table-responsive {
+        overflow: visible;
+        border-radius: 0;
+    }
+
+    .account-library .account-books-head {
+        display: none;
+    }
+
+    .account-library .account-book-row {
+        display: grid;
+        grid-template-columns: 74px minmax(0, 1fr);
+        grid-template-areas:
+            "photo title"
+            "photo availability"
+            "description description"
+            "actions actions";
+        align-items: start;
+        column-gap: 12px;
+        row-gap: 7px;
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        margin-bottom: 14px;
+        padding: 20px 16px;
+        border: 0;
+        border-radius: 5px;
+        background: #fff;
+        font-size: 11px;
+    }
+
+    .account-library .account-book-row:nth-child(odd) {
+        background: #fff;
+    }
+
+    .account-library .account-book-row > .account-book-photo {
+        grid-area: photo;
+    }
+
+    .account-library .account-book-row > .account-book-title {
+        grid-area: title;
+        font-size: 11px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    /* Auteur masque uniquement dans les cartes mobiles. */
+    .account-library .account-book-row > div:nth-child(3) {
+        display: none;
+    }
+
+    .account-library .account-book-row > div:nth-child(4) {
+        grid-area: description;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        line-height: 1.45;
+        font-style: italic;
+    }
+
+    .account-library .account-book-row > div:nth-child(5) {
+        grid-area: availability;
+    }
+
+    .account-library .account-book-row > .account-book-actions {
+        grid-area: actions;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        margin-top: 12px;
+    }
+
+    .account-library .account-book-photo img {
+        width: 74px;
+        height: 90px;
+        object-fit: cover;
+    }
+
+    .account-library .account-book-row .book-available,
+    .account-library .account-book-row .book-unavailable {
+        font-size: 9px;
+        padding: 3px 8px;
+        white-space: normal;
+    }
+
+    .account-library .account-books-table:focus-visible {
+        outline-offset: 0;
+    }
+}
+
+/* =====================================================
+   PROFIL PUBLIC - TABLEAU RESPONSIVE SUR MOBILE
+   Conservation du tableau desktop et du HTML/PHP existant.
+   ===================================================== */
+@media (max-width: 767.98px) {
+    .public-profile-page .public-profile-content {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .public-profile-page .public-profile-card,
+    .public-profile-page .public-profile-books {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .public-profile-page .public-profile-books {
+        overflow-x: hidden;
+        min-height: 0;
+    }
+
+    .public-profile-page .public-profile-books-header,
+    .public-profile-page .public-profile-book-row {
+        display: grid;
+        grid-template-columns: 70px minmax(0, 1fr) minmax(0, 1fr);
+        column-gap: 12px;
+        min-width: 0;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .public-profile-page .public-profile-books-header {
+        height: auto;
+        min-height: 48px;
+        font-size: 10px;
+    }
+
+    .public-profile-page .public-profile-books-header > span:nth-child(4) {
+        display: none;
+    }
+
+    .public-profile-page .public-profile-book-row {
+        row-gap: 14px;
+        align-items: start;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 0;
+    }
+
+    .public-profile-page .public-profile-book-image {
+        width: 60px;
+        height: 70px;
+    }
+
+    .public-profile-page .public-profile-book-title,
+    .public-profile-page .public-profile-book-author {
+        min-width: 0;
+        overflow-wrap: anywhere;
+        padding-top: 8px;
+    }
+
+    .public-profile-page .public-profile-book-description {
+        grid-column: 1 / -1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        line-height: 1.5;
+    }
+}
+
+/* =====================================================
+   MODIFIER UN LIVRE - FINITIONS RESPONSIVE FIGMA
+   Ces regles sont limitees au formulaire d'ajout/edition.
+   ===================================================== */
+.book-form-page .book-form-container {
+    padding: 46px 44px;
+}
+
+.book-form-page .book-form {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 65px;
+}
+
+.book-form-page .book-form-photo,
+.book-form-page .book-form-fields {
+    min-width: 0;
+}
+
+.book-form-page .book-edit-image,
+.book-form-page .book-form-photo-placeholder {
+    display: block;
+    width: 100%;
+    height: 380px;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.book-form-page .book-form-photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-form-page .book-form-group input,
+.book-form-page .book-form-group select {
+    min-height: 48px;
+}
+
+.book-form-page .book-form-group textarea {
+    min-height: 220px;
+}
+
+.book-form-page .book-form-photo input[type="file"] {
+    max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .book-form-page .book-form {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 48px;
+    }
+
+    .book-form-page .book-form-container {
+        padding: 30px 24px;
+    }
+
+    .book-form-page .book-form-photo-placeholder,
+    .book-form-page .book-edit-image {
+        height: 325px;
+    }
+
+    .book-form-page .book-form-submit {
+        max-width: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .book-form-page {
+        padding: 36px 0 64px;
+    }
+
+    .book-form-page .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .book-form-page .book-form-title {
+        font-size: clamp(27px, 7.5vw, 34px);
+        line-height: 1.2;
+        margin-bottom: 32px;
+    }
+
+    .book-form-page .book-form-container {
+        padding: 30px 22px;
+        border-radius: 5px;
+    }
+
+    .book-form-page .book-form {
+        gap: 52px;
+    }
+
+    .book-form-page .book-form-photo-placeholder,
+    .book-form-page .book-edit-image {
+        height: auto;
+        aspect-ratio: 1.2 / 1;
+        min-height: 0;
+    }
+
+    .book-form-page .book-form-group {
+        margin-bottom: 26px;
+    }
+
+    .book-form-page .book-form-group textarea {
+        min-height: 230px;
+    }
+
+    .book-form-page .book-form-submit {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* =====================================================
+   MESSAGERIE - CORRECTIONS RESPONSIVE FINALES
+   Les autres pages et les styles existants sont conserves.
+   ===================================================== */
+
+/* Evite que les elements flex agrandissent la page. */
+.messages-page,
+.messages-layout,
+.messages-sidebar,
+.messages-main,
+.messages-content,
+.messages-form {
+    min-width: 0;
+}
+
+.messages-layout {
+    width: 100%;
+}
+
+.messages-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-content .message-row {
+    min-width: 0;
+}
+
+.messages-content .message-bubble {
+    max-width: min(320px, 100%);
+    overflow-wrap: anywhere;
+}
+
+.messages-form input {
+    min-width: 0;
+}
+
+@media (max-width: 767.98px) {
+    .messages-page {
+        width: 100%;
+        overflow-x: clip;
+    }
+
+    .messages-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        max-width: 100%;
+    }
+
+    .messages-sidebar {
+        width: 100%;
+        flex: 0 0 auto;
+        padding-top: 34px;
+        overflow: hidden;
+    }
+
+    .messages-sidebar h1 {
+        padding: 0 20px 28px;
+        font-size: 26px;
+    }
+
+    .messages-conversations {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .messages-conversation-item {
+        box-sizing: border-box;
+        flex: 0 0 220px;
+        width: 220px;
+        min-width: 0;
+        padding: 15px 20px;
+    }
+
+    .messages-main {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 100%;
+        min-height: 550px;
+        padding: 30px 20px 24px;
+    }
+
+    .messages-content {
+        width: 100%;
+        gap: 25px;
+        padding: 32px 0 28px;
+    }
+
+    .messages-content .message-row {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .messages-content .message-bubble {
+        box-sizing: border-box;
+        width: fit-content;
+        max-width: min(320px, 85%);
+        min-width: 0;
+        padding: 12px 16px;
+    }
+
+    .messages-content .message-meta {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .messages-form {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .messages-form input {
+        flex: 1 1 auto;
+        width: 0;
+        min-width: 0;
+    }
+
+    .messages-form button {
+        flex: 0 0 90px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .messages-main {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .messages-form button {
+        flex-basis: 78px;
+        width: 78px;
+    }
+}
+
+/* =====================================================
+   CONVERSATION - AJUSTEMENTS MOBILE
+   Toutes les règles précédentes sont conservées.
+   ===================================================== */
+.messages-mobile-back { display: none; }
+
+@media (max-width: 767.98px) {
+    .messages-page, .messages-layout { width: 100%; min-height: 0; }
+    .messages-layout { display: block; max-width: 100%; }
+    .messages-sidebar { display: none; }
+    .messages-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: calc(100dvh - 160px);
+        padding: 20px 15px 30px;
+    }
+    .messages-mobile-back {
+        display: block;
+        align-self: flex-start;
+        margin-bottom: 16px;
+        color: #929292;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .messages-header { width: 100%; height: auto; min-height: 42px; margin-bottom: 32px; }
+    .messages-content {
+        flex: 1 0 auto;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        gap: 22px;
+        padding: 0 0 40px;
+        overflow: visible;
+    }
+    .messages-content .message-row { width: 100%; max-width: 100%; }
+    .messages-content .message-row-received { align-items: flex-start; }
+    .messages-content .message-row-sent { align-items: flex-end; }
+    .messages-content .message-bubble {
+        box-sizing: border-box;
+        width: fit-content;
+        min-width: 0;
+        max-width: 78%;
+        padding: 13px 15px;
+        font-size: 12px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+    .messages-content .message-meta { width: auto; max-width: 100%; font-size: 10px; }
+    .messages-form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        gap: 8px;
+        width: 100%;
+        margin-top: auto;
+    }
+    .messages-form input {
+        flex: 0 0 auto;
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+        font-size: 12px;
+    }
+    .messages-form button {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 44px;
+        border-radius: 6px;
+        font-size: 13px;
+    }
+}
+
+/* =====================================================
+   PAGE MESSAGES.PHP - LISTE MOBILE SELON MAQUETTE FIGMA
+   Limite a .messages-list-page : conversation.php inchangee.
+   ===================================================== */
+@media (max-width: 767.98px) {
+    .messages-list-page {
+        background: #f5f3ef;
+        min-height: 0;
+        overflow-x: clip;
+    }
+
+    .messages-list-page .messages-layout {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .messages-list-page .messages-sidebar {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 42px 0 180px;
+        background: #fff;
+        overflow: visible;
+    }
+
+    .messages-list-page .messages-sidebar h1 {
+        margin: 0;
+        padding: 0 15px 23px;
+        color: #292929;
+        font-family: Georgia, serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .messages-list-page .messages-conversations {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+    }
+
+    .messages-list-page .messages-conversation-item {
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        min-width: 0;
+        min-height: 62px;
+        margin: 0;
+        padding: 11px 15px;
+        border: 0;
+        border-radius: 0;
+        background: #fff;
+        text-decoration: none;
+    }
+
+    .messages-list-page .messages-conversation-item:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+    .messages-list-page .messages-conversation-item:hover,
+    .messages-list-page .messages-conversation-item:focus-visible {
+        background: #f1f4f2;
+    }
+
+    .messages-list-page .messages-conversation-picture,
+    .messages-list-page .messages-conversation-placeholder {
+        flex: 0 0 36px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .messages-list-page .messages-conversation-picture img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .messages-list-page .messages-conversation-info {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .messages-list-page .messages-conversation-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .messages-list-page .messages-conversation-pseudo {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .messages-list-page .messages-conversation-time {
+        flex: 0 0 auto;
+        margin-left: auto;
+        font-size: 10px;
+    }
+
+    .messages-list-page .messages-conversation-preview {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #a4a4a4;
+        font-size: 10px;
+    }
+
+    .messages-list-page .messages-main {
+        display: none;
+    }
+
+    .messages-list-page.is-empty .messages-sidebar {
+        padding-bottom: 25px;
+    }
+
+    .messages-list-page.is-empty .messages-main {
+        display: block;
+        min-height: 0;
+        padding: 16px 15px 45px;
+        background: #fff;
+    }
+}
+
+/* =========================================
+   NAVIGATION - NOTIFICATION MESSAGERIE FIGMA
+   Ajustement cible sans affecter les autres liens
+========================================= */
+.main-header .account-navigation .nav-messages-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.main-header .nav-messages-link .fa-comment {
+    margin: 0;
+}
+
+.main-header .nav-messages-link .messages-notification-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 16px;
+    width: auto;
+    height: 20px;
+    padding: 0 4px;
+    margin-left: 0;
+    border-radius: 10px;
+    background: #292929;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
 }

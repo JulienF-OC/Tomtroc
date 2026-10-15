@@ -1,12 +1,13 @@
-<section class="book-detail">
+<section class="book-detail row g-0">
 
-    <div class="book-detail-image">
+    <div class="book-detail-image col-12 col-md-6">
 
         <?php if ($book->getImage() !== null): ?>
 
             <img
                 src="<?= htmlspecialchars($book->getImage()) ?>"
                 alt="<?= htmlspecialchars($book->getTitle()) ?>"
+                class="img-fluid"
             >
 
         <?php else: ?>
@@ -20,7 +21,7 @@
     </div>
 
 
-    <div class="book-detail-content">
+    <div class="book-detail-content col-12 col-md-6">
 
         <div class="book-detail-inner">
 

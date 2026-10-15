@@ -1,4 +1,3 @@
-
 <?php
 
 class MessageController
@@ -33,20 +32,8 @@ class MessageController
         );
 
         /*
-         * Si une conversation existe, on ouvre la plus récente.
-         */
-        if (!empty($conversations)) {
-            $receiverId = (int) $conversations[0]['user_id'];
-
-            header(
-                'Location: index.php?action=conversation&id=' . $receiverId
-            );
-            exit;
-        }
-
-        /*
-         * Si aucune conversation n'existe,
-         * on affiche la page de messagerie vide.
+         * On affiche la liste des conversations, même si elle est vide.
+         * Ainsi, le lien « retour » depuis une conversation fonctionne.
          */
         $view = new View('messages');
 
@@ -137,7 +124,6 @@ class MessageController
         }
 
         /*
-         * NOUVEAU :
          * On marque comme lus uniquement les messages
          * reçus de l'utilisateur dont la conversation
          * est actuellement ouverte.

@@ -92,6 +92,11 @@
         ========================== -->
         <div class="messages-main">
 
+            <!-- Retour mobile -->
+            <a href="index.php?action=messages" class="messages-mobile-back">
+                ← retour
+            </a>
+
             <!-- Utilisateur -->
             <div class="messages-header">
 

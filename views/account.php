@@ -15,7 +15,7 @@ if (empty($_SESSION['csrf_token'])) {
             Mon compte
         </h1>
 
-        <div class="account-top">
+        <div class="account-top d-flex flex-column flex-lg-row gap-3">
 
             <!-- Profil -->
             <div class="account-profile">
@@ -221,7 +221,7 @@ if (empty($_SESSION['csrf_token'])) {
 
             <?php else: ?>
 
-                <div class="account-books-table">
+                <div class="account-books-table table-responsive" role="region" aria-label="Tableau de vos livres" tabindex="0">
 
                     <div class="account-books-head">
 

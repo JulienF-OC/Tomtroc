@@ -1,8 +1,8 @@
 <section class="auth-page">
 
-    <div class="auth-content">
+    <div class="auth-content row g-0">
 
-        <div class="auth-form">
+        <div class="auth-form col-12 col-lg-7">
 
             <h1>Connexion</h1>
 
@@ -72,7 +72,7 @@
 
         </div>
 
-        <div class="auth-image">
+        <div class="auth-image col-12 col-lg-5">
 
             <img
                 src="/TomTroc/public/images/auth-books.jpg"

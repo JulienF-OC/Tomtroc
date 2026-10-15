@@ -4,9 +4,9 @@
 
     <div class="container">
 
-        <div class="row align-items-center hero-content">
+        <div class="row align-items-center hero-content g-4">
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 order-2 order-md-1">
 
                 <div class="hero-text">
 
@@ -24,7 +24,7 @@
 
                     <a
                         href="index.php?action=books"
-                        class="btn-tomtroc"
+                        class="btn-tomtroc d-block d-md-inline-block text-center"
                     >
                         Découvrir
                     </a>
@@ -33,13 +33,14 @@
 
             </div>
 
-            <div class="col-md-6">
+            <div class="col-12 col-md-6 order-1 order-md-2">
 
                 <div class="hero-image">
 
                     <img
                         src="/TomTroc/public/images/home-hero.png"
                         alt="Librairie remplie de livres"
+                        class="img-fluid"
                     >
 
                     <span>Hamza</span>
@@ -63,13 +64,13 @@
 
         <h2>Les derniers livres ajoutés</h2>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center g-3 g-md-4">
 
             <?php foreach ($books as $book): ?>
 
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
 
-                    <article class="book-card">
+                    <article class="book-card h-100">
 
                         <?php if ($book->getImage() !== null): ?>
 
@@ -143,35 +144,35 @@
             Suivez ces étapes pour commencer :
         </p>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center g-4">
 
-            <div class="col-md-3">
+            <div class="col-12 col-md-3">
 
-                <div class="step-card">
+                <div class="step-card h-100">
                     Inscrivez-vous gratuitement sur notre plateforme.
                 </div>
 
             </div>
 
-            <div class="col-md-3">
+            <div class="col-12 col-md-3">
 
-                <div class="step-card">
+                <div class="step-card h-100">
                     Ajoutez les livres que vous souhaitez échanger à votre profil.
                 </div>
 
             </div>
 
-            <div class="col-md-3">
+            <div class="col-12 col-md-3">
 
-                <div class="step-card">
+                <div class="step-card h-100">
                     Parcourez les livres disponibles chez d'autres membres.
                 </div>
 
             </div>
 
-            <div class="col-md-3">
+            <div class="col-12 col-md-3">
 
-                <div class="step-card">
+                <div class="step-card h-100">
                     Proposez un échange et discutez avec d'autres passionnés de lecture.
                 </div>
 
@@ -202,6 +203,7 @@
     <img
         src="/TomTroc/public/images/home-banner.png"
         alt="Bibliothèque remplie de livres"
+        class="img-fluid"
     >
 
 </section>
