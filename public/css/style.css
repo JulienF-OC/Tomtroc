@@ -24,8 +24,6 @@ h2 {
 
 }
 
-/* HEADER */
-
 .main-header {
 
     background-color: #f5f3ef;
@@ -110,8 +108,6 @@ h2 {
 
 }
 
-/* BOUTONS */
-
 .btn-tomtroc {
 
     display: inline-block;
@@ -156,7 +152,6 @@ h2 {
 
 }
 
-/* CARTES LIVRES - styles partages avec le catalogue */
 .book-card { background-color: #fff; border-radius: 0 0 5px 5px; overflow: hidden; }
 .book-image { width: 100%; height: 230px; object-fit: cover; }
 .book-image-empty { background-color: #eee; display: flex; align-items: center; justify-content: center; color: #777; }
@@ -164,8 +159,6 @@ h2 {
 .book-information h2, .book-information h3 { font-family: Arial, sans-serif; font-size: 15px; margin-bottom: 10px; }
 .book-author { color: #777; font-size: 12px; }
 .book-owner { color: #aaa; font-size: 9px; font-style: italic; margin-top: 25px; }
-
-/* PAGE NOS LIVRES */
 
 .books-page {
 
@@ -229,8 +222,6 @@ h2 {
 
 }
 
-/* FOOTER */
-
 .main-footer {
 
     background-color: white;
@@ -267,8 +258,6 @@ h2 {
 
 }
 
-/* LIEN CARTE LIVRE */
-
 .book-link {
 
     display: block;
@@ -298,8 +287,6 @@ h2 {
     transition: transform 0.2s ease;
 
 }
-
-/* DETAIL LIVRE */
 
 .book-detail {
 
@@ -439,8 +426,6 @@ h2 {
 
 }
 
-/* 404 */
-
 .error-page {
 
     min-height: calc(100vh - 80px);
@@ -482,11 +467,8 @@ h2 {
     }
 }
 
-/* RECHERCHE */
-
 .books-header {
 
-    /* Disposition responsive geree par Bootstrap. */
 }
 
 .search-wrapper {
@@ -530,12 +512,6 @@ h2 {
     opacity: 1;
 }
 
-/* =========================
-
-   INSCRIPTION / CONNEXION
-
-   ========================= */
-
 .auth-page {
 
     background-color: #f5f3ef;
@@ -557,8 +533,6 @@ h2 {
     background-color: white;
 
 }
-
-/* FORMULAIRE */
 
 .auth-form {
 
@@ -680,8 +654,6 @@ h2 {
 
 }
 
-/* IMAGE */
-
 .auth-image {
 
     overflow: hidden;
@@ -699,8 +671,6 @@ h2 {
     object-fit: cover;
 
 }
-
-/* MESSAGES D'ERREUR */
 
 .auth-form .alert {
 
@@ -721,12 +691,6 @@ h2 {
     padding-left: 18px;
 
 }
-
-/* =========================
-
-   RESPONSIVE
-
-   ========================= */
 
 @media (max-width: 768px) {
 
@@ -801,8 +765,6 @@ h2 {
     gap: 20px;
 
 }
-
-/* Profil */
 
 .account-profile {
 
@@ -933,8 +895,6 @@ h2 {
     font-size: 11px;
 
 }
-
-/* Informations */
 
 .account-informations {
 
@@ -1084,18 +1044,6 @@ h2 {
 
 }
 
-.account-library-header h2 {
-
-    margin: 0;
-
-    font-family: Georgia, serif;
-
-    font-size: 16px;
-
-    font-weight: 400;
-
-}
-
 .account-library-header a {
 
     color: #00ac66;
@@ -1151,8 +1099,6 @@ h2 {
     border-bottom: 1px solid #eeeeee;
 
     color: #999999;
-
-    
 
 }
 
@@ -1310,12 +1256,6 @@ h2 {
 
 }
 
-/* =========================
-
-   PROFILE CARD
-
-   ========================= */
-
 .public-profile-card {
 
     width: 230px;
@@ -1467,12 +1407,6 @@ h2 {
     color: #ffffff;
 
 }
-
-/* =========================
-
-   PROFILE BOOKS
-
-   ========================= */
 
 .public-profile-books {
 
@@ -1646,12 +1580,6 @@ h2 {
 
 }
 
-/* =========================
-
-   MESSAGERIE
-
-   ========================= */
-
 .messages-page {
 
     background-color: #f5f3ef;
@@ -1664,21 +1592,11 @@ h2 {
 
     display: flex;
 
-    
-
-    
-
     min-height: 650px;
 
     margin: 0 auto;
 
 }
-
-/* =========================
-
-   COLONNE GAUCHE
-
-   ========================= */
 
 .messages-sidebar {
 
@@ -1699,8 +1617,6 @@ h2 {
     padding: 0 25px 25px;
 
     font-family: Georgia, serif;
-
-    
 
     font-weight: 400;
 
@@ -1854,19 +1770,9 @@ h2 {
 
 }
 
-/* =========================
-
-   CONVERSATION
-
-   ========================= */
-
 .messages-main {
 
-    
-
     flex: 1;
-
-    
 
     min-width: 0;
 
@@ -1944,12 +1850,6 @@ h2 {
 
 }
 
-/* =========================
-
-   MESSAGES
-
-   ========================= */
-
 .messages-content {
 
     display: flex;
@@ -1959,8 +1859,6 @@ h2 {
     flex-direction: column;
 
     justify-content: flex-end;
-
-    
 
     padding: 35px 0 25px;
 
@@ -2015,8 +1913,6 @@ h2 {
 }
 
 .message-row-sent .message-meta {
-
-    
 
 }
 
@@ -2076,23 +1972,11 @@ h2 {
 
 }
 
-.message-row-received .message-bubble {
-
-    
-
-}
-
 .message-row-sent .message-bubble {
 
     background-color: #FFFFFF;
 
 }
-
-/* =========================
-
-   ERREURS
-
-   ========================= */
 
 .messages-errors {
 
@@ -2115,12 +1999,6 @@ h2 {
     margin: 0;
 
 }
-
-/* =========================
-
-   FORMULAIRE
-
-   ========================= */
 
 .messages-form {
 
@@ -2194,12 +2072,6 @@ h2 {
 
 }
 
-/* =========================
-
-   RESPONSIVE MESSAGERIE
-
-   ========================= */
-
 @media (max-width: 768px) {
 
     .messages-layout {
@@ -2270,8 +2142,6 @@ h2 {
 
 .messages-sidebar {
 
-    
-
     padding-top: 50px;
 
 }
@@ -2330,8 +2200,6 @@ h2 {
 
 }
 
-/* Bulles plus proches de la maquette */
-
 .message-row {
 
     width: 100%;
@@ -2342,13 +2210,9 @@ h2 {
 
 .message-row-received {
 
-    
-
 }
 
 .message-row-sent {
-
-    
 
 }
 
@@ -2368,19 +2232,13 @@ h2 {
 
     width: 420px;
 
-    
-
 }
 
 .message-row-sent .message-meta {
 
     width: 420px;
 
-    
-
 }
-
-/* Formulaire */
 
 .messages-form {
 
@@ -2401,12 +2259,6 @@ h2 {
     height: 42px;
 
 }
-
-/* =====================================================
-
-   AJOUT D'UN LIVRE - BOUTON DE LA BIBLIOTHEQUE
-
-   ===================================================== */
 
 .account-library-header {
 
@@ -2455,12 +2307,6 @@ h2 {
     text-decoration: none;
 
 }
-
-/* =====================================================
-
-   AJOUT D'UN LIVRE - FORMULAIRE
-
-   ===================================================== */
 
 .book-form-page {
 
@@ -2784,10 +2630,6 @@ h2 {
 
 }
 
-/* =====================================================
-   MON COMPTE - MODIFICATION DE LA PHOTO DE PROFIL
-   ===================================================== */
-
 .profile-image-form {
     display: flex;
     flex-direction: column;
@@ -2817,10 +2659,6 @@ h2 {
     color: #ffffff;
 }
 
-/* =====================================================
-   MON COMPTE - BOUTON DE SUPPRESSION
-   ===================================================== */
-
 .account-delete-form {
     margin: 0;
 }
@@ -2840,10 +2678,6 @@ h2 {
 .account-delete-button:hover {
     color: #00ac66;
 }
-
-/* =====================================================
-   MON COMPTE - TABLEAU DES LIVRES (MAQUETTE FIGMA)
-   ===================================================== */
 
 .account-books-table {
     overflow-x: auto;
@@ -2949,13 +2783,8 @@ h2 {
     }
 }
 
-/* =====================================================
-   MESSAGERIE - AJUSTEMENTS FIGMA (sans JavaScript)
-   ===================================================== */
-
-/* La conversation sélectionnée se distingue des autres. */
 .messages-conversation-item.active {
-    
+
 }
 
 .messages-conversation-item:not(.active) {
@@ -2966,16 +2795,14 @@ h2 {
     background-color: #eef2f4;
 }
 
-/* Les messages envoyés sont bleu clair, les reçus blancs. */
 .message-row-sent .message-bubble {
-    
+
 }
 
 .message-row-received .message-bubble {
-    
+
 }
 
-/* Bulles et horodatages restent alignés sur leur côté. */
 .message-row-sent {
     align-items: flex-end;
 }
@@ -2984,19 +2811,16 @@ h2 {
     align-items: flex-start;
 }
 
-/* Les bulles ne dépassent pas la largeur disponible. */
 .messages-content .message-bubble {
-    
+
     max-width: min(420px, 100%);
-    
-    
+
 }
 
 .messages-content .message-meta {
-    
+
 }
 
-/* Sur écran étroit, les bulles restent lisibles. */
 @media (max-width: 700px) {
     .messages-content .message-bubble {
         max-width: 100%;
@@ -3007,12 +2831,6 @@ h2 {
     }
 }
 
-/* =====================================================
-   MESSAGERIE - FINITIONS FIDELES A LA MAQUETTE FIGMA
-   Les regles precedentes sont conservees.
-   ===================================================== */
-
-/* Colonne de gauche : proportions et selection. */
 .messages-layout {
     max-width: 1140px;
 }
@@ -3029,7 +2847,6 @@ h2 {
     background-color: #faf9f7;
 }
 
-/* Conversation : espacement et bulles regulieres. */
 .messages-main {
     padding: 40px 40px 35px;
 }
@@ -3047,12 +2864,12 @@ h2 {
 .messages-content .message-bubble {
     width: 320px;
     min-width: 0;
-    
+
     box-sizing: border-box;
     padding: 12px 16px;
     font-size: 11px;
     line-height: 1.5;
-    
+
 }
 
 .message-row-received .message-bubble {
@@ -3076,7 +2893,6 @@ h2 {
     justify-content: flex-end;
 }
 
-/* Formulaire de message dans le meme alignement que la maquette. */
 .messages-form {
     gap: 16px;
 }
@@ -3100,10 +2916,6 @@ h2 {
     }
 }
 
-/* =========================================
-   NOTIFICATION MESSAGERIE
-========================================= */
-
 .messages-notification-badge {
     display: inline-flex;
     align-items: center;
@@ -3126,10 +2938,6 @@ h2 {
     margin-left: 2px;
 }
 
-/* =====================================================
-   ACCUEIL - REGLES SPECIFIQUES FIGMA
-   Grille, alignements, marges courantes et responsive : Bootstrap 5.
-   ===================================================== */
 .home-hero { background: #f5f3ef; padding: 64px 0 82px; }
 .hero-content { max-width: 900px; margin: auto; }
 .hero-text { max-width: 350px; }
@@ -3139,7 +2947,7 @@ h2 {
 .hero-image img { display: block; width: 100%; height: 490px; object-fit: cover; }
 .hero-image span { display: block; text-align: right; color: #aaa; font-size: 10px; margin-top: 8px; }
 
-.latest-books { background: #fff; padding: 72px 0 76px; }
+.latest-books { background: #f5f3ef; padding: 72px 0 76px; }
 .latest-books h2, .how-it-works h2 { font-size: 30px; text-align: center; margin-bottom: 50px; }
 .latest-books .row { max-width: 900px; margin: 0 auto 44px; }
 .latest-books .book-card { display: flex; flex-direction: column; width: 100%; border-radius: 4px; }
@@ -3165,7 +2973,6 @@ h2 {
 .team { display: block; color: #aaa; font-size: 10px; margin-top: 35px; font-style: italic; }
 .heart { color: #00ac66; font-size: 90px; text-align: right; line-height: 1; }
 
-/* Uniquement les dimensions que les utilitaires Bootstrap ne couvrent pas. */
 @media (max-width: 767.98px) {
     .home-hero { padding: 0 0 35px; }
     .hero-text { max-width: 100%; }
@@ -3206,7 +3013,6 @@ h2 {
     .latest-books .book-image { height: 155px; }
 }
 
-/* Navigation mobile compacte, proche de la maquette Figma. */
 @media (max-width: 991.98px) {
     .main-header { height: auto; min-height: 56px; }
     .main-header .navbar {
@@ -3242,7 +3048,6 @@ h2 {
     }
 }
 
-/* Catalogue : seules les dimensions specifiques restent en CSS. */
 .book-search-form { max-width: 100%; }
 @media (max-width: 767.98px) {
     .book-search-form { width: 100%; }
@@ -3253,7 +3058,6 @@ h2 {
     .books-grid .book-information { padding: 12px; }
 }
 
-/* Detail du livre : Bootstrap gere les colonnes ; dimensions mobiles specifiques. */
 @media (max-width: 767.98px) {
     .book-detail, .book-detail-image { min-height: 0; }
     .book-detail-image img { height: 340px; min-height: 0; object-fit: cover; }
@@ -3263,7 +3067,6 @@ h2 {
     .book-detail-inner h1 { font-size: 30px; }
 }
 
-/* Inscription / connexion : colonnes Bootstrap et hauteur naturelle. */
 .auth-content.row { height: auto; }
 .auth-content.row > .auth-image { min-height: 478px; }
 .auth-content.row > .auth-image img { height: 100%; }
@@ -3275,12 +3078,6 @@ h2 {
     .auth-content.row .auth-form .btn-tomtroc { max-width: 100%; }
 }
 
-/* =====================================================
-   MON COMPTE - FINITIONS RESPONSIVE BOOTSTRAP 5
-   Les styles existants des autres pages sont conserves.
-   ===================================================== */
-
-/* Les deux cartes restent de meme largeur sur ordinateur. */
 @media (min-width: 992px) {
     .account-top > .account-profile,
     .account-top > .account-informations {
@@ -3290,7 +3087,6 @@ h2 {
     }
 }
 
-/* Empilement propre des cartes et champs lisibles sur mobile. */
 @media (max-width: 991.98px) {
     .account-top > .account-profile,
     .account-top > .account-informations {
@@ -3308,8 +3104,6 @@ h2 {
     }
 }
 
-/* Le tableau de six colonnes defile dans sa propre zone,
-   sans elargir la page ni masquer les boutons d'action. */
 .account-library .account-books-table.table-responsive {
     display: block;
     width: 100%;
@@ -3338,10 +3132,6 @@ h2 {
     }
 }
 
-/* =====================================================
-   MON COMPTE - LIVRES EN CARTES SUR MOBILE (MAQUETTE)
-   Tableau conserve sur ordinateur ; aucune modification PHP.
-   ===================================================== */
 @media (max-width: 767.98px) {
     .account-library .account-books-table.table-responsive {
         overflow: visible;
@@ -3389,7 +3179,6 @@ h2 {
         overflow-wrap: anywhere;
     }
 
-    /* Auteur masque uniquement dans les cartes mobiles. */
     .account-library .account-book-row > div:nth-child(3) {
         display: none;
     }
@@ -3435,10 +3224,6 @@ h2 {
     }
 }
 
-/* =====================================================
-   PROFIL PUBLIC - TABLEAU RESPONSIVE SUR MOBILE
-   Conservation du tableau desktop et du HTML/PHP existant.
-   ===================================================== */
 @media (max-width: 767.98px) {
     .public-profile-page .public-profile-content {
         flex-direction: column;
@@ -3505,10 +3290,6 @@ h2 {
     }
 }
 
-/* =====================================================
-   MODIFIER UN LIVRE - FINITIONS RESPONSIVE FIGMA
-   Ces regles sont limitees au formulaire d'ajout/edition.
-   ===================================================== */
 .book-form-page .book-form-container {
     padding: 46px 44px;
 }
@@ -3618,12 +3399,6 @@ h2 {
     }
 }
 
-/* =====================================================
-   MESSAGERIE - CORRECTIONS RESPONSIVE FINALES
-   Les autres pages et les styles existants sont conserves.
-   ===================================================== */
-
-/* Evite que les elements flex agrandissent la page. */
 .messages-page,
 .messages-layout,
 .messages-sidebar,
@@ -3763,10 +3538,6 @@ h2 {
     }
 }
 
-/* =====================================================
-   CONVERSATION - AJUSTEMENTS MOBILE
-   Toutes les règles précédentes sont conservées.
-   ===================================================== */
 .messages-mobile-back { display: none; }
 
 @media (max-width: 767.98px) {
@@ -3840,10 +3611,6 @@ h2 {
     }
 }
 
-/* =====================================================
-   PAGE MESSAGES.PHP - LISTE MOBILE SELON MAQUETTE FIGMA
-   Limite a .messages-list-page : conversation.php inchangee.
-   ===================================================== */
 @media (max-width: 767.98px) {
     .messages-list-page {
         background: #f5f3ef;
@@ -3986,10 +3753,6 @@ h2 {
     }
 }
 
-/* =========================================
-   NAVIGATION - NOTIFICATION MESSAGERIE FIGMA
-   Ajustement cible sans affecter les autres liens
-========================================= */
 .main-header .account-navigation .nav-messages-link {
     display: inline-flex;
     align-items: center;
@@ -4018,4 +3781,223 @@ h2 {
     font-size: 11px;
     font-weight: 600;
     line-height: 1;
+}
+
+.latest-books .book-card {
+    background-color: #ffffff;
+}
+
+section.latest-books {
+    background-color: #faf9f7;
+}
+
+section.latest-books .book-card,
+section.latest-books .book-information {
+    background-color: #ffffff;
+}
+
+section.latest-books .row .book-card {
+    background: #ffffff !important;
+    overflow: hidden;
+}
+section.latest-books .row .book-card > .book-information {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    background: #ffffff !important;
+}
+section.latest-books .row .book-card > .book-information > * {
+    background-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+    .account-page .account-library {
+        background: transparent;
+        padding: 20px 0;
+        border-radius: 0;
+    }
+
+    .account-library .account-books-table.table-responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        overflow: visible;
+        border-radius: 0;
+    }
+
+    .account-library .account-books-head { display: none; }
+
+    .account-library .account-book-row,
+    .account-library .account-book-row:nth-child(odd) {
+        display: grid;
+        grid-template-columns: 76px minmax(0, 1fr);
+        grid-template-areas:
+            "photo title"
+            "photo author"
+            "photo availability"
+            "description description"
+            "actions actions";
+        column-gap: 17px;
+        row-gap: 0;
+        align-items: start;
+        min-width: 0;
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 46px 32px 42px;
+        background: #ffffff;
+        border: 1px solid #f0efed;
+        border-radius: 20px;
+        box-shadow: none;
+        color: #292929;
+    }
+
+    .account-library .account-book-row > div { min-width: 0; }
+    .account-library .account-book-row > .account-book-photo {
+        grid-area: photo;
+        align-self: start;
+    }
+    .account-library .account-book-photo img {
+        display: block;
+        width: 76px;
+        height: 76px;
+        object-fit: cover;
+        border-radius: 0;
+    }
+    .account-library .account-book-row > .account-book-title {
+        grid-area: title;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+    .account-library .account-book-row > div:nth-child(3) {
+        display: block;
+        grid-area: author;
+        font-size: 13px;
+        line-height: 1.25;
+        margin-top: 0;
+    }
+    .account-library .account-book-row > div:nth-child(5) {
+        grid-area: availability;
+        margin-top: 13px;
+    }
+    .account-library .account-book-row .book-available,
+    .account-library .account-book-row .book-unavailable {
+        padding: 4px 13px;
+        font-size: 9px;
+        line-height: 1.2;
+        border-radius: 20px;
+        white-space: nowrap;
+    }
+    .account-library .account-book-row > div:nth-child(4) {
+        display: -webkit-box;
+        grid-area: description;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        margin-top: 23px;
+        font-size: 13px;
+        line-height: 1.25;
+        font-style: italic;
+        overflow-wrap: anywhere;
+    }
+    .account-library .account-book-row > .account-book-actions {
+        grid-area: actions;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 42px;
+        margin-top: 46px;
+        padding-left: 5px;
+    }
+    .account-library .account-book-row .account-book-actions a,
+    .account-library .account-book-row .account-delete-button {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.3;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+    .account-library .account-book-row .account-delete-button {
+        color: #e33535;
+    }
+}
+
+@media (max-width: 370px) {
+    .account-library .account-book-row,
+    .account-library .account-book-row:nth-child(odd) {
+        padding: 32px 18px;
+        column-gap: 12px;
+    }
+    .account-library .account-book-row > .account-book-actions {
+        gap: 28px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .account-library .account-books-table.table-responsive {
+        align-items: center;
+    }
+
+    .account-library .account-book-row,
+    .account-library .account-book-row:nth-child(odd) {
+        width: min(100%, 340px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.account-informations h2 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.account-informations .account-form-group {
+    margin-bottom: 20px;
+}
+
+.account-informations .account-form-group label {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.account-informations .account-form-group input {
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.account-informations .account-save {
+    width: auto;
+    min-width: 110px;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 12px;
+}
+
+.our-values .heart { display: flex; justify-content: flex-end; margin-top: -12px; color: #00ac66; font-size: initial; line-height: normal; }
+.our-values .heart svg { display: block; width: 115px; height: 100px; }
+
+.our-values .heart svg { width: 122px; height: 104px; max-width: 100%; }
+
+@media (min-width: 768px) {
+    .our-values .values-content { position: relative; }
+    .our-values .heart {
+        position: absolute;
+        right: 0;
+        bottom: -48px;
+        margin-top: 0;
+        display: block;
+        width: 120px;
+        height: 102px;
+    }
+    .our-values .heart svg { width: 120px; height: 102px; max-width: none; }
+}
+@media (max-width: 767.98px) {
+    .our-values .heart { position: static; margin-top: 12px; }
+    .our-values .heart svg { width: 120px; height: 102px; }
 }

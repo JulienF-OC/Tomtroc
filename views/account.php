@@ -196,10 +196,6 @@ if (empty($_SESSION['csrf_token'])) {
 
             <div class="account-library-header">
 
-                <h2>
-                    Vos livres
-                </h2>
-
                 <a
                     href="index.php?action=addBook"
                     class="account-add-book"
