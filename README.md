@@ -112,7 +112,3 @@ TomTroc/
 **Pages vides ou erreurs SQL :** vérifier que les tables attendues par le projet ont bien été importées.
 
 **Couvertures absentes :** le SQL contient des chemins vers les fichiers d’images, mais pas les images elles-mêmes. Vérifier le contenu de `public/images/`. Les livres « Le Petit Prince » et « Les Misérables » n’ont pas de couverture renseignée dans la base de démonstration.
-
-## Remarque
-
-Ce projet est prévu pour être lancé en local. Les paramètres de connexion, la gestion des fichiers envoyés et la configuration du serveur doivent être adaptés avant toute mise en production.
