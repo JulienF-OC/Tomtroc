@@ -38,7 +38,7 @@ Ouvrir le panneau de contrôle XAMPP et démarrer **Apache** et **MySQL**.
 1. Ouvrir [phpMyAdmin](http://localhost/phpmyadmin/).
 2. Créer une base de données nommée `tomtroc` (ou choisir un autre nom).
 3. Ouvrir la base créée, puis l’onglet **Importer**.
-4. Sélectionner `tomtroc_soutenance.sql` à la racine du dépôt et lancer l’import.
+4. Sélectionner `tomtroc_test.sql` à la racine du dépôt et lancer l’import.
 
 Le fichier crée les tables `user`, `book` et `message`, avec des livres et des comptes de démonstration. Utiliser de préférence une base vide pour éviter les conflits de tables existantes.
 
