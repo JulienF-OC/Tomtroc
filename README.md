@@ -12,9 +12,9 @@ TomTroc est une application web d'échange de livres entre particuliers. Les uti
 ## Prérequis
 
 - PHP avec les extensions PDO et PDO MySQL
-- MySQL ou MariaDB
+- MySQL
 - Un serveur web local, par exemple **XAMPP** (Apache + MySQL)
-- Le fichier `tomtroc_soutenance.sql` fourni avec le projet
+- Le fichier `tomtroc_test.sql` fourni avec le projet
 
 ## Installation avec XAMPP
 
