@@ -1,114 +1,146 @@
+
 # TomTroc
 
 TomTroc est une application web d'échange de livres entre particuliers. Les utilisateurs peuvent consulter les livres disponibles, créer un compte, ajouter leurs propres livres et échanger des messages.
 
+Ce projet a été réalisé dans le cadre de la formation Développeur d'application PHP d'OpenClassrooms.
+
 ## Technologies utilisées
 
-- PHP (architecture MVC)
+- PHP 8 (programmation orientée objet et architecture MVC)
 - MySQL avec PDO
-- HTML, CSS et Bootstrap 5
-- Font Awesome
+- HTML et CSS
+- Bootstrap 5
 
 ## Prérequis
 
 - PHP avec les extensions PDO et PDO MySQL
-- MySQL
-- Un serveur web local, par exemple **XAMPP** (Apache + MySQL)
-- Le fichier `tomtroc_test.sql` fourni avec le projet
+- MySQL ou MariaDB
+- XAMPP (Apache + MySQL)
+- Git (pour cloner le dépôt)
 
-## Installation avec XAMPP
+## Installation
 
 ### 1. Récupérer le projet
 
-Cloner le dépôt dans le dossier `htdocs` de XAMPP :
+Cloner le dépôt GitHub dans le dossier `htdocs` de XAMPP :
 
 ```bash
 cd C:\xampp\htdocs
 git clone URL_DU_DEPOT TomTroc
 ```
 
-Remplacer `URL_DU_DEPOT` par l'adresse du dépôt GitHub. Il est aussi possible de télécharger le ZIP du dépôt et d'extraire son contenu dans `C:\xampp\htdocs\TomTroc`.
+Remplacer `URL_DU_DEPOT` par l'adresse du dépôt GitHub.
 
-### 2. Démarrer les services
+Il est également possible de télécharger le projet au format ZIP et de l'extraire dans `C:\xampp\htdocs\TomTroc`.
 
-Ouvrir le panneau de contrôle XAMPP et démarrer **Apache** et **MySQL**.
+### 2. Démarrer XAMPP
 
-### 3. Préparer la base de données
+Ouvrir XAMPP et démarrer les services Apache et MySQL.
 
-1. Ouvrir [phpMyAdmin](http://localhost/phpmyadmin/).
-2. Créer une base de données nommée `tomtroc` (ou choisir un autre nom).
-3. Ouvrir la base créée, puis l’onglet **Importer**.
-4. Sélectionner `tomtroc_test.sql` à la racine du dépôt et lancer l’import.
+### 3. Importer la base de données
 
-Le fichier crée les tables `user`, `book` et `message`, avec des livres et des comptes de démonstration. Utiliser de préférence une base vide pour éviter les conflits de tables existantes.
+1. Ouvrir http://localhost/phpmyadmin/
+2. Créer une nouvelle base de données nommée `tomtroc_test`.
+3. Sélectionner cette base.
+4. Cliquer sur l'onglet **Importer**.
+5. Sélectionner le fichier `tomtroc_test.sql` présent à la racine du projet.
+6. Lancer l'importation.
+
+La base contient trois tables : `user`, `book` et `message`, ainsi que des données de démonstration.
 
 ### 4. Configurer la connexion MySQL
 
-Configurer les identifiants MySQL dans `config/config.php`. Si le dépôt contient `config/config.example.php`, le copier d’abord en `config/config.php` :
+Ouvrir le fichier `config/config.php` et vérifier les paramètres de connexion à la base de données.
+
+Pour une installation XAMPP classique :
 
 ```php
-<?php
-
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'tomtroc');
+define('DB_NAME', 'tomtroc_test');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 ```
 
-Ces valeurs correspondent à une configuration XAMPP locale courante. Adapter les identifiants si nécessaire.
+Adapter ces paramètres selon la configuration locale.
 
-Ne pas publier de vrais identifiants de connexion dans le dépôt.
+### 5. Lancer le site
 
-### 5. Lancer l'application
+Ouvrir l'adresse suivante dans le navigateur :
 
-Dans le navigateur, ouvrir :
+http://localhost/TomTroc/
 
-**http://localhost/TomTroc/**
-
-Le fichier `index.php` à la racine du projet sert de point d'entrée et gère les différentes pages.
+Le fichier `index.php` situé à la racine du projet sert de point d'entrée à l'application.
 
 ## Comptes de démonstration
 
-Deux comptes permettent de tester la connexion et la messagerie :
+Deux comptes sont disponibles pour tester les fonctionnalités du site.
 
 | E-mail | Mot de passe |
 | --- | --- |
-| `lecteur@example.com` | `TomTroc2026!` |
-| `marie@example.com` | `TomTroc2026!` |
+| lecteur@example.com | TomTroc2026! |
+| marie@example.com | TomTroc2026! |
 
-Ces identifiants sont réservés à la démonstration locale.
+Ces comptes permettent notamment de tester la connexion, les profils et la messagerie.
 
 ## Fonctionnalités
 
-- Consulter les derniers livres ajoutés et le catalogue
-- Rechercher des livres
-- Voir la fiche détaillée d'un livre et le profil de son propriétaire
-- Créer un compte et se connecter
-- Modifier ses informations et sa photo de profil
-- Ajouter, modifier et supprimer ses livres
-- Envoyer et consulter des messages entre utilisateurs
+- Consultation des derniers livres ajoutés
+- Catalogue et recherche de livres
+- Consultation des fiches détaillées
+- Inscription et connexion
+- Gestion du profil utilisateur
+- Ajout, modification et suppression de livres
+- Consultation des profils publics
+- Messagerie privée entre utilisateurs
 
-## Organisation du projet
+## Architecture du projet
+
+Le projet utilise une architecture MVC (Modèle-Vue-Contrôleur) et la programmation orientée objet.
 
 ```text
 TomTroc/
-├── config/          # Configuration et chargement des classes
-├── controllers/     # Contrôleurs
-├── entities/        # Entités métier
-├── managers/        # Accès aux données avec PDO
-├── public/          # CSS et images
-├── services/        # Affichage des vues
-├── templates/       # Structure commune des pages
-├── views/           # Pages de l'application
-└── index.php        # Point d'entrée et routage
+├── config/
+├── controllers/
+├── entities/
+├── managers/
+├── public/
+│   ├── css/
+│   └── images/
+├── services/
+├── templates/
+├── views/
+├── index.php
+├── README.md
+└── tomtroc_test.sql
 ```
+
+Les contrôleurs gèrent les actions de l'utilisateur, les managers communiquent avec la base de données et les vues affichent les pages.
 
 ## Problèmes fréquents
 
-**Erreur de connexion à la base de données :** vérifier que MySQL est démarré, que la base existe et que les valeurs de `config/config.php` sont correctes.
+### Erreur de connexion à la base de données
 
-**Page introuvable :** vérifier que le dossier s'appelle bien `TomTroc` dans `htdocs` et utiliser l'adresse `http://localhost/TomTroc/`.
+Vérifier que MySQL est démarré, que la base `tomtroc_test` existe et que les identifiants dans `config/config.php` sont corrects.
 
-**Pages vides ou erreurs SQL :** vérifier que les tables attendues par le projet ont bien été importées.
+### Page introuvable
 
-**Couvertures absentes :** le SQL contient des chemins vers les fichiers d’images, mais pas les images elles-mêmes. Vérifier le contenu de `public/images/`. Les livres « Le Petit Prince » et « Les Misérables » n’ont pas de couverture renseignée dans la base de démonstration.
+Vérifier que le projet se trouve dans `C:\xampp\htdocs\TomTroc` et que l'adresse utilisée est bien http://localhost/TomTroc/.
+
+### Images manquantes
+
+Les images doivent être présentes dans `public/images/`. Le fichier SQL contient uniquement leurs chemins.
+
+Certains livres de démonstration peuvent ne pas avoir de couverture.
+
+## Contexte du projet
+
+TomTroc est une association fictive à but non lucratif qui souhaite encourager le partage de livres et les rencontres entre lecteurs.
+
+L'objectif du projet est de développer une plateforme permettant aux particuliers de proposer leurs livres et de communiquer pour organiser des échanges.
+
+Le développement repose sur PHP, la programmation orientée objet, une architecture MVC et une base de données relationnelle.
+
+Projet réalisé dans le cadre du parcours OpenClassrooms :
+
+[Mettez en place un site de mise en relation avec PHP](https://openclassrooms.com/fr/paths/876/projects/1675)
