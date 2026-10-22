@@ -52,10 +52,22 @@
                 href="index.php?action=profile&id=<?= $book->getIdUser() ?>"
                 class="book-owner-profile"
             >
-                <?= htmlspecialchars(
-                    $book->getOwnerPseudo()
-                    ?? 'Utilisateur inconnu'
-                ) ?>
+                <?php if ($book->getOwnerImage()): ?>
+                    <img
+                        src="<?= htmlspecialchars($book->getOwnerImage(), ENT_QUOTES, 'UTF-8') ?>"
+                        alt="Photo de profil du propriétaire"
+                        class="book-owner-avatar"
+                    >
+                <?php else: ?>
+                    <span class="book-owner-avatar-placeholder" aria-hidden="true">👤</span>
+                <?php endif; ?>
+
+                <span>
+                    <?= htmlspecialchars(
+                        $book->getOwnerPseudo()
+                        ?? 'Utilisateur inconnu'
+                    ) ?>
+                </span>
             </a>
 
 

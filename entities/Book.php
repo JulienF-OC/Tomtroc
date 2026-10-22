@@ -11,6 +11,7 @@ class Book
     private bool $available;
     private string $dateCreation;
     private ?string $ownerPseudo;
+    private ?string $ownerImage;
 
     public function __construct(array $data)
     {
@@ -24,6 +25,7 @@ class Book
         $this->dateCreation = $data['date_creation'];
 
         $this->ownerPseudo = $data['owner_pseudo'] ?? null;
+        $this->ownerImage = $data['owner_image'] ?? null;
     }
 
     public function getId(): int
@@ -69,5 +71,10 @@ class Book
     public function getOwnerPseudo(): ?string
     {
         return $this->ownerPseudo;
+    }
+
+    public function getOwnerImage(): ?string
+    {
+        return $this->ownerImage;
     }
 }

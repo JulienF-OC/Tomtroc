@@ -1,4 +1,3 @@
-
 <?php
 
 class BookManager extends AbstractEntityManager
@@ -87,7 +86,8 @@ class BookManager extends AbstractEntityManager
         $query = $this->db->prepare(
             'SELECT
                 b.*,
-                u.pseudo AS owner_pseudo
+                u.pseudo AS owner_pseudo,
+                u.image AS owner_image
             FROM book b
             INNER JOIN `user` u ON b.id_user = u.id
             WHERE b.id = :id'
